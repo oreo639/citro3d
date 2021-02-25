@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['base_2eh_4',['base.h',['../base_8h.html',1,'']]],
-  ['bottom_5',['bottom',['../structTex3DS__SubTexture.html#ae8520be2fe338c4d790f7a4f5437d993',1,'Tex3DS_SubTexture']]],
-  ['buffers_2eh_6',['buffers.h',['../buffers_8h.html',1,'']]],
-  ['bufinfo_5fadd_7',['BufInfo_Add',['../buffers_8h.html#ace3c32831df0d7cbe2890990a5d06749',1,'buffers.h']]],
-  ['bufinfo_5finit_8',['BufInfo_Init',['../buffers_8h.html#a6bd7a8fb0f9a2922c4d3f27bbe14dc4a',1,'buffers.h']]]
+  ['_5fpad1_1',['_pad1',['https://libctru.devkitpro.org/unionCSND__CapInfo.html#ae0a73702b74a8df5d1767e2d8f643bf5',1,'CSND_CapInfo::_pad1()'],['https://libctru.devkitpro.org/unionCSND__ChnInfo.html#a82f44e9c71e5058523616518884bc29d',1,'CSND_ChnInfo::_pad1()']]],
+  ['_5fpad2_2',['_pad2',['https://libctru.devkitpro.org/unionCSND__CapInfo.html#aad5428d2d50ecc0d775e25de6fe36ab1',1,'CSND_CapInfo::_pad2()'],['https://libctru.devkitpro.org/unionCSND__ChnInfo.html#a8a5d07ac432da22d7dd37cfed6d7a1f2',1,'CSND_ChnInfo::_pad2()']]],
+  ['_5fpad3_3',['_pad3',['https://libctru.devkitpro.org/unionCSND__ChnInfo.html#a122945e8a6846829ae2435226c0a82aa',1,'CSND_ChnInfo']]]
 ];

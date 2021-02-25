@@ -76,13 +76,13 @@ $(function() {
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="structC3D__FogLut.html">    5</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    u32 data[128];</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> data[128];</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;} <a class="code" href="structC3D__FogLut.html">C3D_FogLut</a>;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structC3D__GasLut.html">   10</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    u32 diff[8];</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    u32 color[8];</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> diff[8];</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> color[8];</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;} <a class="code" href="structC3D__GasLut.html">C3D_GasLut</a>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">float</span> FogLut_CalcZ(<span class="keywordtype">float</span> depth, <span class="keywordtype">float</span> near, <span class="keywordtype">float</span> far)</div>
@@ -93,11 +93,11 @@ $(function() {
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">void</span> FogLut_FromArray(<a class="code" href="structC3D__FogLut.html">C3D_FogLut</a>* lut, <span class="keyword">const</span> <span class="keywordtype">float</span> data[256]);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">void</span> FogLut_Exp(<a class="code" href="structC3D__FogLut.html">C3D_FogLut</a>* lut, <span class="keywordtype">float</span> density, <span class="keywordtype">float</span> gradient, <span class="keywordtype">float</span> near, <span class="keywordtype">float</span> far);</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">void</span> C3D_FogGasMode(GPU_FOGMODE fogMode, GPU_GASMODE gasMode, <span class="keywordtype">bool</span> zFlip);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">void</span> C3D_FogColor(u32 color);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">void</span> C3D_FogGasMode(<a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a1f70bba2c275f4e43e9126e5017cc982">GPU_FOGMODE</a> fogMode, <a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#acc2d65787e8cddd99f2e65dd3168e388">GPU_GASMODE</a> gasMode, <span class="keywordtype">bool</span> zFlip);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keywordtype">void</span> C3D_FogColor(<a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> color);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">void</span> C3D_FogLutBind(<a class="code" href="structC3D__FogLut.html">C3D_FogLut</a>* lut);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">void</span> GasLut_FromArray(<a class="code" href="structC3D__GasLut.html">C3D_GasLut</a>* lut, <span class="keyword">const</span> u32 data[9]);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">void</span> GasLut_FromArray(<a class="code" href="structC3D__GasLut.html">C3D_GasLut</a>* lut, <span class="keyword">const</span> <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> data[9]);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">void</span> C3D_GasBeginAcc(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">void</span> C3D_GasDeltaZ(<span class="keywordtype">float</span> value);</div>
@@ -107,11 +107,15 @@ $(function() {
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> C3D_GasLightPlanar(<span class="keywordtype">float</span> min, <span class="keywordtype">float</span> max, <span class="keywordtype">float</span> attn);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">void</span> C3D_GasLightView(<span class="keywordtype">float</span> min, <span class="keywordtype">float</span> max, <span class="keywordtype">float</span> attn);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> C3D_GasLightDirection(<span class="keywordtype">float</span> dotp);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> C3D_GasLutInput(GPU_GASLUTINPUT input);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> C3D_GasLutInput(<a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#adb1be3a2d383032545509998c88ac649">GPU_GASLUTINPUT</a> input);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> C3D_GasLutBind(<a class="code" href="structC3D__GasLut.html">C3D_GasLut</a>* lut);</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="atypes_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">Various citro3d types.</div></div>
 <div class="ttc" id="astructC3D__GasLut_html"><div class="ttname"><a href="structC3D__GasLut.html">C3D_GasLut</a></div><div class="ttdef"><b>Definition:</b> fog.h:10</div></div>
+<div class="ttc" id="aenums_8h_html_a1f70bba2c275f4e43e9126e5017cc982"><div class="ttname"><a href="https://libctru.devkitpro.org/enums_8h.html#a1f70bba2c275f4e43e9126e5017cc982">GPU_FOGMODE</a></div><div class="ttdeci">GPU_FOGMODE</div></div>
+<div class="ttc" id="atypes_8h_html_afaa62991928fb9fb18ff0db62a040aba"><div class="ttname"><a href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a></div><div class="ttdeci">uint32_t u32</div></div>
+<div class="ttc" id="aenums_8h_html_acc2d65787e8cddd99f2e65dd3168e388"><div class="ttname"><a href="https://libctru.devkitpro.org/enums_8h.html#acc2d65787e8cddd99f2e65dd3168e388">GPU_GASMODE</a></div><div class="ttdeci">GPU_GASMODE</div></div>
+<div class="ttc" id="aenums_8h_html_adb1be3a2d383032545509998c88ac649"><div class="ttname"><a href="https://libctru.devkitpro.org/enums_8h.html#adb1be3a2d383032545509998c88ac649">GPU_GASLUTINPUT</a></div><div class="ttdeci">GPU_GASLUTINPUT</div></div>
 <div class="ttc" id="astructC3D__FogLut_html"><div class="ttname"><a href="structC3D__FogLut.html">C3D_FogLut</a></div><div class="ttdef"><b>Definition:</b> fog.h:5</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

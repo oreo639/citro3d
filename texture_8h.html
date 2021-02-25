@@ -97,10 +97,10 @@ Functions</h2></td></tr>
 <tr class="memitem:afa0b16b43f95e7786bcf85dd9eb4c746"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#afa0b16b43f95e7786bcf85dd9eb4c746">C3D_TexInitWithParams</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, <a class="el" href="structC3D__TexCube.html">C3D_TexCube</a> *cube, <a class="el" href="structC3D__TexInitParams.html">C3D_TexInitParams</a> p)</td></tr>
 <tr class="memdesc:afa0b16b43f95e7786bcf85dd9eb4c746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initalizes texture with specified paramaters.  <a href="texture_8h.html#afa0b16b43f95e7786bcf85dd9eb4c746">More...</a><br /></td></tr>
 <tr class="separator:afa0b16b43f95e7786bcf85dd9eb4c746"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abfc2aa9643a319accc71ebb559e68891"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#abfc2aa9643a319accc71ebb559e68891">C3D_TexLoadImage</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, const void *data, GPU_TEXFACE face, int level)</td></tr>
+<tr class="memitem:abfc2aa9643a319accc71ebb559e68891"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#abfc2aa9643a319accc71ebb559e68891">C3D_TexLoadImage</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, const void *data, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a2fac8fe6dd845ff19a9fc758c0aa8332">GPU_TEXFACE</a> face, int level)</td></tr>
 <tr class="memdesc:abfc2aa9643a319accc71ebb559e68891"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies raw texture data into <a class="el" href="structC3D__Tex.html">C3D_Tex</a>.  <a href="texture_8h.html#abfc2aa9643a319accc71ebb559e68891">More...</a><br /></td></tr>
 <tr class="separator:abfc2aa9643a319accc71ebb559e68891"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc333445dfee8a3418b51249cee58b66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#abc333445dfee8a3418b51249cee58b66">C3D_TexGenerateMipmap</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, GPU_TEXFACE face)</td></tr>
+<tr class="memitem:abc333445dfee8a3418b51249cee58b66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#abc333445dfee8a3418b51249cee58b66">C3D_TexGenerateMipmap</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a2fac8fe6dd845ff19a9fc758c0aa8332">GPU_TEXFACE</a> face)</td></tr>
 <tr class="memdesc:abc333445dfee8a3418b51249cee58b66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates mipmaps for <a class="el" href="structC3D__Tex.html">C3D_Tex</a> using previously specified max level The max level should have been specified using <a class="el" href="texture_8h.html#a10c69c9586050f8dc04b7210873c01a5">C3D_TexInitMipmap()</a> or <a class="el" href="texture_8h.html#afa0b16b43f95e7786bcf85dd9eb4c746">C3D_TexInitWithParams()</a>  <a href="texture_8h.html#abc333445dfee8a3418b51249cee58b66">More...</a><br /></td></tr>
 <tr class="separator:abc333445dfee8a3418b51249cee58b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a360d2c5598e94a10dbd1667b02676105"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#a360d2c5598e94a10dbd1667b02676105">C3D_TexBind</a> (int unitId, <a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex)</td></tr>
@@ -115,55 +115,55 @@ Functions</h2></td></tr>
 <tr class="memitem:ac74ca64e5d72e7bf3d86c9ee61d2d962"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#ac74ca64e5d72e7bf3d86c9ee61d2d962">C3D_TexShadowParams</a> (bool perspective, float bias)</td></tr>
 <tr class="memdesc:ac74ca64e5d72e7bf3d86c9ee61d2d962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configues texunit0 shadow texture properties.  <a href="texture_8h.html#ac74ca64e5d72e7bf3d86c9ee61d2d962">More...</a><br /></td></tr>
 <tr class="separator:ac74ca64e5d72e7bf3d86c9ee61d2d962"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a492fa66c42f0b78ed91752497c92a796"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#a492fa66c42f0b78ed91752497c92a796">C3D_TexCalcMaxLevel</a> (u32 width, u32 height)</td></tr>
+<tr class="memitem:a492fa66c42f0b78ed91752497c92a796"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#a492fa66c42f0b78ed91752497c92a796">C3D_TexCalcMaxLevel</a> (<a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> width, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> height)</td></tr>
 <tr class="memdesc:a492fa66c42f0b78ed91752497c92a796"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates maximum mipmap level for given texture size.  <a href="texture_8h.html#a492fa66c42f0b78ed91752497c92a796">More...</a><br /></td></tr>
 <tr class="separator:a492fa66c42f0b78ed91752497c92a796"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea53f5680ca07230a244c0753f8d2401"><td class="memItemLeft" align="right" valign="top">static u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#aea53f5680ca07230a244c0753f8d2401">C3D_TexCalcLevelSize</a> (u32 size, int level)</td></tr>
+<tr class="memitem:aea53f5680ca07230a244c0753f8d2401"><td class="memItemLeft" align="right" valign="top">static <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#aea53f5680ca07230a244c0753f8d2401">C3D_TexCalcLevelSize</a> (<a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> size, int level)</td></tr>
 <tr class="memdesc:aea53f5680ca07230a244c0753f8d2401"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates size of mipmap level.  <a href="texture_8h.html#aea53f5680ca07230a244c0753f8d2401">More...</a><br /></td></tr>
 <tr class="separator:aea53f5680ca07230a244c0753f8d2401"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8d5abaafcddb14bfb27590d2d78c26f"><td class="memItemLeft" align="right" valign="top">static u32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#ac8d5abaafcddb14bfb27590d2d78c26f">C3D_TexCalcTotalSize</a> (u32 size, int maxLevel)</td></tr>
+<tr class="memitem:ac8d5abaafcddb14bfb27590d2d78c26f"><td class="memItemLeft" align="right" valign="top">static <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#ac8d5abaafcddb14bfb27590d2d78c26f">C3D_TexCalcTotalSize</a> (<a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> size, int maxLevel)</td></tr>
 <tr class="memdesc:ac8d5abaafcddb14bfb27590d2d78c26f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates total size of mipmap texture data.  <a href="texture_8h.html#ac8d5abaafcddb14bfb27590d2d78c26f">More...</a><br /></td></tr>
 <tr class="separator:ac8d5abaafcddb14bfb27590d2d78c26f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b204661d6827dd9ab86cdb4b138e693"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#a0b204661d6827dd9ab86cdb4b138e693">C3D_TexInit</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, u16 width, u16 height, GPU_TEXCOLOR format)</td></tr>
+<tr class="memitem:a0b204661d6827dd9ab86cdb4b138e693"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#a0b204661d6827dd9ab86cdb4b138e693">C3D_TexInit</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> width, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> height, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a63bb2f7fceb0f356549f0be235a0f99f">GPU_TEXCOLOR</a> format)</td></tr>
 <tr class="memdesc:a0b204661d6827dd9ab86cdb4b138e693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initalizes standard 2D texture.  <a href="texture_8h.html#a0b204661d6827dd9ab86cdb4b138e693">More...</a><br /></td></tr>
 <tr class="separator:a0b204661d6827dd9ab86cdb4b138e693"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10c69c9586050f8dc04b7210873c01a5"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#a10c69c9586050f8dc04b7210873c01a5">C3D_TexInitMipmap</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, u16 width, u16 height, GPU_TEXCOLOR format)</td></tr>
+<tr class="memitem:a10c69c9586050f8dc04b7210873c01a5"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#a10c69c9586050f8dc04b7210873c01a5">C3D_TexInitMipmap</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> width, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> height, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a63bb2f7fceb0f356549f0be235a0f99f">GPU_TEXCOLOR</a> format)</td></tr>
 <tr class="memdesc:a10c69c9586050f8dc04b7210873c01a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initalizes standard 2D texture with mipmap Maximum miplevel is calculated using <a class="el" href="texture_8h.html#a492fa66c42f0b78ed91752497c92a796">C3D_TexCalcMaxLevel()</a>  <a href="texture_8h.html#a10c69c9586050f8dc04b7210873c01a5">More...</a><br /></td></tr>
 <tr class="separator:a10c69c9586050f8dc04b7210873c01a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fa197d4044c29c792c862e3a5226b69"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#a9fa197d4044c29c792c862e3a5226b69">C3D_TexInitCube</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, <a class="el" href="structC3D__TexCube.html">C3D_TexCube</a> *cube, u16 width, u16 height, GPU_TEXCOLOR format)</td></tr>
+<tr class="memitem:a9fa197d4044c29c792c862e3a5226b69"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#a9fa197d4044c29c792c862e3a5226b69">C3D_TexInitCube</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, <a class="el" href="structC3D__TexCube.html">C3D_TexCube</a> *cube, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> width, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> height, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a63bb2f7fceb0f356549f0be235a0f99f">GPU_TEXCOLOR</a> format)</td></tr>
 <tr class="memdesc:a9fa197d4044c29c792c862e3a5226b69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initalizes cubemap texture.  <a href="texture_8h.html#a9fa197d4044c29c792c862e3a5226b69">More...</a><br /></td></tr>
 <tr class="separator:a9fa197d4044c29c792c862e3a5226b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76c79f7e6e9357f835905c63cd8d07d9"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#a76c79f7e6e9357f835905c63cd8d07d9">C3D_TexInitVRAM</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, u16 width, u16 height, GPU_TEXCOLOR format)</td></tr>
+<tr class="memitem:a76c79f7e6e9357f835905c63cd8d07d9"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#a76c79f7e6e9357f835905c63cd8d07d9">C3D_TexInitVRAM</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> width, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> height, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a63bb2f7fceb0f356549f0be235a0f99f">GPU_TEXCOLOR</a> format)</td></tr>
 <tr class="memdesc:a76c79f7e6e9357f835905c63cd8d07d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initalizes 2D texture in VRAM.  <a href="texture_8h.html#a76c79f7e6e9357f835905c63cd8d07d9">More...</a><br /></td></tr>
 <tr class="separator:a76c79f7e6e9357f835905c63cd8d07d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e20b6b7dfa24e4c3e2d22c15f38510e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#a0e20b6b7dfa24e4c3e2d22c15f38510e">C3D_TexInitShadow</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, u16 width, u16 height)</td></tr>
+<tr class="memitem:a0e20b6b7dfa24e4c3e2d22c15f38510e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#a0e20b6b7dfa24e4c3e2d22c15f38510e">C3D_TexInitShadow</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> width, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> height)</td></tr>
 <tr class="memdesc:a0e20b6b7dfa24e4c3e2d22c15f38510e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initalizes 2D shadowmap texture.  <a href="texture_8h.html#a0e20b6b7dfa24e4c3e2d22c15f38510e">More...</a><br /></td></tr>
 <tr class="separator:a0e20b6b7dfa24e4c3e2d22c15f38510e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd38dedabe4731e8815bf42c6a035862"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#acd38dedabe4731e8815bf42c6a035862">C3D_TexInitShadowCube</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, <a class="el" href="structC3D__TexCube.html">C3D_TexCube</a> *cube, u16 width, u16 height)</td></tr>
+<tr class="memitem:acd38dedabe4731e8815bf42c6a035862"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#acd38dedabe4731e8815bf42c6a035862">C3D_TexInitShadowCube</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, <a class="el" href="structC3D__TexCube.html">C3D_TexCube</a> *cube, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> width, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> height)</td></tr>
 <tr class="memdesc:acd38dedabe4731e8815bf42c6a035862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initalizes shadowmap cubemap texture.  <a href="texture_8h.html#acd38dedabe4731e8815bf42c6a035862">More...</a><br /></td></tr>
 <tr class="separator:acd38dedabe4731e8815bf42c6a035862"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a22be3bd33c46ecf4c68d2ccd295602"><td class="memItemLeft" align="right" valign="top">static GPU_TEXTURE_MODE_PARAM&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#a8a22be3bd33c46ecf4c68d2ccd295602">C3D_TexGetType</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex)</td></tr>
+<tr class="memitem:a8a22be3bd33c46ecf4c68d2ccd295602"><td class="memItemLeft" align="right" valign="top">static <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a5d14598061a96db4f06bf8316156a1bb">GPU_TEXTURE_MODE_PARAM</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#a8a22be3bd33c46ecf4c68d2ccd295602">C3D_TexGetType</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex)</td></tr>
 <tr class="memdesc:a8a22be3bd33c46ecf4c68d2ccd295602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets type of texture.  <a href="texture_8h.html#a8a22be3bd33c46ecf4c68d2ccd295602">More...</a><br /></td></tr>
 <tr class="separator:a8a22be3bd33c46ecf4c68d2ccd295602"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e6b06642d07b2cd2316020c85c6d0b4"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#a9e6b06642d07b2cd2316020c85c6d0b4">C3D_TexGetImagePtr</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, void *data, int level, u32 *size)</td></tr>
+<tr class="memitem:a9e6b06642d07b2cd2316020c85c6d0b4"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#a9e6b06642d07b2cd2316020c85c6d0b4">C3D_TexGetImagePtr</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, void *data, int level, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *size)</td></tr>
 <tr class="memdesc:a9e6b06642d07b2cd2316020c85c6d0b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets pointer to texture image.  <a href="texture_8h.html#a9e6b06642d07b2cd2316020c85c6d0b4">More...</a><br /></td></tr>
 <tr class="separator:a9e6b06642d07b2cd2316020c85c6d0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afdb25ea4360b45e2c57a2d616b31e93b"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#afdb25ea4360b45e2c57a2d616b31e93b">C3D_Tex2DGetImagePtr</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, int level, u32 *size)</td></tr>
+<tr class="memitem:afdb25ea4360b45e2c57a2d616b31e93b"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#afdb25ea4360b45e2c57a2d616b31e93b">C3D_Tex2DGetImagePtr</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, int level, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *size)</td></tr>
 <tr class="memdesc:afdb25ea4360b45e2c57a2d616b31e93b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets pointer to 2D texture image.  <a href="texture_8h.html#afdb25ea4360b45e2c57a2d616b31e93b">More...</a><br /></td></tr>
 <tr class="separator:afdb25ea4360b45e2c57a2d616b31e93b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a861a5b5dd5b682343bfffe08a0a4eb60"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#a861a5b5dd5b682343bfffe08a0a4eb60">C3D_TexCubeGetImagePtr</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, GPU_TEXFACE face, int level, u32 *size)</td></tr>
+<tr class="memitem:a861a5b5dd5b682343bfffe08a0a4eb60"><td class="memItemLeft" align="right" valign="top">static void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#a861a5b5dd5b682343bfffe08a0a4eb60">C3D_TexCubeGetImagePtr</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a2fac8fe6dd845ff19a9fc758c0aa8332">GPU_TEXFACE</a> face, int level, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *size)</td></tr>
 <tr class="memdesc:a861a5b5dd5b682343bfffe08a0a4eb60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets pointer to cubemap texture image.  <a href="texture_8h.html#a861a5b5dd5b682343bfffe08a0a4eb60">More...</a><br /></td></tr>
 <tr class="separator:a861a5b5dd5b682343bfffe08a0a4eb60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e0d70e5d4d77613cb68319ed3911e51"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#a4e0d70e5d4d77613cb68319ed3911e51">C3D_TexUpload</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, const void *data)</td></tr>
 <tr class="memdesc:a4e0d70e5d4d77613cb68319ed3911e51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies raw texture data into standard 2D texture.  <a href="texture_8h.html#a4e0d70e5d4d77613cb68319ed3911e51">More...</a><br /></td></tr>
 <tr class="separator:a4e0d70e5d4d77613cb68319ed3911e51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae748480963ff8dd0aa506fd22881c32"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#aae748480963ff8dd0aa506fd22881c32">C3D_TexSetFilter</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, GPU_TEXTURE_FILTER_PARAM magFilter, GPU_TEXTURE_FILTER_PARAM minFilter)</td></tr>
+<tr class="memitem:aae748480963ff8dd0aa506fd22881c32"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#aae748480963ff8dd0aa506fd22881c32">C3D_TexSetFilter</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a2c76780b7ff5d323daf30ea310fbc8c4">GPU_TEXTURE_FILTER_PARAM</a> magFilter, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a2c76780b7ff5d323daf30ea310fbc8c4">GPU_TEXTURE_FILTER_PARAM</a> minFilter)</td></tr>
 <tr class="memdesc:aae748480963ff8dd0aa506fd22881c32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures texture magnification and minification filters.  <a href="texture_8h.html#aae748480963ff8dd0aa506fd22881c32">More...</a><br /></td></tr>
 <tr class="separator:aae748480963ff8dd0aa506fd22881c32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac0a1d8575b2623ca3c901bbe8f2553a1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#ac0a1d8575b2623ca3c901bbe8f2553a1">C3D_TexSetFilterMipmap</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, GPU_TEXTURE_FILTER_PARAM filter)</td></tr>
+<tr class="memitem:ac0a1d8575b2623ca3c901bbe8f2553a1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#ac0a1d8575b2623ca3c901bbe8f2553a1">C3D_TexSetFilterMipmap</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a2c76780b7ff5d323daf30ea310fbc8c4">GPU_TEXTURE_FILTER_PARAM</a> filter)</td></tr>
 <tr class="memdesc:ac0a1d8575b2623ca3c901bbe8f2553a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures texture mipmap minification filters.  <a href="texture_8h.html#ac0a1d8575b2623ca3c901bbe8f2553a1">More...</a><br /></td></tr>
 <tr class="separator:ac0a1d8575b2623ca3c901bbe8f2553a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae739b49b1e6694608f7778a67556eacd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#ae739b49b1e6694608f7778a67556eacd">C3D_TexSetWrap</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, GPU_TEXTURE_WRAP_PARAM wrapS, GPU_TEXTURE_WRAP_PARAM wrapT)</td></tr>
+<tr class="memitem:ae739b49b1e6694608f7778a67556eacd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#ae739b49b1e6694608f7778a67556eacd">C3D_TexSetWrap</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#aca018b509809231470e5e3c3e907261d">GPU_TEXTURE_WRAP_PARAM</a> wrapS, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#aca018b509809231470e5e3c3e907261d">GPU_TEXTURE_WRAP_PARAM</a> wrapT)</td></tr>
 <tr class="memdesc:ae739b49b1e6694608f7778a67556eacd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures texture wrappinng options.  <a href="texture_8h.html#ae739b49b1e6694608f7778a67556eacd">More...</a><br /></td></tr>
 <tr class="separator:ae739b49b1e6694608f7778a67556eacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb8980dcac42b0d86ed3cc418991ef5f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#abb8980dcac42b0d86ed3cc418991ef5f">C3D_TexSetLodBias</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, float lodBias)</td></tr>
@@ -197,7 +197,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u32 *&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
           <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
@@ -274,9 +274,9 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static u32 C3D_TexCalcLevelSize </td>
+          <td class="memname">static <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> C3D_TexCalcLevelSize </td>
           <td>(</td>
-          <td class="paramtype">u32&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
           <td class="paramname"><em>size</em>, </td>
         </tr>
         <tr>
@@ -322,13 +322,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">static int C3D_TexCalcMaxLevel </td>
           <td>(</td>
-          <td class="paramtype">u32&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
           <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u32&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
           <td class="paramname"><em>height</em>&#160;</td>
         </tr>
         <tr>
@@ -366,9 +366,9 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static u32 C3D_TexCalcTotalSize </td>
+          <td class="memname">static <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> C3D_TexCalcTotalSize </td>
           <td>(</td>
-          <td class="paramtype">u32&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
           <td class="paramname"><em>size</em>, </td>
         </tr>
         <tr>
@@ -420,7 +420,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GPU_TEXFACE&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a2fac8fe6dd845ff19a9fc758c0aa8332">GPU_TEXFACE</a>&#160;</td>
           <td class="paramname"><em>face</em>, </td>
         </tr>
         <tr>
@@ -432,7 +432,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u32 *&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
           <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
@@ -511,7 +511,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd>GSPGPU_FlushDataCache() </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="elRef" href="https://libctru.devkitpro.org/gspgpu_8h.html#a24f1c78fad4e1108ddc56fb3674cdba2">GSPGPU_FlushDataCache()</a> </dd></dl>
 
 </div>
 </div>
@@ -530,7 +530,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GPU_TEXFACE&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a2fac8fe6dd845ff19a9fc758c0aa8332">GPU_TEXFACE</a>&#160;</td>
           <td class="paramname"><em>face</em>&#160;</td>
         </tr>
         <tr>
@@ -583,7 +583,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u32 *&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *&#160;</td>
           <td class="paramname"><em>size</em>&#160;</td>
         </tr>
         <tr>
@@ -623,7 +623,7 @@ Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static GPU_TEXTURE_MODE_PARAM C3D_TexGetType </td>
+          <td class="memname">static <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a5d14598061a96db4f06bf8316156a1bb">GPU_TEXTURE_MODE_PARAM</a> C3D_TexGetType </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structC3D__Tex.html">C3D_Tex</a> *&#160;</td>
           <td class="paramname"><em>tex</em></td><td>)</td>
@@ -665,19 +665,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
           <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
           <td class="paramname"><em>height</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GPU_TEXCOLOR&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a63bb2f7fceb0f356549f0be235a0f99f">GPU_TEXCOLOR</a>&#160;</td>
           <td class="paramname"><em>format</em>&#160;</td>
         </tr>
         <tr>
@@ -731,19 +731,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
           <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
           <td class="paramname"><em>height</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GPU_TEXCOLOR&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a63bb2f7fceb0f356549f0be235a0f99f">GPU_TEXCOLOR</a>&#160;</td>
           <td class="paramname"><em>format</em>&#160;</td>
         </tr>
         <tr>
@@ -792,19 +792,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
           <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
           <td class="paramname"><em>height</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GPU_TEXCOLOR&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a63bb2f7fceb0f356549f0be235a0f99f">GPU_TEXCOLOR</a>&#160;</td>
           <td class="paramname"><em>format</em>&#160;</td>
         </tr>
         <tr>
@@ -852,13 +852,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
           <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
           <td class="paramname"><em>height</em>&#160;</td>
         </tr>
         <tr>
@@ -911,13 +911,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
           <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
           <td class="paramname"><em>height</em>&#160;</td>
         </tr>
         <tr>
@@ -965,19 +965,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
           <td class="paramname"><em>width</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u16&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a>&#160;</td>
           <td class="paramname"><em>height</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GPU_TEXCOLOR&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a63bb2f7fceb0f356549f0be235a0f99f">GPU_TEXCOLOR</a>&#160;</td>
           <td class="paramname"><em>format</em>&#160;</td>
         </tr>
         <tr>
@@ -1073,7 +1073,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GPU_TEXFACE&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a2fac8fe6dd845ff19a9fc758c0aa8332">GPU_TEXFACE</a>&#160;</td>
           <td class="paramname"><em>face</em>, </td>
         </tr>
         <tr>
@@ -1121,13 +1121,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GPU_TEXTURE_FILTER_PARAM&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a2c76780b7ff5d323daf30ea310fbc8c4">GPU_TEXTURE_FILTER_PARAM</a>&#160;</td>
           <td class="paramname"><em>magFilter</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GPU_TEXTURE_FILTER_PARAM&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a2c76780b7ff5d323daf30ea310fbc8c4">GPU_TEXTURE_FILTER_PARAM</a>&#160;</td>
           <td class="paramname"><em>minFilter</em>&#160;</td>
         </tr>
         <tr>
@@ -1173,7 +1173,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GPU_TEXTURE_FILTER_PARAM&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a2c76780b7ff5d323daf30ea310fbc8c4">GPU_TEXTURE_FILTER_PARAM</a>&#160;</td>
           <td class="paramname"><em>filter</em>&#160;</td>
         </tr>
         <tr>
@@ -1263,13 +1263,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GPU_TEXTURE_WRAP_PARAM&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#aca018b509809231470e5e3c3e907261d">GPU_TEXTURE_WRAP_PARAM</a>&#160;</td>
           <td class="paramname"><em>wrapS</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GPU_TEXTURE_WRAP_PARAM&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#aca018b509809231470e5e3c3e907261d">GPU_TEXTURE_WRAP_PARAM</a>&#160;</td>
           <td class="paramname"><em>wrapT</em>&#160;</td>
         </tr>
         <tr>

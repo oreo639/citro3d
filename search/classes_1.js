@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tex3ds_5fsubtexture_288',['Tex3DS_SubTexture',['../structTex3DS__SubTexture.html',1,'']]]
+  ['bosscontext_1071',['bossContext',['https://libctru.devkitpro.org/structbossContext.html',1,'']]]
 ];

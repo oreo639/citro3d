@@ -120,28 +120,28 @@ Functions</h2></td></tr>
 <tr class="memitem:afd650b68579ca331052abb1ee60f8013"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texenv_8h.html#afd650b68579ca331052abb1ee60f8013">C3D_TexEnvBufUpdate</a> (int mode, int mask)</td></tr>
 <tr class="memdesc:afd650b68579ca331052abb1ee60f8013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the stages where the GPU_PREVIOUS_BUFFER source value should be updated with the output of that stage.  <a href="texenv_8h.html#afd650b68579ca331052abb1ee60f8013">More...</a><br /></td></tr>
 <tr class="separator:afd650b68579ca331052abb1ee60f8013"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81588f3622353d3da05dd2ff96e43020"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texenv_8h.html#a81588f3622353d3da05dd2ff96e43020">C3D_TexEnvBufColor</a> (u32 color)</td></tr>
+<tr class="memitem:a81588f3622353d3da05dd2ff96e43020"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texenv_8h.html#a81588f3622353d3da05dd2ff96e43020">C3D_TexEnvBufColor</a> (<a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> color)</td></tr>
 <tr class="memdesc:a81588f3622353d3da05dd2ff96e43020"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the initial value of GPU_PREVIOUS_BUFFER.  <a href="texenv_8h.html#a81588f3622353d3da05dd2ff96e43020">More...</a><br /></td></tr>
 <tr class="separator:a81588f3622353d3da05dd2ff96e43020"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd2797778a6e16a5585a4cae7f4a0e3f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texenv_8h.html#acd2797778a6e16a5585a4cae7f4a0e3f">C3D_TexEnvInit</a> (<a class="el" href="structC3D__TexEnv.html">C3D_TexEnv</a> *env)</td></tr>
 <tr class="memdesc:acd2797778a6e16a5585a4cae7f4a0e3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets/resets a TexEnv to its initial value.  <a href="texenv_8h.html#acd2797778a6e16a5585a4cae7f4a0e3f">More...</a><br /></td></tr>
 <tr class="separator:acd2797778a6e16a5585a4cae7f4a0e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85cd9b447b6f68bfb3c18ddfa9209f1d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texenv_8h.html#a85cd9b447b6f68bfb3c18ddfa9209f1d">C3D_TexEnvSrc</a> (<a class="el" href="structC3D__TexEnv.html">C3D_TexEnv</a> *env, <a class="el" href="texenv_8h.html#ae642decb740f1911fc318b4f17833b8c">C3D_TexEnvMode</a> mode, GPU_TEVSRC s1, GPU_TEVSRC s2, GPU_TEVSRC s3)</td></tr>
+<tr class="memitem:a85cd9b447b6f68bfb3c18ddfa9209f1d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texenv_8h.html#a85cd9b447b6f68bfb3c18ddfa9209f1d">C3D_TexEnvSrc</a> (<a class="el" href="structC3D__TexEnv.html">C3D_TexEnv</a> *env, <a class="el" href="texenv_8h.html#ae642decb740f1911fc318b4f17833b8c">C3D_TexEnvMode</a> mode, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a43f47361b7edcab3c6b7d064c09ae7d0">GPU_TEVSRC</a> s1, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a43f47361b7edcab3c6b7d064c09ae7d0">GPU_TEVSRC</a> s2, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a43f47361b7edcab3c6b7d064c09ae7d0">GPU_TEVSRC</a> s3)</td></tr>
 <tr class="memdesc:a85cd9b447b6f68bfb3c18ddfa9209f1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the input source of a TexEnv.  <a href="texenv_8h.html#a85cd9b447b6f68bfb3c18ddfa9209f1d">More...</a><br /></td></tr>
 <tr class="separator:a85cd9b447b6f68bfb3c18ddfa9209f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01ed462aea98189957edd14dc69f5f6c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texenv_8h.html#a01ed462aea98189957edd14dc69f5f6c">C3D_TexEnvOpRgb</a> (<a class="el" href="structC3D__TexEnv.html">C3D_TexEnv</a> *env, GPU_TEVOP_RGB o1, GPU_TEVOP_RGB o2, GPU_TEVOP_RGB o3)</td></tr>
+<tr class="memitem:a01ed462aea98189957edd14dc69f5f6c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texenv_8h.html#a01ed462aea98189957edd14dc69f5f6c">C3D_TexEnvOpRgb</a> (<a class="el" href="structC3D__TexEnv.html">C3D_TexEnv</a> *env, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a10399b41ca4c093e8e5e6d9f5943d80f">GPU_TEVOP_RGB</a> o1, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a10399b41ca4c093e8e5e6d9f5943d80f">GPU_TEVOP_RGB</a> o2, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a10399b41ca4c093e8e5e6d9f5943d80f">GPU_TEVOP_RGB</a> o3)</td></tr>
 <tr class="memdesc:a01ed462aea98189957edd14dc69f5f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the operation to be applied to the input color of a TexEnv before the function is applied.  <a href="texenv_8h.html#a01ed462aea98189957edd14dc69f5f6c">More...</a><br /></td></tr>
 <tr class="separator:a01ed462aea98189957edd14dc69f5f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5970cafd988ba6840682d99f6453cbe6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texenv_8h.html#a5970cafd988ba6840682d99f6453cbe6">C3D_TexEnvOpAlpha</a> (<a class="el" href="structC3D__TexEnv.html">C3D_TexEnv</a> *env, GPU_TEVOP_A o1, GPU_TEVOP_A o2, GPU_TEVOP_A o3)</td></tr>
+<tr class="memitem:a5970cafd988ba6840682d99f6453cbe6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texenv_8h.html#a5970cafd988ba6840682d99f6453cbe6">C3D_TexEnvOpAlpha</a> (<a class="el" href="structC3D__TexEnv.html">C3D_TexEnv</a> *env, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a31812c01b9cbe8b050a6076efb4c0f42">GPU_TEVOP_A</a> o1, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a31812c01b9cbe8b050a6076efb4c0f42">GPU_TEVOP_A</a> o2, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a31812c01b9cbe8b050a6076efb4c0f42">GPU_TEVOP_A</a> o3)</td></tr>
 <tr class="memdesc:a5970cafd988ba6840682d99f6453cbe6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the operation to be applied to the input alpha of a TexEnv before the function is applied.  <a href="texenv_8h.html#a5970cafd988ba6840682d99f6453cbe6">More...</a><br /></td></tr>
 <tr class="separator:a5970cafd988ba6840682d99f6453cbe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f493bad9d9e7651e1a13f514ed76592"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texenv_8h.html#a9f493bad9d9e7651e1a13f514ed76592">C3D_TexEnvFunc</a> (<a class="el" href="structC3D__TexEnv.html">C3D_TexEnv</a> *env, <a class="el" href="texenv_8h.html#ae642decb740f1911fc318b4f17833b8c">C3D_TexEnvMode</a> mode, GPU_COMBINEFUNC param)</td></tr>
+<tr class="memitem:a9f493bad9d9e7651e1a13f514ed76592"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texenv_8h.html#a9f493bad9d9e7651e1a13f514ed76592">C3D_TexEnvFunc</a> (<a class="el" href="structC3D__TexEnv.html">C3D_TexEnv</a> *env, <a class="el" href="texenv_8h.html#ae642decb740f1911fc318b4f17833b8c">C3D_TexEnvMode</a> mode, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a07c36c673c5ca75d946367821c8afdd0">GPU_COMBINEFUNC</a> param)</td></tr>
 <tr class="memdesc:a9f493bad9d9e7651e1a13f514ed76592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the combiner function to perform in this TexEnv.  <a href="texenv_8h.html#a9f493bad9d9e7651e1a13f514ed76592">More...</a><br /></td></tr>
 <tr class="separator:a9f493bad9d9e7651e1a13f514ed76592"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a446dacad5cbbc8f21fbb900dffff768b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texenv_8h.html#a446dacad5cbbc8f21fbb900dffff768b">C3D_TexEnvColor</a> (<a class="el" href="structC3D__TexEnv.html">C3D_TexEnv</a> *env, u32 color)</td></tr>
+<tr class="memitem:a446dacad5cbbc8f21fbb900dffff768b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texenv_8h.html#a446dacad5cbbc8f21fbb900dffff768b">C3D_TexEnvColor</a> (<a class="el" href="structC3D__TexEnv.html">C3D_TexEnv</a> *env, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> color)</td></tr>
 <tr class="memdesc:a446dacad5cbbc8f21fbb900dffff768b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of the GPU_CONSTANT source for a TexEnv stage.  <a href="texenv_8h.html#a446dacad5cbbc8f21fbb900dffff768b">More...</a><br /></td></tr>
 <tr class="separator:a446dacad5cbbc8f21fbb900dffff768b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe00519e1495bad3a9dbe57ae0dfe763"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texenv_8h.html#abe00519e1495bad3a9dbe57ae0dfe763">C3D_TexEnvScale</a> (<a class="el" href="structC3D__TexEnv.html">C3D_TexEnv</a> *env, int mode, GPU_TEVSCALE param)</td></tr>
+<tr class="memitem:abe00519e1495bad3a9dbe57ae0dfe763"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texenv_8h.html#abe00519e1495bad3a9dbe57ae0dfe763">C3D_TexEnvScale</a> (<a class="el" href="structC3D__TexEnv.html">C3D_TexEnv</a> *env, int mode, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a08411ce4cfbf061b9f0aa1cf00890d65">GPU_TEVSCALE</a> param)</td></tr>
 <tr class="memdesc:abe00519e1495bad3a9dbe57ae0dfe763"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures the scaling to be applied to the output of a TexEnv.  <a href="texenv_8h.html#abe00519e1495bad3a9dbe57ae0dfe763">More...</a><br /></td></tr>
 <tr class="separator:abe00519e1495bad3a9dbe57ae0dfe763"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -274,7 +274,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void C3D_TexEnvBufColor </td>
           <td>(</td>
-          <td class="paramtype">u32&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
           <td class="paramname"><em>color</em></td><td>)</td>
           <td></td>
         </tr>
@@ -346,7 +346,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">u32&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td>
           <td class="paramname"><em>color</em>&#160;</td>
         </tr>
         <tr>
@@ -397,7 +397,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GPU_COMBINEFUNC&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a07c36c673c5ca75d946367821c8afdd0">GPU_COMBINEFUNC</a>&#160;</td>
           <td class="paramname"><em>param</em>&#160;</td>
         </tr>
         <tr>
@@ -483,19 +483,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GPU_TEVOP_A&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a31812c01b9cbe8b050a6076efb4c0f42">GPU_TEVOP_A</a>&#160;</td>
           <td class="paramname"><em>o1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GPU_TEVOP_A&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a31812c01b9cbe8b050a6076efb4c0f42">GPU_TEVOP_A</a>&#160;</td>
           <td class="paramname"><em>o2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GPU_TEVOP_A&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a31812c01b9cbe8b050a6076efb4c0f42">GPU_TEVOP_A</a>&#160;</td>
           <td class="paramname"><em>o3</em>&#160;</td>
         </tr>
         <tr>
@@ -542,19 +542,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GPU_TEVOP_RGB&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a10399b41ca4c093e8e5e6d9f5943d80f">GPU_TEVOP_RGB</a>&#160;</td>
           <td class="paramname"><em>o1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GPU_TEVOP_RGB&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a10399b41ca4c093e8e5e6d9f5943d80f">GPU_TEVOP_RGB</a>&#160;</td>
           <td class="paramname"><em>o2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GPU_TEVOP_RGB&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a10399b41ca4c093e8e5e6d9f5943d80f">GPU_TEVOP_RGB</a>&#160;</td>
           <td class="paramname"><em>o3</em>&#160;</td>
         </tr>
         <tr>
@@ -607,7 +607,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GPU_TEVSCALE&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a08411ce4cfbf061b9f0aa1cf00890d65">GPU_TEVSCALE</a>&#160;</td>
           <td class="paramname"><em>param</em>&#160;</td>
         </tr>
         <tr>
@@ -659,19 +659,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GPU_TEVSRC&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a43f47361b7edcab3c6b7d064c09ae7d0">GPU_TEVSRC</a>&#160;</td>
           <td class="paramname"><em>s1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GPU_TEVSRC&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a43f47361b7edcab3c6b7d064c09ae7d0">GPU_TEVSRC</a>&#160;</td>
           <td class="paramname"><em>s2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">GPU_TEVSRC&#160;</td>
+          <td class="paramtype"><a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a43f47361b7edcab3c6b7d064c09ae7d0">GPU_TEVSRC</a>&#160;</td>
           <td class="paramname"><em>s3</em>&#160;</td>
         </tr>
         <tr>

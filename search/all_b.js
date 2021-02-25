@@ -1,24 +1,5 @@
 var searchData=
 [
-  ['quat_5fadd_212',['Quat_Add',['../group__math__support.html#ga57e019dd1e4f6f46f7a3bdb29f80bab1',1,'maths.h']]],
-  ['quat_5fconjugate_213',['Quat_Conjugate',['../group__math__support.html#ga7c79289d876936974e291e3a52078774',1,'maths.h']]],
-  ['quat_5fcrossfvec3_214',['Quat_CrossFVec3',['../group__math__support.html#ga585ace65e61c3f5eaa5aa01a54debff7',1,'maths.h']]],
-  ['quat_5fdot_215',['Quat_Dot',['../group__math__support.html#gaedd36b5ef97e45f55105acf41c1fdf73',1,'maths.h']]],
-  ['quat_5ffromaxisangle_216',['Quat_FromAxisAngle',['../group__math__support.html#ga8eff75561be78aef8236c2fb5016f1fd',1,'maths.h']]],
-  ['quat_5ffrommtx_217',['Quat_FromMtx',['../group__math__support.html#gaf9ee3635a678d69c18676f20b1190063',1,'maths.h']]],
-  ['quat_5ffrompitchyawroll_218',['Quat_FromPitchYawRoll',['../group__math__support.html#ga38f79dcd8e8d8b0f025af5632629d8ac',1,'maths.h']]],
-  ['quat_5fidentity_219',['Quat_Identity',['../group__math__support.html#ga52f97a7a10b89083a92c16f03b6a86ad',1,'maths.h']]],
-  ['quat_5finverse_220',['Quat_Inverse',['../group__math__support.html#gaa9b8f21b187d0594daee582b53fbda9a',1,'maths.h']]],
-  ['quat_5flookat_221',['Quat_LookAt',['../group__math__support.html#ga7fbba74b28a2e2b5574431d10a6e7947',1,'maths.h']]],
-  ['quat_5fmultiply_222',['Quat_Multiply',['../group__math__support.html#gaaf3d8de02af908ef1f3bfc252bb4299b',1,'maths.h']]],
-  ['quat_5fnegate_223',['Quat_Negate',['../group__math__support.html#gad556d28f9ce6cd84f484adfc1190ec8f',1,'maths.h']]],
-  ['quat_5fnew_224',['Quat_New',['../group__math__support.html#ga15b24b7c262f61ed84f49a810e871acb',1,'maths.h']]],
-  ['quat_5fnormalize_225',['Quat_Normalize',['../group__math__support.html#gae0415dbba61cadc0c7c08d5473fa2ff3',1,'maths.h']]],
-  ['quat_5fpow_226',['Quat_Pow',['../group__math__support.html#gab03dc88dec7a8745bb5f54fc07660294',1,'maths.h']]],
-  ['quat_5frotate_227',['Quat_Rotate',['../group__math__support.html#gac6ba4458705fbc4cd7ebe09be8d5a0b7',1,'maths.h']]],
-  ['quat_5frotatex_228',['Quat_RotateX',['../group__math__support.html#ga0b982df76399822c9262685877e02953',1,'maths.h']]],
-  ['quat_5frotatey_229',['Quat_RotateY',['../group__math__support.html#gac1f3b196675e9c809a6c31b1842d3d9a',1,'maths.h']]],
-  ['quat_5frotatez_230',['Quat_RotateZ',['../group__math__support.html#gafa5defdbf47e3b6d290dc3f56feb9277',1,'maths.h']]],
-  ['quat_5fscale_231',['Quat_Scale',['../group__math__support.html#gaa8fc08ab776c45a477c448950d4574d3',1,'maths.h']]],
-  ['quat_5fsubtract_232',['Quat_Subtract',['../group__math__support.html#gaddb6f41db638452500b56cab755c4768',1,'maths.h']]]
+  ['j_556',['j',['../unionC3D__FVec.html#a3ba1d36cc5963d370e40e2a1cc98bcf0',1,'C3D_FVec']]],
+  ['jump_5fid_557',['jump_id',['https://libctru.devkitpro.org/structExHeader__SystemInfo.html#aeb79c8684325cb75cde25fc55178947e',1,'ExHeader_SystemInfo']]]
 ];

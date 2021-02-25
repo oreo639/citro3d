@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['top_486',['top',['../structTex3DS__SubTexture.html#acd4f083c3d698e0bff53f70f01752c64',1,'Tex3DS_SubTexture']]],
-  ['type_487',['type',['../structC3D__TexInitParams.html#a2583851972567174c9b8eda05bd7d23d',1,'C3D_TexInitParams']]]
+  ['k_1785',['k',['../unionC3D__FVec.html#a4eb7dc6c81332a01eadc7093cecd0132',1,'C3D_FVec']]],
+  ['kbl_1786',['kBL',['https://libctru.devkitpro.org/structCAMU__ImageQualityCalibrationData.html#aca34569b0802753164a7fd3cb96babeb',1,'CAMU_ImageQualityCalibrationData']]],
+  ['kernel_5fcaps_1787',['kernel_caps',['https://libctru.devkitpro.org/structExHeader__AccessControlInfo.html#a9e4232569651618ffce2181768d86dad',1,'ExHeader_AccessControlInfo']]],
+  ['kgl_1788',['kGL',['https://libctru.devkitpro.org/structCAMU__ImageQualityCalibrationData.html#a5da6013cd8a54aea4e5193787d4d6394',1,'CAMU_ImageQualityCalibrationData']]],
+  ['krl_1789',['kRL',['https://libctru.devkitpro.org/structCAMU__ImageQualityCalibrationData.html#afe1d7567b2dd1ba2824023c208137de5',1,'CAMU_ImageQualityCalibrationData']]]
 ];

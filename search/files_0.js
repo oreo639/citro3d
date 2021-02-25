@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['attribs_2eh_289',['attribs.h',['../attribs_8h.html',1,'']]]
+  ['3ds_2eh_1256',['3ds.h',['https://libctru.devkitpro.org/3ds_8h.html.html',1,'']]]
 ];

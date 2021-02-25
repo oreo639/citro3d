@@ -79,13 +79,13 @@ $(function() {
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="structC3D__BufCfg.html">    8</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    u32 offset;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    u32 flags[2];</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> offset;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> flags[2];</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;} <a class="code" href="structC3D__BufCfg.html">C3D_BufCfg</a>;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structC3D__BufInfo.html">   14</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    u32 base_paddr;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> base_paddr;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">int</span> bufCount;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="structC3D__BufCfg.html">C3D_BufCfg</a> buffers[12];</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;} <a class="code" href="structC3D__BufInfo.html">C3D_BufInfo</a>;</div>
@@ -110,7 +110,7 @@ $(function() {
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> *       then the second, then the third. 0x120 would configure the permutation to be the first attribute index, then the third, then the second.</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> * @return buffer index if sucessful, less than 0 if unsucessful</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">int</span>  <a class="code" href="buffers_8h.html#ace3c32831df0d7cbe2890990a5d06749">BufInfo_Add</a>(<a class="code" href="structC3D__BufInfo.html">C3D_BufInfo</a>* info, <span class="keyword">const</span> <span class="keywordtype">void</span>* data, ptrdiff_t stride, <span class="keywordtype">int</span> attribCount, u64 permutation);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">int</span>  <a class="code" href="buffers_8h.html#ace3c32831df0d7cbe2890990a5d06749">BufInfo_Add</a>(<a class="code" href="structC3D__BufInfo.html">C3D_BufInfo</a>* info, <span class="keyword">const</span> <span class="keywordtype">void</span>* data, ptrdiff_t stride, <span class="keywordtype">int</span> attribCount, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a> permutation);</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"> * @brief Gets pointer to the global \ref C3D_BufInfo structure.</span></div>
@@ -127,6 +127,8 @@ $(function() {
 <div class="ttc" id="astructC3D__BufInfo_html"><div class="ttname"><a href="structC3D__BufInfo.html">C3D_BufInfo</a></div><div class="ttdef"><b>Definition:</b> buffers.h:14</div></div>
 <div class="ttc" id="atypes_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">Various citro3d types.</div></div>
 <div class="ttc" id="abuffers_8h_html_a171a9cd987caaa33b5556e60b1a716e6"><div class="ttname"><a href="buffers_8h.html#a171a9cd987caaa33b5556e60b1a716e6">C3D_SetBufInfo</a></div><div class="ttdeci">void C3D_SetBufInfo(C3D_BufInfo *info)</div><div class="ttdoc">Sets global C3D_BufInfo structure.</div></div>
+<div class="ttc" id="atypes_8h_html_afaa62991928fb9fb18ff0db62a040aba"><div class="ttname"><a href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a></div><div class="ttdeci">uint32_t u32</div></div>
+<div class="ttc" id="atypes_8h_html_a3f7e2bcbb0b4c338f3c4f6c937cd4234"><div class="ttname"><a href="https://libctru.devkitpro.org/types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a></div><div class="ttdeci">uint64_t u64</div></div>
 <div class="ttc" id="abuffers_8h_html_ace3c32831df0d7cbe2890990a5d06749"><div class="ttname"><a href="buffers_8h.html#ace3c32831df0d7cbe2890990a5d06749">BufInfo_Add</a></div><div class="ttdeci">int BufInfo_Add(C3D_BufInfo *info, const void *data, ptrdiff_t stride, int attribCount, u64 permutation)</div><div class="ttdoc">Adds a buffer to the vertex buffer info struct.</div></div>
 <div class="ttc" id="abuffers_8h_html_a6bd7a8fb0f9a2922c4d3f27bbe14dc4a"><div class="ttname"><a href="buffers_8h.html#a6bd7a8fb0f9a2922c4d3f27bbe14dc4a">BufInfo_Init</a></div><div class="ttdeci">void BufInfo_Init(C3D_BufInfo *info)</div><div class="ttdoc">Resets and initalizes C3D_BufInfo structure.</div></div>
 <div class="ttc" id="astructC3D__BufCfg_html"><div class="ttname"><a href="structC3D__BufCfg.html">C3D_BufCfg</a></div><div class="ttdef"><b>Definition:</b> buffers.h:8</div></div>
