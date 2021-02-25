@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['tex3ds_2eh_236',['tex3ds.h',['../tex3ds_8h.html',1,'']]],
+  ['tex3ds_5fgetnumsubtextures_237',['Tex3DS_GetNumSubTextures',['../tex3ds_8h.html#ab2a4089637e155481da431da62646042',1,'tex3ds.h']]],
+  ['tex3ds_5fgetsubtexture_238',['Tex3DS_GetSubTexture',['../tex3ds_8h.html#a589a97a0713210f846f4507fd73e219c',1,'tex3ds.h']]],
+  ['tex3ds_5fsubtexture_239',['Tex3DS_SubTexture',['../structTex3DS__SubTexture.html',1,'']]],
+  ['tex3ds_5fsubtexturebottomleft_240',['Tex3DS_SubTextureBottomLeft',['../tex3ds_8h.html#a05a32b1e6544f1aa82da4b436215d0d6',1,'tex3ds.h']]],
+  ['tex3ds_5fsubtexturebottomright_241',['Tex3DS_SubTextureBottomRight',['../tex3ds_8h.html#a237a77a378a22901f8f9cc0fa0ec2367',1,'tex3ds.h']]],
+  ['tex3ds_5fsubtexturerotated_242',['Tex3DS_SubTextureRotated',['../tex3ds_8h.html#ae4a77e72775c02d6d2a333bb39b3dcf6',1,'tex3ds.h']]],
+  ['tex3ds_5fsubtexturetopleft_243',['Tex3DS_SubTextureTopLeft',['../tex3ds_8h.html#ad6c1c27b47af78c16169162091c0e34e',1,'tex3ds.h']]],
+  ['tex3ds_5fsubtexturetopright_244',['Tex3DS_SubTextureTopRight',['../tex3ds_8h.html#abbb11d00b97978ef739cd55f891342f1',1,'tex3ds.h']]],
+  ['tex3ds_5ftexture_245',['Tex3DS_Texture',['../tex3ds_8h.html#a6514f0e1ee12ce6f1883845b12599e01',1,'tex3ds.h']]],
+  ['tex3ds_5ftexturefree_246',['Tex3DS_TextureFree',['../tex3ds_8h.html#a644ebdcb177b99196c3799b6f6e7b1de',1,'tex3ds.h']]],
+  ['tex3ds_5ftextureimport_247',['Tex3DS_TextureImport',['../tex3ds_8h.html#aeb2c3487491ef866ff16f6cecde9448d',1,'tex3ds.h']]],
+  ['tex3ds_5ftextureimportcallback_248',['Tex3DS_TextureImportCallback',['../tex3ds_8h.html#a76fb1ed8388513928ca6e06ada4e7552',1,'tex3ds.h']]],
+  ['tex3ds_5ftextureimportfd_249',['Tex3DS_TextureImportFD',['../tex3ds_8h.html#a20dfee0fe7c2ac8b93e95065b64cb76f',1,'tex3ds.h']]],
+  ['tex3ds_5ftextureimportstdio_250',['Tex3DS_TextureImportStdio',['../tex3ds_8h.html#a2840b76f4ce3a0f86e2d86b37dcb923e',1,'tex3ds.h']]],
+  ['texenv_2eh_251',['texenv.h',['../texenv_8h.html',1,'']]],
+  ['texture_2eh_252',['texture.h',['../texture_8h.html',1,'']]],
+  ['top_253',['top',['../structTex3DS__SubTexture.html#acd4f083c3d698e0bff53f70f01752c64',1,'Tex3DS_SubTexture']]],
+  ['type_254',['type',['../structC3D__TexInitParams.html#a2583851972567174c9b8eda05bd7d23d',1,'C3D_TexInitParams']]],
+  ['types_2eh_255',['types.h',['../types_8h.html',1,'']]]
+];
