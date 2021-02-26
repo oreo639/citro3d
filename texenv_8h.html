@@ -124,7 +124,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a81588f3622353d3da05dd2ff96e43020"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure the initial value of GPU_PREVIOUS_BUFFER.  <a href="texenv_8h.html#a81588f3622353d3da05dd2ff96e43020">More...</a><br /></td></tr>
 <tr class="separator:a81588f3622353d3da05dd2ff96e43020"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd2797778a6e16a5585a4cae7f4a0e3f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texenv_8h.html#acd2797778a6e16a5585a4cae7f4a0e3f">C3D_TexEnvInit</a> (<a class="el" href="structC3D__TexEnv.html">C3D_TexEnv</a> *env)</td></tr>
-<tr class="memdesc:acd2797778a6e16a5585a4cae7f4a0e3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets/resets a TexEnv to its initial value.  <a href="texenv_8h.html#acd2797778a6e16a5585a4cae7f4a0e3f">More...</a><br /></td></tr>
+<tr class="memdesc:acd2797778a6e16a5585a4cae7f4a0e3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets a TexEnv to its default values.  <a href="texenv_8h.html#acd2797778a6e16a5585a4cae7f4a0e3f">More...</a><br /></td></tr>
 <tr class="separator:acd2797778a6e16a5585a4cae7f4a0e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85cd9b447b6f68bfb3c18ddfa9209f1d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texenv_8h.html#a85cd9b447b6f68bfb3c18ddfa9209f1d">C3D_TexEnvSrc</a> (<a class="el" href="structC3D__TexEnv.html">C3D_TexEnv</a> *env, <a class="el" href="texenv_8h.html#ae642decb740f1911fc318b4f17833b8c">C3D_TexEnvMode</a> mode, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a43f47361b7edcab3c6b7d064c09ae7d0">GPU_TEVSRC</a> s1, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a43f47361b7edcab3c6b7d064c09ae7d0">GPU_TEVSRC</a> s2, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a43f47361b7edcab3c6b7d064c09ae7d0">GPU_TEVSRC</a> s3)</td></tr>
 <tr class="memdesc:a85cd9b447b6f68bfb3c18ddfa9209f1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the input source of a TexEnv.  <a href="texenv_8h.html#a85cd9b447b6f68bfb3c18ddfa9209f1d">More...</a><br /></td></tr>
@@ -220,7 +220,7 @@ Functions</h2></td></tr>
 <p>Gets the global TexEnv for a given stage. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Stage id between 0-5 to return. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>TexEnv stage between 0-5 to return. </td></tr>
   </table>
   </dd>
 </dl>
@@ -257,7 +257,7 @@ Functions</h2></td></tr>
 <p>Sets the global TexEnv for a given stage. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Stage id between 0-5 to return. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>TexEnv stage between 0-5 to set. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">env</td><td>Pointer to user TexEnv. </td></tr>
   </table>
   </dd>
@@ -284,7 +284,7 @@ Functions</h2></td></tr>
 <p>Configure the initial value of GPU_PREVIOUS_BUFFER. </p>
 <p>This value will be kept until it is updated; see <a class="el" href="texenv_8h.html#afd650b68579ca331052abb1ee60f8013">C3D_TexEnvBufUpdate()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">color</td><td>Sets color value. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">color</td><td>Color value. </td></tr>
   </table>
   </dd>
 </dl>
@@ -321,7 +321,7 @@ Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>TexEnv update modes (see <a class="el" href="texenv_8h.html#ae642decb740f1911fc318b4f17833b8c">C3D_TexEnvMode</a>) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mask</td><td>Bitmask containing which stages update GPU_PREVIOUS_BUFFER (can be built using GPU_TEV_BUFFER_WRITE_CONFIG) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mask</td><td>Bitmask containing which stages update GPU_PREVIOUS_BUFFER (created using <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a2c504de99ace4dbeb8e7d3af041f5f2c">GPU_TEV_BUFFER_WRITE_CONFIG()</a>) </td></tr>
   </table>
   </dd>
 </dl>
@@ -449,16 +449,10 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Sets/resets a TexEnv to its initial value. </p>
+<p>Resets a TexEnv to its default values. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">env</td><td>TexEnv to initialize. This is the same as performing the following: <div class="fragment"><div class="line"><a class="code" href="texenv_8h.html#a85cd9b447b6f68bfb3c18ddfa9209f1d">C3D_TexEnvSrc</a>(env, <a class="code" href="texenv_8h.html#ae642decb740f1911fc318b4f17833b8ca808827845f2a9388afcc2ce8a997c989">C3D_Both</a>, GPU_PREVIOUS, 0, 0);</div>
-<div class="line"><a class="code" href="texenv_8h.html#a01ed462aea98189957edd14dc69f5f6c">C3D_TexEnvOpRgb</a>(env, GPU_TEVOP_RGB_SRC_COLOR, GPU_TEVOP_RGB_SRC_COLOR, GPU_TEVOP_RGB_SRC_COLOR);</div>
-<div class="line"><a class="code" href="texenv_8h.html#a5970cafd988ba6840682d99f6453cbe6">C3D_TexEnvOpAlpha</a>(env, GPU_TEVOP_A_SRC_ALPHA, GPU_TEVOP_A_SRC_ALPHA, GPU_TEVOP_A_SRC_ALPHA;</div>
-<div class="line"><a class="code" href="texenv_8h.html#a9f493bad9d9e7651e1a13f514ed76592">C3D_TexEnvFunc</a>(env, <a class="code" href="texenv_8h.html#ae642decb740f1911fc318b4f17833b8ca808827845f2a9388afcc2ce8a997c989">C3D_Both</a>, GPU_REPLACE);</div>
-<div class="line"><a class="code" href="texenv_8h.html#a446dacad5cbbc8f21fbb900dffff768b">C3D_TexEnvColor</a>(env, 0xFFFFFFFF);</div>
-<div class="line"><a class="code" href="texenv_8h.html#abe00519e1495bad3a9dbe57ae0dfe763">C3D_TexEnvScale</a>(env, <a class="code" href="texenv_8h.html#ae642decb740f1911fc318b4f17833b8ca808827845f2a9388afcc2ce8a997c989">C3D_Both</a>, GPU_TEVSCALE_1);</div>
-</div><!-- fragment --> </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">env</td><td>TexEnv to initialize. </td></tr>
   </table>
   </dd>
 </dl>
@@ -702,13 +696,6 @@ Functions</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
-<div class="ttc" id="atexenv_8h_html_abe00519e1495bad3a9dbe57ae0dfe763"><div class="ttname"><a href="texenv_8h.html#abe00519e1495bad3a9dbe57ae0dfe763">C3D_TexEnvScale</a></div><div class="ttdeci">static void C3D_TexEnvScale(C3D_TexEnv *env, int mode, GPU_TEVSCALE param)</div><div class="ttdoc">Configures the scaling to be applied to the output of a TexEnv.</div><div class="ttdef"><b>Definition:</b> texenv.h:175</div></div>
-<div class="ttc" id="atexenv_8h_html_a85cd9b447b6f68bfb3c18ddfa9209f1d"><div class="ttname"><a href="texenv_8h.html#a85cd9b447b6f68bfb3c18ddfa9209f1d">C3D_TexEnvSrc</a></div><div class="ttdeci">static void C3D_TexEnvSrc(C3D_TexEnv *env, C3D_TexEnvMode mode, GPU_TEVSRC s1, GPU_TEVSRC s2, GPU_TEVSRC s3)</div><div class="ttdoc">Sets the input source of a TexEnv.</div><div class="ttdef"><b>Definition:</b> texenv.h:103</div></div>
-<div class="ttc" id="atexenv_8h_html_a9f493bad9d9e7651e1a13f514ed76592"><div class="ttname"><a href="texenv_8h.html#a9f493bad9d9e7651e1a13f514ed76592">C3D_TexEnvFunc</a></div><div class="ttdeci">static void C3D_TexEnvFunc(C3D_TexEnv *env, C3D_TexEnvMode mode, GPU_COMBINEFUNC param)</div><div class="ttdoc">Sets the combiner function to perform in this TexEnv.</div><div class="ttdef"><b>Definition:</b> texenv.h:151</div></div>
-<div class="ttc" id="atexenv_8h_html_a446dacad5cbbc8f21fbb900dffff768b"><div class="ttname"><a href="texenv_8h.html#a446dacad5cbbc8f21fbb900dffff768b">C3D_TexEnvColor</a></div><div class="ttdeci">static void C3D_TexEnvColor(C3D_TexEnv *env, u32 color)</div><div class="ttdoc">Sets the value of the GPU_CONSTANT source for a TexEnv stage.</div><div class="ttdef"><b>Definition:</b> texenv.h:164</div></div>
-<div class="ttc" id="atexenv_8h_html_a5970cafd988ba6840682d99f6453cbe6"><div class="ttname"><a href="texenv_8h.html#a5970cafd988ba6840682d99f6453cbe6">C3D_TexEnvOpAlpha</a></div><div class="ttdeci">static void C3D_TexEnvOpAlpha(C3D_TexEnv *env, GPU_TEVOP_A o1, GPU_TEVOP_A o2, GPU_TEVOP_A o3)</div><div class="ttdoc">Configures the operation to be applied to the input alpha of a TexEnv before the function is applied.</div><div class="ttdef"><b>Definition:</b> texenv.h:137</div></div>
-<div class="ttc" id="atexenv_8h_html_a01ed462aea98189957edd14dc69f5f6c"><div class="ttname"><a href="texenv_8h.html#a01ed462aea98189957edd14dc69f5f6c">C3D_TexEnvOpRgb</a></div><div class="ttdeci">static void C3D_TexEnvOpRgb(C3D_TexEnv *env, GPU_TEVOP_RGB o1, GPU_TEVOP_RGB o2, GPU_TEVOP_RGB o3)</div><div class="ttdoc">Configures the operation to be applied to the input color of a TexEnv before the function is applied.</div><div class="ttdef"><b>Definition:</b> texenv.h:122</div></div>
-<div class="ttc" id="atexenv_8h_html_ae642decb740f1911fc318b4f17833b8ca808827845f2a9388afcc2ce8a997c989"><div class="ttname"><a href="texenv_8h.html#ae642decb740f1911fc318b4f17833b8ca808827845f2a9388afcc2ce8a997c989">C3D_Both</a></div><div class="ttdeci">@ C3D_Both</div><div class="ttdoc">Both.</div><div class="ttdef"><b>Definition:</b> texenv.h:27</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
