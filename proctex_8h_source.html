@@ -70,140 +70,147 @@ $(function() {
 <div class="title">proctex.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">types.h</a>&quot;</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="structC3D__ProcTexColorLut.html">    4</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> color[256];</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> diff[256];</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;} <a class="code" href="structC3D__ProcTexColorLut.html">C3D_ProcTexColorLut</a>;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="structC3D__ProcTex.html">   10</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">union</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> proctex0;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">struct</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        {</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> uClamp         : 3;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> vClamp         : 3;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> rgbFunc        : 4;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> alphaFunc      : 4;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            <span class="keywordtype">bool</span> alphaSeparate : 1;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keywordtype">bool</span> enableNoise   : 1;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> uShift         : 2;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> vShift         : 2;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> lodBiasLow     : 8;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        };</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    };</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">union</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> proctex1;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">struct</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> uNoiseAmpl;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> uNoisePhase;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        };</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    };</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">union</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> proctex2;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">struct</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> vNoiseAmpl;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> vNoisePhase;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        };</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    };</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">union</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> proctex3;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">struct</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> uNoiseFreq;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> vNoiseFreq;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        };</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    };</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">union</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> proctex4;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">struct</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> minFilter   : 3;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> unknown1    : 8;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> width       : 8;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> lodBiasHigh : 8;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        };</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    };</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">union</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> proctex5;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keyword">struct</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> offset   : 8;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> unknown2 : 24;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        };</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    };</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;} <a class="code" href="structC3D__ProcTex.html">C3D_ProcTex</a>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">enum</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    C3D_ProcTex_U  = <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#a3a8ea58898cb58fc96013383d39f482c">BIT</a>(0),</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    C3D_ProcTex_V  = <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#a3a8ea58898cb58fc96013383d39f482c">BIT</a>(1),</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    C3D_ProcTex_UV = C3D_ProcTex_U | C3D_ProcTex_V,</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
+<a href="proctex_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * @file proctex.h</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * @brief Procedural texture generation</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * @see https://www.4gamer.net/games/017/G001762/20120822007/</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * @see https://www.3dbrew.org/wiki/GPU/Procedural_Texture_Generation</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">types.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">/// ProcTex color lookup table</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="structC3D__ProcTexColorLut.html">   11</a></span>&#160;<span class="comment"></span><span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> color[256];</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> diff[256];</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;} <a class="code" href="structC3D__ProcTexColorLut.html">C3D_ProcTexColorLut</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="structC3D__ProcTex.html">   17</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">union</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> proctex0;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="keyword">struct</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> uClamp         : 3;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> vClamp         : 3;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> rgbFunc        : 4;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> alphaFunc      : 4;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordtype">bool</span> alphaSeparate : 1;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordtype">bool</span> enableNoise   : 1;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> uShift         : 2;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> vShift         : 2;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> lodBiasLow     : 8;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        };</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    };</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">union</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> proctex1;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">struct</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> uNoiseAmpl;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> uNoisePhase;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        };</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    };</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">union</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> proctex2;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">struct</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> vNoiseAmpl;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> vNoisePhase;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        };</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    };</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">union</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> proctex3;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">struct</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> uNoiseFreq;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> vNoiseFreq;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        };</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    };</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">union</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> proctex4;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">struct</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> minFilter   : 3;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> unknown1    : 8;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> width       : 8;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> lodBiasHigh : 8;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        };</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    };</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">union</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> proctex5;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keyword">struct</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> offset   : 8;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> unknown2 : 24;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        };</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    };</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;} <a class="code" href="structC3D__ProcTex.html">C3D_ProcTex</a>;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keywordtype">void</span> C3D_ProcTexInit(<a class="code" href="structC3D__ProcTex.html">C3D_ProcTex</a>* pt, <span class="keywordtype">int</span> offset, <span class="keywordtype">int</span> length);</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">void</span> C3D_ProcTexNoiseCoefs(<a class="code" href="structC3D__ProcTex.html">C3D_ProcTex</a>* pt, <span class="keywordtype">int</span> mode, <span class="keywordtype">float</span> amplitude, <span class="keywordtype">float</span> frequency, <span class="keywordtype">float</span> phase);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keywordtype">void</span> C3D_ProcTexLodBias(<a class="code" href="structC3D__ProcTex.html">C3D_ProcTex</a>* pt, <span class="keywordtype">float</span> bias);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keywordtype">void</span> C3D_ProcTexBind(<span class="keywordtype">int</span> texCoordId, <a class="code" href="structC3D__ProcTex.html">C3D_ProcTex</a>* pt);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">// GPU_LUT_NOISE, GPU_LUT_RGBMAP, GPU_LUT_ALPHAMAP</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">typedef</span> <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> C3D_ProcTexLut[128];</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">void</span> C3D_ProcTexLutBind(<a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#ab864ff9d46955c2f61539b23688c99aa">GPU_PROCTEX_LUTID</a> <span class="keywordtype">id</span>, C3D_ProcTexLut* lut);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">void</span> ProcTexLut_FromArray(C3D_ProcTexLut* lut, <span class="keyword">const</span> <span class="keywordtype">float</span> in[129]);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordtype">void</span> C3D_ProcTexColorLutBind(<a class="code" href="structC3D__ProcTexColorLut.html">C3D_ProcTexColorLut</a>* lut);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordtype">void</span> ProcTexColorLut_Write(<a class="code" href="structC3D__ProcTexColorLut.html">C3D_ProcTexColorLut</a>* out, <span class="keyword">const</span> <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>* in, <span class="keywordtype">int</span> offset, <span class="keywordtype">int</span> length);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> C3D_ProcTexClamp(<a class="code" href="structC3D__ProcTex.html">C3D_ProcTex</a>* pt, <a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#ac7003b201f809461614b0be43c7f1cb7">GPU_PROCTEX_CLAMP</a> u, <a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#ac7003b201f809461614b0be43c7f1cb7">GPU_PROCTEX_CLAMP</a> v)</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    pt-&gt;uClamp = u;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    pt-&gt;vClamp = v;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> C3D_ProcTexCombiner(<a class="code" href="structC3D__ProcTex.html">C3D_ProcTex</a>* pt, <span class="keywordtype">bool</span> separate, <a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#ae0bf20f78563bc660ebcaa2079a386c7">GPU_PROCTEX_MAPFUNC</a> rgb, <a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#ae0bf20f78563bc660ebcaa2079a386c7">GPU_PROCTEX_MAPFUNC</a> alpha)</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;{</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    pt-&gt;alphaSeparate = separate;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    pt-&gt;rgbFunc = rgb;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">if</span> (separate)</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        pt-&gt;alphaFunc = alpha;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> C3D_ProcTexNoiseEnable(<a class="code" href="structC3D__ProcTex.html">C3D_ProcTex</a>* pt, <span class="keywordtype">bool</span> enable)</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;{</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    pt-&gt;enableNoise = enable;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> C3D_ProcTexShift(<a class="code" href="structC3D__ProcTex.html">C3D_ProcTex</a>* pt, <a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a7aef13dcdf16a383d3931fe46a69eb78">GPU_PROCTEX_SHIFT</a> u, <a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a7aef13dcdf16a383d3931fe46a69eb78">GPU_PROCTEX_SHIFT</a> v)</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;{</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    pt-&gt;uShift = u;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    pt-&gt;vShift = v;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> C3D_ProcTexFilter(<a class="code" href="structC3D__ProcTex.html">C3D_ProcTex</a>* pt, <a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a430c590536a256d9db4a6b8ab5abc133">GPU_PROCTEX_FILTER</a> min)</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;{</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    pt-&gt;minFilter = min;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">enum</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    C3D_ProcTex_U  = <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#a3a8ea58898cb58fc96013383d39f482c">BIT</a>(0),</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    C3D_ProcTex_V  = <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#a3a8ea58898cb58fc96013383d39f482c">BIT</a>(1),</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    C3D_ProcTex_UV = C3D_ProcTex_U | C3D_ProcTex_V,</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;};</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">void</span> C3D_ProcTexInit(<a class="code" href="structC3D__ProcTex.html">C3D_ProcTex</a>* pt, <span class="keywordtype">int</span> offset, <span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">void</span> C3D_ProcTexNoiseCoefs(<a class="code" href="structC3D__ProcTex.html">C3D_ProcTex</a>* pt, <span class="keywordtype">int</span> mode, <span class="keywordtype">float</span> amplitude, <span class="keywordtype">float</span> frequency, <span class="keywordtype">float</span> phase);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keywordtype">void</span> C3D_ProcTexLodBias(<a class="code" href="structC3D__ProcTex.html">C3D_ProcTex</a>* pt, <span class="keywordtype">float</span> bias);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keywordtype">void</span> C3D_ProcTexBind(<span class="keywordtype">int</span> texCoordId, <a class="code" href="structC3D__ProcTex.html">C3D_ProcTex</a>* pt);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">// GPU_LUT_NOISE, GPU_LUT_RGBMAP, GPU_LUT_ALPHAMAP</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">typedef</span> <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> C3D_ProcTexLut[128];</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keywordtype">void</span> C3D_ProcTexLutBind(<a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#ab864ff9d46955c2f61539b23688c99aa">GPU_PROCTEX_LUTID</a> <span class="keywordtype">id</span>, C3D_ProcTexLut* lut);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keywordtype">void</span> ProcTexLut_FromArray(C3D_ProcTexLut* lut, <span class="keyword">const</span> <span class="keywordtype">float</span> in[129]);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keywordtype">void</span> C3D_ProcTexColorLutBind(<a class="code" href="structC3D__ProcTexColorLut.html">C3D_ProcTexColorLut</a>* lut);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keywordtype">void</span> ProcTexColorLut_Write(<a class="code" href="structC3D__ProcTexColorLut.html">C3D_ProcTexColorLut</a>* out, <span class="keyword">const</span> <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>* in, <span class="keywordtype">int</span> offset, <span class="keywordtype">int</span> length);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> C3D_ProcTexClamp(<a class="code" href="structC3D__ProcTex.html">C3D_ProcTex</a>* pt, <a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#ac7003b201f809461614b0be43c7f1cb7">GPU_PROCTEX_CLAMP</a> u, <a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#ac7003b201f809461614b0be43c7f1cb7">GPU_PROCTEX_CLAMP</a> v)</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;{</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    pt-&gt;uClamp = u;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    pt-&gt;vClamp = v;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> C3D_ProcTexCombiner(<a class="code" href="structC3D__ProcTex.html">C3D_ProcTex</a>* pt, <span class="keywordtype">bool</span> separate, <a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#ae0bf20f78563bc660ebcaa2079a386c7">GPU_PROCTEX_MAPFUNC</a> rgb, <a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#ae0bf20f78563bc660ebcaa2079a386c7">GPU_PROCTEX_MAPFUNC</a> alpha)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    pt-&gt;alphaSeparate = separate;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    pt-&gt;rgbFunc = rgb;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">if</span> (separate)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        pt-&gt;alphaFunc = alpha;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> C3D_ProcTexNoiseEnable(<a class="code" href="structC3D__ProcTex.html">C3D_ProcTex</a>* pt, <span class="keywordtype">bool</span> enable)</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;{</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    pt-&gt;enableNoise = enable;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> C3D_ProcTexShift(<a class="code" href="structC3D__ProcTex.html">C3D_ProcTex</a>* pt, <a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a7aef13dcdf16a383d3931fe46a69eb78">GPU_PROCTEX_SHIFT</a> u, <a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a7aef13dcdf16a383d3931fe46a69eb78">GPU_PROCTEX_SHIFT</a> v)</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;{</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    pt-&gt;uShift = u;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    pt-&gt;vShift = v;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> C3D_ProcTexFilter(<a class="code" href="structC3D__ProcTex.html">C3D_ProcTex</a>* pt, <a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a430c590536a256d9db4a6b8ab5abc133">GPU_PROCTEX_FILTER</a> min)</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;{</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    pt-&gt;minFilter = min;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="atypes_8h_html"><div class="ttname"><a href="types_8h.html">types.h</a></div><div class="ttdoc">Various citro3d types.</div></div>
 <div class="ttc" id="aenums_8h_html_a430c590536a256d9db4a6b8ab5abc133"><div class="ttname"><a href="https://libctru.devkitpro.org/enums_8h.html#a430c590536a256d9db4a6b8ab5abc133">GPU_PROCTEX_FILTER</a></div><div class="ttdeci">GPU_PROCTEX_FILTER</div></div>
 <div class="ttc" id="aenums_8h_html_ac7003b201f809461614b0be43c7f1cb7"><div class="ttname"><a href="https://libctru.devkitpro.org/enums_8h.html#ac7003b201f809461614b0be43c7f1cb7">GPU_PROCTEX_CLAMP</a></div><div class="ttdeci">GPU_PROCTEX_CLAMP</div></div>
 <div class="ttc" id="aenums_8h_html_a7aef13dcdf16a383d3931fe46a69eb78"><div class="ttname"><a href="https://libctru.devkitpro.org/enums_8h.html#a7aef13dcdf16a383d3931fe46a69eb78">GPU_PROCTEX_SHIFT</a></div><div class="ttdeci">GPU_PROCTEX_SHIFT</div></div>
-<div class="ttc" id="astructC3D__ProcTex_html"><div class="ttname"><a href="structC3D__ProcTex.html">C3D_ProcTex</a></div><div class="ttdef"><b>Definition:</b> proctex.h:10</div></div>
+<div class="ttc" id="astructC3D__ProcTex_html"><div class="ttname"><a href="structC3D__ProcTex.html">C3D_ProcTex</a></div><div class="ttdef"><b>Definition:</b> proctex.h:17</div></div>
 <div class="ttc" id="atypes_8h_html_afaa62991928fb9fb18ff0db62a040aba"><div class="ttname"><a href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a></div><div class="ttdeci">uint32_t u32</div></div>
 <div class="ttc" id="aenums_8h_html_ae0bf20f78563bc660ebcaa2079a386c7"><div class="ttname"><a href="https://libctru.devkitpro.org/enums_8h.html#ae0bf20f78563bc660ebcaa2079a386c7">GPU_PROCTEX_MAPFUNC</a></div><div class="ttdeci">GPU_PROCTEX_MAPFUNC</div></div>
-<div class="ttc" id="astructC3D__ProcTexColorLut_html"><div class="ttname"><a href="structC3D__ProcTexColorLut.html">C3D_ProcTexColorLut</a></div><div class="ttdef"><b>Definition:</b> proctex.h:4</div></div>
+<div class="ttc" id="astructC3D__ProcTexColorLut_html"><div class="ttname"><a href="structC3D__ProcTexColorLut.html">C3D_ProcTexColorLut</a></div><div class="ttdoc">ProcTex color lookup table.</div><div class="ttdef"><b>Definition:</b> proctex.h:11</div></div>
 <div class="ttc" id="aenums_8h_html_ab864ff9d46955c2f61539b23688c99aa"><div class="ttname"><a href="https://libctru.devkitpro.org/enums_8h.html#ab864ff9d46955c2f61539b23688c99aa">GPU_PROCTEX_LUTID</a></div><div class="ttdeci">GPU_PROCTEX_LUTID</div></div>
 <div class="ttc" id="atypes_8h_html_a3a8ea58898cb58fc96013383d39f482c"><div class="ttname"><a href="https://libctru.devkitpro.org/types_8h.html#a3a8ea58898cb58fc96013383d39f482c">BIT</a></div><div class="ttdeci">#define BIT(n)</div></div>
 <div class="ttc" id="atypes_8h_html_ace9d960e74685e2cd84b36132dbbf8aa"><div class="ttname"><a href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a></div><div class="ttdeci">uint16_t u16</div></div>

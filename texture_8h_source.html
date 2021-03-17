@@ -159,7 +159,7 @@ $(function() {
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"> * @brief Binds C3D_Tex to texture unit</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment"> * @note The 3ds has 3 texture units in total. (0-2)</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment"> * @note The 3ds has 3 normal texture units (0-2).</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"> * @param[in] unitId Specifies texture unit.</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"> * @param[in] tex    Pointer to \ref C3D_Tex.</span></div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"> */</span></div>
@@ -404,8 +404,8 @@ $(function() {
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="comment"> * @brief Configures texture wrappinng options</span></div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="comment"> * @param[out] tex   Pointer to \ref C3D_Tex.</span></div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="comment"> * @param[in]  wrapS Specifies the texture wraping mode for texture coordinate S.</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="comment"> * @param[in]  wrapT Specifies the texture wraping mode for texture coordinate T.</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="comment"> * @param[in]  wrapS Specifies the texture wraping mode for texture coordinate S (aka U).</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="comment"> * @param[in]  wrapT Specifies the texture wraping mode for texture coordinate T (aka V).</span></div>
 <div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00338"></a><span class="lineno"><a class="line" href="texture_8h.html#ae739b49b1e6694608f7778a67556eacd">  338</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="texture_8h.html#ae739b49b1e6694608f7778a67556eacd">C3D_TexSetWrap</a>(<a class="code" href="structC3D__Tex.html">C3D_Tex</a>* tex, <a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#aca018b509809231470e5e3c3e907261d">GPU_TEXTURE_WRAP_PARAM</a> wrapS, <a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#aca018b509809231470e5e3c3e907261d">GPU_TEXTURE_WRAP_PARAM</a> wrapT)</div>
 <div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;{</div>
