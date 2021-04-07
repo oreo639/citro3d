@@ -112,7 +112,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:aedb07e1e24a9a95654bef448a8067a3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets command buffer usage.  <a href="base_8h.html#aedb07e1e24a9a95654bef448a8067a3b">More...</a><br /></td></tr>
 <tr class="separator:aedb07e1e24a9a95654bef448a8067a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46a4b1c8578240f5f303e18e99d97af1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a46a4b1c8578240f5f303e18e99d97af1">C3D_BindProgram</a> (<a class="elRef" href="https://libctru.devkitpro.org/structshaderProgram__s.html">shaderProgram_s</a> *program)</td></tr>
-<tr class="memdesc:a46a4b1c8578240f5f303e18e99d97af1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a shader program.  <a href="base_8h.html#a46a4b1c8578240f5f303e18e99d97af1">More...</a><br /></td></tr>
+<tr class="memdesc:a46a4b1c8578240f5f303e18e99d97af1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds a shader program to the current rendering state.  <a href="base_8h.html#a46a4b1c8578240f5f303e18e99d97af1">More...</a><br /></td></tr>
 <tr class="separator:a46a4b1c8578240f5f303e18e99d97af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0c625289847e014e5045cd61218a559"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#af0c625289847e014e5045cd61218a559">C3D_SetViewport</a> (<a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> x, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> y, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> w, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> h)</td></tr>
 <tr class="memdesc:af0c625289847e014e5045cd61218a559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the viewport for the current framebuffer.  <a href="base_8h.html#af0c625289847e014e5045cd61218a559">More...</a><br /></td></tr>
@@ -189,10 +189,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Binds a shader program. </p>
+<p>Binds a shader program to the current rendering state. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">program</td><td>Shader program to bind </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">program</td><td>Specifies the pointer to a shader program object whose executables are to be used as part of current rendering state. </td></tr>
   </table>
   </dd>
 </dl>
