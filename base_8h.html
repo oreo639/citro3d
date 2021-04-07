@@ -126,12 +126,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a9fa75694d9963a1800141b2452badd5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a9fa75694d9963a1800141b2452badd5c">C3D_DrawElements</a> (<a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a94bdee50fa003d70dd3888f347397806">GPU_Primitive_t</a> primitive, int count, int type, const void *indices)</td></tr>
 <tr class="memdesc:a9fa75694d9963a1800141b2452badd5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Renders primitives from current vertex array buffer in a manually specified order.  <a href="base_8h.html#a9fa75694d9963a1800141b2452badd5c">More...</a><br /></td></tr>
 <tr class="separator:a9fa75694d9963a1800141b2452badd5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4233d3caf713261355784912a40497a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="unionC3D__FVec.html">C3D_FVec</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a4233d3caf713261355784912a40497a7">C3D_FixedAttribGetWritePtr</a> (int id)</td></tr>
-<tr class="memdesc:a4233d3caf713261355784912a40497a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the pointer to the fixed attribute vector for specified attribute index.  <a href="base_8h.html#a4233d3caf713261355784912a40497a7">More...</a><br /></td></tr>
-<tr class="separator:a4233d3caf713261355784912a40497a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a980bf276d5f2071f46c23401e0b71323"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a980bf276d5f2071f46c23401e0b71323">C3D_FixedAttribSet</a> (int id, float x, float y, float z, float w)</td></tr>
-<tr class="memdesc:a980bf276d5f2071f46c23401e0b71323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets fixed attribute vector for the specified attribute index.  <a href="base_8h.html#a980bf276d5f2071f46c23401e0b71323">More...</a><br /></td></tr>
-<tr class="separator:a980bf276d5f2071f46c23401e0b71323"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Immediate-mode vertex submission</div></td></tr>
 <tr class="memitem:a4cd0c7092d4dcc36e4299c409af0df95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a4cd0c7092d4dcc36e4299c409af0df95">C3D_ImmDrawBegin</a> (<a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a94bdee50fa003d70dd3888f347397806">GPU_Primitive_t</a> primitive)</td></tr>
 <tr class="memdesc:a4cd0c7092d4dcc36e4299c409af0df95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delimits the vertices of a primitive or a group of like primitives.  <a href="base_8h.html#a4cd0c7092d4dcc36e4299c409af0df95">More...</a><br /></td></tr>
@@ -145,6 +139,13 @@ Functions</h2></td></tr>
 <tr class="memitem:a43d43fb6fc9441e9683e9630f7cfed4a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a43d43fb6fc9441e9683e9630f7cfed4a">C3D_ImmDrawRestartPrim</a> (void)</td></tr>
 <tr class="memdesc:a43d43fb6fc9441e9683e9630f7cfed4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies the end of the previous strip/fan and the begining of a new one.  <a href="base_8h.html#a43d43fb6fc9441e9683e9630f7cfed4a">More...</a><br /></td></tr>
 <tr class="separator:a43d43fb6fc9441e9683e9630f7cfed4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Fixed vertex attributes</div></td></tr>
+<tr class="memitem:a4233d3caf713261355784912a40497a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="unionC3D__FVec.html">C3D_FVec</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a4233d3caf713261355784912a40497a7">C3D_FixedAttribGetWritePtr</a> (int id)</td></tr>
+<tr class="memdesc:a4233d3caf713261355784912a40497a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the pointer to the fixed attribute vector for specified attribute index.  <a href="base_8h.html#a4233d3caf713261355784912a40497a7">More...</a><br /></td></tr>
+<tr class="separator:a4233d3caf713261355784912a40497a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a980bf276d5f2071f46c23401e0b71323"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="base_8h.html#a980bf276d5f2071f46c23401e0b71323">C3D_FixedAttribSet</a> (int id, float x, float y, float z, float w)</td></tr>
+<tr class="memdesc:a980bf276d5f2071f46c23401e0b71323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets fixed attribute vector for the specified attribute index.  <a href="base_8h.html#a980bf276d5f2071f46c23401e0b71323">More...</a><br /></td></tr>
+<tr class="separator:a980bf276d5f2071f46c23401e0b71323"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base citro3d functions. </p>
@@ -577,7 +578,7 @@ Functions</h2></td></tr>
 <p>Initalizes citro3d. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cmdBufSize</td><td>Size of GPU command buffer. If you don't know, use <a class="el" href="base_8h.html#adbed79751117be1d85a04041043afda4">C3D_DEFAULT_CMDBUF_SIZE</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmdBufSize</td><td>Desired size of GPU command buffer. <a class="el" href="base_8h.html#adbed79751117be1d85a04041043afda4">C3D_DEFAULT_CMDBUF_SIZE</a> should generally be used, unless there are given memory consumption or scene complexity requirements. </td></tr>
   </table>
   </dd>
 </dl>
