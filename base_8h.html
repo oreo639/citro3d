@@ -578,10 +578,11 @@ Functions</h2></td></tr>
 <p>Initializes citro3d. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">cmdBufSize</td><td>Desired size of GPU command buffer. <a class="el" href="base_8h.html#adbed79751117be1d85a04041043afda4">C3D_DEFAULT_CMDBUF_SIZE</a> should generally be used, unless there are given memory consumption or scene complexity requirements. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">cmdBufSize</td><td>Desired size of GPU command buffer; <a class="el" href="base_8h.html#adbed79751117be1d85a04041043afda4">C3D_DEFAULT_CMDBUF_SIZE</a> should generally be used here. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section note"><dt>Note</dt><dd>If you have a particularly complex scene you might need to increase <code>cmdBufSize</code>. Conversely, you may want to decrease it if you're particularly concerned about memory consumption. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true if library was initialized successfully, false if there was an error. </dd></dl>
 
 </div>
