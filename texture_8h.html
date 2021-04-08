@@ -95,7 +95,7 @@ Data Structures</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:afa0b16b43f95e7786bcf85dd9eb4c746"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#afa0b16b43f95e7786bcf85dd9eb4c746">C3D_TexInitWithParams</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, <a class="el" href="structC3D__TexCube.html">C3D_TexCube</a> *cube, <a class="el" href="structC3D__TexInitParams.html">C3D_TexInitParams</a> p)</td></tr>
-<tr class="memdesc:afa0b16b43f95e7786bcf85dd9eb4c746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initalizes texture with specified paramaters.  <a href="texture_8h.html#afa0b16b43f95e7786bcf85dd9eb4c746">More...</a><br /></td></tr>
+<tr class="memdesc:afa0b16b43f95e7786bcf85dd9eb4c746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes texture with specified parameters.  <a href="texture_8h.html#afa0b16b43f95e7786bcf85dd9eb4c746">More...</a><br /></td></tr>
 <tr class="separator:afa0b16b43f95e7786bcf85dd9eb4c746"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfc2aa9643a319accc71ebb559e68891"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#abfc2aa9643a319accc71ebb559e68891">C3D_TexLoadImage</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, const void *data, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a2fac8fe6dd845ff19a9fc758c0aa8332">GPU_TEXFACE</a> face, int level)</td></tr>
 <tr class="memdesc:abfc2aa9643a319accc71ebb559e68891"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies raw texture data into <a class="el" href="structC3D__Tex.html">C3D_Tex</a>.  <a href="texture_8h.html#abfc2aa9643a319accc71ebb559e68891">More...</a><br /></td></tr>
@@ -125,22 +125,22 @@ Functions</h2></td></tr>
 <tr class="memdesc:ac8d5abaafcddb14bfb27590d2d78c26f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates total size of mipmap texture data.  <a href="texture_8h.html#ac8d5abaafcddb14bfb27590d2d78c26f">More...</a><br /></td></tr>
 <tr class="separator:ac8d5abaafcddb14bfb27590d2d78c26f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b204661d6827dd9ab86cdb4b138e693"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#a0b204661d6827dd9ab86cdb4b138e693">C3D_TexInit</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> width, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> height, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a63bb2f7fceb0f356549f0be235a0f99f">GPU_TEXCOLOR</a> format)</td></tr>
-<tr class="memdesc:a0b204661d6827dd9ab86cdb4b138e693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initalizes standard 2D texture.  <a href="texture_8h.html#a0b204661d6827dd9ab86cdb4b138e693">More...</a><br /></td></tr>
+<tr class="memdesc:a0b204661d6827dd9ab86cdb4b138e693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes standard 2D texture.  <a href="texture_8h.html#a0b204661d6827dd9ab86cdb4b138e693">More...</a><br /></td></tr>
 <tr class="separator:a0b204661d6827dd9ab86cdb4b138e693"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10c69c9586050f8dc04b7210873c01a5"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#a10c69c9586050f8dc04b7210873c01a5">C3D_TexInitMipmap</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> width, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> height, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a63bb2f7fceb0f356549f0be235a0f99f">GPU_TEXCOLOR</a> format)</td></tr>
-<tr class="memdesc:a10c69c9586050f8dc04b7210873c01a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initalizes standard 2D texture with mipmap Maximum miplevel is calculated using <a class="el" href="texture_8h.html#a492fa66c42f0b78ed91752497c92a796">C3D_TexCalcMaxLevel()</a>  <a href="texture_8h.html#a10c69c9586050f8dc04b7210873c01a5">More...</a><br /></td></tr>
+<tr class="memdesc:a10c69c9586050f8dc04b7210873c01a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes standard 2D texture with mipmap Maximum miplevel is calculated using <a class="el" href="texture_8h.html#a492fa66c42f0b78ed91752497c92a796">C3D_TexCalcMaxLevel()</a>  <a href="texture_8h.html#a10c69c9586050f8dc04b7210873c01a5">More...</a><br /></td></tr>
 <tr class="separator:a10c69c9586050f8dc04b7210873c01a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9fa197d4044c29c792c862e3a5226b69"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#a9fa197d4044c29c792c862e3a5226b69">C3D_TexInitCube</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, <a class="el" href="structC3D__TexCube.html">C3D_TexCube</a> *cube, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> width, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> height, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a63bb2f7fceb0f356549f0be235a0f99f">GPU_TEXCOLOR</a> format)</td></tr>
-<tr class="memdesc:a9fa197d4044c29c792c862e3a5226b69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initalizes cubemap texture.  <a href="texture_8h.html#a9fa197d4044c29c792c862e3a5226b69">More...</a><br /></td></tr>
+<tr class="memdesc:a9fa197d4044c29c792c862e3a5226b69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes cubemap texture.  <a href="texture_8h.html#a9fa197d4044c29c792c862e3a5226b69">More...</a><br /></td></tr>
 <tr class="separator:a9fa197d4044c29c792c862e3a5226b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76c79f7e6e9357f835905c63cd8d07d9"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#a76c79f7e6e9357f835905c63cd8d07d9">C3D_TexInitVRAM</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> width, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> height, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a63bb2f7fceb0f356549f0be235a0f99f">GPU_TEXCOLOR</a> format)</td></tr>
-<tr class="memdesc:a76c79f7e6e9357f835905c63cd8d07d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initalizes 2D texture in VRAM.  <a href="texture_8h.html#a76c79f7e6e9357f835905c63cd8d07d9">More...</a><br /></td></tr>
+<tr class="memdesc:a76c79f7e6e9357f835905c63cd8d07d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes 2D texture in VRAM.  <a href="texture_8h.html#a76c79f7e6e9357f835905c63cd8d07d9">More...</a><br /></td></tr>
 <tr class="separator:a76c79f7e6e9357f835905c63cd8d07d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e20b6b7dfa24e4c3e2d22c15f38510e"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#a0e20b6b7dfa24e4c3e2d22c15f38510e">C3D_TexInitShadow</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> width, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> height)</td></tr>
-<tr class="memdesc:a0e20b6b7dfa24e4c3e2d22c15f38510e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initalizes 2D shadowmap texture.  <a href="texture_8h.html#a0e20b6b7dfa24e4c3e2d22c15f38510e">More...</a><br /></td></tr>
+<tr class="memdesc:a0e20b6b7dfa24e4c3e2d22c15f38510e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes 2D shadowmap texture.  <a href="texture_8h.html#a0e20b6b7dfa24e4c3e2d22c15f38510e">More...</a><br /></td></tr>
 <tr class="separator:a0e20b6b7dfa24e4c3e2d22c15f38510e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd38dedabe4731e8815bf42c6a035862"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#acd38dedabe4731e8815bf42c6a035862">C3D_TexInitShadowCube</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, <a class="el" href="structC3D__TexCube.html">C3D_TexCube</a> *cube, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> width, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> height)</td></tr>
-<tr class="memdesc:acd38dedabe4731e8815bf42c6a035862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initalizes shadowmap cubemap texture.  <a href="texture_8h.html#acd38dedabe4731e8815bf42c6a035862">More...</a><br /></td></tr>
+<tr class="memdesc:acd38dedabe4731e8815bf42c6a035862"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes shadowmap cubemap texture.  <a href="texture_8h.html#acd38dedabe4731e8815bf42c6a035862">More...</a><br /></td></tr>
 <tr class="separator:acd38dedabe4731e8815bf42c6a035862"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a22be3bd33c46ecf4c68d2ccd295602"><td class="memItemLeft" align="right" valign="top">static <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a5d14598061a96db4f06bf8316156a1bb">GPU_TEXTURE_MODE_PARAM</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#a8a22be3bd33c46ecf4c68d2ccd295602">C3D_TexGetType</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex)</td></tr>
 <tr class="memdesc:a8a22be3bd33c46ecf4c68d2ccd295602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets type of texture.  <a href="texture_8h.html#a8a22be3bd33c46ecf4c68d2ccd295602">More...</a><br /></td></tr>
@@ -164,7 +164,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ac0a1d8575b2623ca3c901bbe8f2553a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures texture mipmap minification filters.  <a href="texture_8h.html#ac0a1d8575b2623ca3c901bbe8f2553a1">More...</a><br /></td></tr>
 <tr class="separator:ac0a1d8575b2623ca3c901bbe8f2553a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae739b49b1e6694608f7778a67556eacd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#ae739b49b1e6694608f7778a67556eacd">C3D_TexSetWrap</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#aca018b509809231470e5e3c3e907261d">GPU_TEXTURE_WRAP_PARAM</a> wrapS, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#aca018b509809231470e5e3c3e907261d">GPU_TEXTURE_WRAP_PARAM</a> wrapT)</td></tr>
-<tr class="memdesc:ae739b49b1e6694608f7778a67556eacd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures texture wrappinng options.  <a href="texture_8h.html#ae739b49b1e6694608f7778a67556eacd">More...</a><br /></td></tr>
+<tr class="memdesc:ae739b49b1e6694608f7778a67556eacd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures texture wrapping options.  <a href="texture_8h.html#ae739b49b1e6694608f7778a67556eacd">More...</a><br /></td></tr>
 <tr class="separator:ae739b49b1e6694608f7778a67556eacd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb8980dcac42b0d86ed3cc418991ef5f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="texture_8h.html#abb8980dcac42b0d86ed3cc418991ef5f">C3D_TexSetLodBias</a> (<a class="el" href="structC3D__Tex.html">C3D_Tex</a> *tex, float lodBias)</td></tr>
 <tr class="memdesc:abb8980dcac42b0d86ed3cc418991ef5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configures texture level of detail bias used to select the correct mipmap during sampling.  <a href="texture_8h.html#abb8980dcac42b0d86ed3cc418991ef5f">More...</a><br /></td></tr>
@@ -253,7 +253,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Binds <a class="el" href="structC3D__Tex.html" title="Texture data.">C3D_Tex</a> to texture unit. </p>
-<dl class="section note"><dt>Note</dt><dd>The 3ds has 3 normal texture units (0-2). </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The 3DS has 3 normal texture units (IDs 0 through 0 2). </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">unitId</td><td>Specifies texture unit. </td></tr>
@@ -301,7 +301,7 @@ Functions</h2></td></tr>
 <p>Calculates size of mipmap level. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of origional texture. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of original texture. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">level</td><td>Mipmap level. </td></tr>
   </table>
   </dd>
@@ -393,7 +393,7 @@ Functions</h2></td></tr>
 <p>Calculates total size of mipmap texture data. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of origional texture. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of original texture. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">maxLevel</td><td>Maximum mipmap level. </td></tr>
   </table>
   </dd>
@@ -542,7 +542,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generates mipmaps for <a class="el" href="structC3D__Tex.html">C3D_Tex</a> using previously specified max level The max level should have been specified using <a class="el" href="texture_8h.html#a10c69c9586050f8dc04b7210873c01a5">C3D_TexInitMipmap()</a> or <a class="el" href="texture_8h.html#afa0b16b43f95e7786bcf85dd9eb4c746">C3D_TexInitWithParams()</a> </p>
-<dl class="section note"><dt>Note</dt><dd>Does not support generating mipmaps for vram textures. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Does not support generating mipmaps for VRAM textures. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">tex</td><td>Pointer to <a class="el" href="structC3D__Tex.html">C3D_Tex</a>. </td></tr>
@@ -693,17 +693,17 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initalizes standard 2D texture. </p>
+<p>Initializes standard 2D texture. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">tex</td><td>Pointer to uninitalized <a class="el" href="structC3D__Tex.html">C3D_Tex</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">tex</td><td>Pointer to uninitialized <a class="el" href="structC3D__Tex.html">C3D_Tex</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>Specifies width of texture. (must be a power of 2) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">height</td><td>Specifies height of texture. (must be a power of 2) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>Specifies texture format. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if texture was initalized sucessfully, otherwise false. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if texture was initialized successfully, otherwise false. </dd></dl>
 
 </div>
 </div>
@@ -759,10 +759,10 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initalizes cubemap texture. </p>
+<p>Initializes cubemap texture. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">tex</td><td>Pointer to uninitalized <a class="el" href="structC3D__Tex.html">C3D_Tex</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">tex</td><td>Pointer to uninitialized <a class="el" href="structC3D__Tex.html">C3D_Tex</a>. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">cube</td><td>Pointer to <a class="el" href="structC3D__TexCube.html">C3D_TexCube</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>Specifies width of texture. (must be a power of 2) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">height</td><td>Specifies height of texture. (must be a power of 2) </td></tr>
@@ -770,7 +770,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if texture was initalized sucessfully, otherwise false. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if texture was initialized successfully, otherwise false. </dd></dl>
 
 </div>
 </div>
@@ -820,17 +820,17 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initalizes standard 2D texture with mipmap Maximum miplevel is calculated using <a class="el" href="texture_8h.html#a492fa66c42f0b78ed91752497c92a796">C3D_TexCalcMaxLevel()</a> </p>
+<p>Initializes standard 2D texture with mipmap Maximum miplevel is calculated using <a class="el" href="texture_8h.html#a492fa66c42f0b78ed91752497c92a796">C3D_TexCalcMaxLevel()</a> </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">tex</td><td>Pointer to uninitalized <a class="el" href="structC3D__Tex.html">C3D_Tex</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">tex</td><td>Pointer to uninitialized <a class="el" href="structC3D__Tex.html">C3D_Tex</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>Specifies width of texture. (must be a power of 2) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">height</td><td>Specifies height of texture. (must be a power of 2) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>Specifies texture format. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if texture was initalized sucessfully, otherwise false. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if texture was initialized successfully, otherwise false. </dd></dl>
 
 </div>
 </div>
@@ -874,16 +874,16 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initalizes 2D shadowmap texture. </p>
+<p>Initializes 2D shadowmap texture. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">tex</td><td>Pointer to uninitalized <a class="el" href="structC3D__Tex.html">C3D_Tex</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">tex</td><td>Pointer to uninitialized <a class="el" href="structC3D__Tex.html">C3D_Tex</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>Specifies width of texture. (must be a power of 2) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">height</td><td>Specifies height of texture. (must be a power of 2) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if texture was initalized sucessfully, otherwise false. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if texture was initialized successfully, otherwise false. </dd></dl>
 
 </div>
 </div>
@@ -933,17 +933,17 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initalizes shadowmap cubemap texture. </p>
+<p>Initializes shadowmap cubemap texture. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">tex</td><td>Pointer to uninitalized <a class="el" href="structC3D__Tex.html">C3D_Tex</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">tex</td><td>Pointer to uninitialized <a class="el" href="structC3D__Tex.html">C3D_Tex</a>. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">cube</td><td>Pointer to <a class="el" href="structC3D__TexCube.html">C3D_TexCube</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>Specifies width of texture. (must be a power of 2) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">height</td><td>Specifies height of texture. (must be a power of 2) </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if texture was initalized sucessfully, otherwise false. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if texture was initialized successfully, otherwise false. </dd></dl>
 
 </div>
 </div>
@@ -993,17 +993,17 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Initalizes 2D texture in VRAM. </p>
+<p>Initializes 2D texture in VRAM. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">tex</td><td>Pointer to uninitalized <a class="el" href="structC3D__Tex.html">C3D_Tex</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">tex</td><td>Pointer to uninitialized <a class="el" href="structC3D__Tex.html">C3D_Tex</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>Specifies width of texture. (must be a power of 2) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">height</td><td>Specifies height of texture. (must be a power of 2) </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>Specifies texture format. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if texture was initalized sucessfully, otherwise false. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if texture was initialized successfully, otherwise false. </dd></dl>
 
 </div>
 </div>
@@ -1039,16 +1039,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initalizes texture with specified paramaters. </p>
+<p>Initializes texture with specified parameters. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">tex</td><td>Pointer to uninitalized <a class="el" href="structC3D__Tex.html">C3D_Tex</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">tex</td><td>Pointer to uninitialized <a class="el" href="structC3D__Tex.html">C3D_Tex</a>. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">cube</td><td>Pointer to <a class="el" href="structC3D__TexCube.html">C3D_TexCube</a>. (Only used if texture type is cubemap) </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>Paramaters. See <a class="el" href="structC3D__TexInitParams.html">C3D_TexInitParams</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">p</td><td>Parameters. See <a class="el" href="structC3D__TexInitParams.html">C3D_TexInitParams</a>. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if texture was initalized sucessfully, otherwise false. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if texture was initialized successfully, otherwise false. </dd></dl>
 
 </div>
 </div>
@@ -1285,12 +1285,12 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Configures texture wrappinng options. </p>
+<p>Configures texture wrapping options. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">tex</td><td>Pointer to <a class="el" href="structC3D__Tex.html">C3D_Tex</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">wrapS</td><td>Specifies the texture wraping mode for texture coordinate S (aka U). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">wrapT</td><td>Specifies the texture wraping mode for texture coordinate T (aka V). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wrapS</td><td>Specifies the texture wrapping mode for texture coordinate S (aka U). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">wrapT</td><td>Specifies the texture wrapping mode for texture coordinate T (aka V). </td></tr>
   </table>
   </dd>
 </dl>

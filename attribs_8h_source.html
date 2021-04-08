@@ -86,7 +86,7 @@ $(function() {
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;} <a class="code" href="structC3D__AttrInfo.html">C3D_AttrInfo</a>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * @brief Resets and initalizes \ref C3D_AttrInfo structure.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * @brief Resets and initializes \ref C3D_AttrInfo structure.</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * @param[out] info Pointer to attribute info structure.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">void</span> <a class="code" href="attribs_8h.html#aa0f970274110d97b21d52d89bd7d0ba5">AttrInfo_Init</a>(<a class="code" href="structC3D__AttrInfo.html">C3D_AttrInfo</a>* info);</div>
@@ -95,11 +95,11 @@ $(function() {
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * @brief Defines an array of vertex attribute data.</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * @note The attribute index returned should be the same as the order used</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> *       when specifying \ref AttrInfo_AddLoader() and \ref AttrInfo_AddFixed().</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * @param[out] info   Attribute info stucture.</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * @param[in]  regId  Specifies the attribute register in the vertex shader that will be modfied.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"> * @param[out] info   Attribute info structure.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"> * @param[in]  regId  Specifies the attribute register in the vertex shader that will be modified.</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"> * @param[in]  format Specifies the data type of the array.</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"> * @param[in]  count  Specifies the length of the array.</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> * @return Attribute index if sucessful, less than 0 if unsucessful.</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"> * @return Attribute index if successful, negative value on failure.</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">int</span>  <a class="code" href="attribs_8h.html#a4e2e4bdce8a218aa36b168e61a081c21">AttrInfo_AddLoader</a>(<a class="code" href="structC3D__AttrInfo.html">C3D_AttrInfo</a>* info, <span class="keywordtype">int</span> regId, <a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a3a62c2be4e88ff3de7c69f1b660d1634">GPU_FORMATS</a> format, <span class="keywordtype">int</span> count);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"></span> </div>
@@ -107,15 +107,15 @@ $(function() {
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> * @brief Defines a fixed vertex attribute.</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> * @note The attribute index returned should be the same as the order used</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> *       when specifying \ref AttrInfo_AddLoader() and \ref AttrInfo_AddFixed().</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> * @param[out] info  Attribute info stucture.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> * @param[out] info  Attribute info structure.</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> * @param[in]  regId Specifies the attribute register in the vertex shader that will be modified.</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> * @return Attribute index if sucessful, less than 0 if unsucessful.</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> * @return Attribute index if successful, negative value on failure.</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">int</span>  <a class="code" href="attribs_8h.html#a7ef5c674515715bc56c3d585ba3e729d">AttrInfo_AddFixed</a>(<a class="code" href="structC3D__AttrInfo.html">C3D_AttrInfo</a>* info, <span class="keywordtype">int</span> regId);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"> * @brief Gets pointer to the global \ref C3D_AttrInfo structure.</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> * @return Pointer to globabl \ref C3D_AttrInfo.</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> * @return Pointer to global \ref C3D_AttrInfo.</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<a class="code" href="structC3D__AttrInfo.html">C3D_AttrInfo</a>* <a class="code" href="attribs_8h.html#ae2a389556c7608f7d54b936df8de7816">C3D_GetAttrInfo</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"></span> </div>
@@ -134,7 +134,7 @@ $(function() {
 <div class="ttc" id="atypes_8h_html_afaa62991928fb9fb18ff0db62a040aba"><div class="ttname"><a href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a></div><div class="ttdeci">uint32_t u32</div></div>
 <div class="ttc" id="aattribs_8h_html_a6b5dbb56e3874447d62ca53182cf7795"><div class="ttname"><a href="attribs_8h.html#a6b5dbb56e3874447d62ca53182cf7795">C3D_SetAttrInfo</a></div><div class="ttdeci">void C3D_SetAttrInfo(C3D_AttrInfo *info)</div><div class="ttdoc">Sets global C3D_AttrInfo structure.</div></div>
 <div class="ttc" id="atypes_8h_html_a3f7e2bcbb0b4c338f3c4f6c937cd4234"><div class="ttname"><a href="https://libctru.devkitpro.org/types_8h.html#a3f7e2bcbb0b4c338f3c4f6c937cd4234">u64</a></div><div class="ttdeci">uint64_t u64</div></div>
-<div class="ttc" id="aattribs_8h_html_aa0f970274110d97b21d52d89bd7d0ba5"><div class="ttname"><a href="attribs_8h.html#aa0f970274110d97b21d52d89bd7d0ba5">AttrInfo_Init</a></div><div class="ttdeci">void AttrInfo_Init(C3D_AttrInfo *info)</div><div class="ttdoc">Resets and initalizes C3D_AttrInfo structure.</div></div>
+<div class="ttc" id="aattribs_8h_html_aa0f970274110d97b21d52d89bd7d0ba5"><div class="ttname"><a href="attribs_8h.html#aa0f970274110d97b21d52d89bd7d0ba5">AttrInfo_Init</a></div><div class="ttdeci">void AttrInfo_Init(C3D_AttrInfo *info)</div><div class="ttdoc">Resets and initializes C3D_AttrInfo structure.</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

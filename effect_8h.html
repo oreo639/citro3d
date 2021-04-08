@@ -174,12 +174,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>C3D_FragOpShadow</b> 
 <p>Configure blend functions. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">colorEq</td><td>specifies how source and destination colors are combined. The intial value is GPU_BLEND_ADD. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">alphaEq</td><td>specifies how source and destination alphas are combined. The intial value is GPU_BLEND_ADD. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">srcClr</td><td>Specifies how the red, green, and blue source blending factors are computed. The intial value is GPU_SRC_ALPHA. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dstClr</td><td>Specifies how the red, green, and blue destination blending factors are computed. The intial value is GPU_ONE_MINUS_SRC_ALPHA. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">srcAlpha</td><td>Specifies how the alpha source blending factors are computed. The intial value is GPU_SRC_ALPHA. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dstAlpha</td><td>Specifies how the alpha destination blending factors are computed. The intial value is GPU_ONE_MINUS_SRC_ALPHA. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">colorEq</td><td>Specifies how source and destination colors are combined. The initial value is GPU_BLEND_ADD. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">alphaEq</td><td>Specifies how source and destination alphas are combined. The initial value is GPU_BLEND_ADD. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">srcClr</td><td>Specifies how the red, green, and blue source blending factors are computed. The initial value is GPU_SRC_ALPHA. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dstClr</td><td>Specifies how the red, green, and blue destination blending factors are computed. The initial value is GPU_ONE_MINUS_SRC_ALPHA. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">srcAlpha</td><td>Specifies how the alpha source blending factors are computed. The initial value is GPU_SRC_ALPHA. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dstAlpha</td><td>Specifies how the alpha destination blending factors are computed. The initial value is GPU_ONE_MINUS_SRC_ALPHA. </td></tr>
   </table>
   </dd>
 </dl>
@@ -221,8 +221,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>C3D_FragOpShadow</b> 
 <p>Configure Alpha testing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>Enables or disables alpha test. The intial value is false. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">function</td><td>Specifies the alpha comparison function. The intial value is GPU_ALWAYS. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>Enables or disables alpha test. The initial value is false. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">function</td><td>Specifies the alpha comparison function. The initial value is GPU_ALWAYS. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ref</td><td>Specifies the reference value that incoming alpha values are compared to (0 disables depth buffer writing). The intial value is 0. </td></tr>
   </table>
   </dd>
@@ -249,7 +249,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>C3D_FragOpShadow</b> 
 <p>Set the blend color. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">color</td><td>Specifies the RGBA blend color. The intial value is 0. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">color</td><td>Specifies the RGBA blend color. The initial value is 0. </td></tr>
   </table>
   </dd>
 </dl>
@@ -317,9 +317,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>C3D_FragOpShadow</b> 
 <p>Specify mapping of depth values from normalized device coordinates to window coordinates. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">bIsZBuffer</td><td>Enables or disables depth range. The intial value is true. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">zScale</td><td>Specifies mapping of depth values from normalized device coordinates to window coordinates (nearVal - farVal). The inital value is -1.0f. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">zOffset</td><td>Sets the scale and units used to calculate depth values (nearVal + polygonOffset). The inital value is 0.0f. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bIsZBuffer</td><td>Enables or disables depth range. The initial value is true. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zScale</td><td>Specifies mapping of depth values from normalized device coordinates to window coordinates (nearVal - farVal). The initial value is -1.0f. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">zOffset</td><td>Sets the scale and units used to calculate depth values (nearVal + polygonOffset). The initial value is 0.0f. </td></tr>
   </table>
   </dd>
 </dl>
@@ -361,9 +361,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>C3D_FragOpShadow</b> 
 <p>Configure depth testing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>Enables or disables depth test. The intial value is true. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">function</td><td>Specifies the depth comparison function. The intial value is GPU_GREATER. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">writemask</td><td>Configures depth buffer writing mode (0 disables depth buffer writing). The intial value is GPU_WRITE_ALL. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>Enables or disables depth test. The initial value is true. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">function</td><td>Specifies the depth comparison function. The initial value is GPU_GREATER. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">writemask</td><td>Configures depth buffer writing mode (0 disables depth buffer writing). The initial value is GPU_WRITE_ALL. </td></tr>
   </table>
   </dd>
 </dl>
@@ -405,9 +405,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>C3D_FragOpShadow</b> 
 <p>Set front and back stencil test actions. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sfail</td><td>Specifies the action to take when the stencil test fails. The intial value is GPU_STENCIL_KEEP. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dfail</td><td>Specifies the stencil action when the stencil test passes, but the depth test fails. The inital value is GPU_STENCIL_KEEP. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pass</td><td>Specifies the stencil action when both the stencil test and the depth test pass, or when the stencil test passes and either there is no depth buffer or depth testing is not enabled. The inital value is GPU_STENCIL_KEEP. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sfail</td><td>Specifies the action to take when the stencil test fails. The initial value is GPU_STENCIL_KEEP. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dfail</td><td>Specifies the stencil action when the stencil test passes, but the depth test fails. The initial value is GPU_STENCIL_KEEP. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pass</td><td>Specifies the stencil action when both the stencil test and the depth test pass, or when the stencil test passes and either there is no depth buffer or depth testing is not enabled. The initial value is GPU_STENCIL_KEEP. </td></tr>
   </table>
   </dd>
 </dl>
@@ -461,8 +461,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>C3D_FragOpShadow</b> 
 <p>Set front and back function and reference value for stencil testing. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>Enables or disables stencil test. The intial value is false. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">function</td><td>Specifies the test function. The inital value is GPU_ALWAYS. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>Enables or disables stencil test. The initial value is false. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">function</td><td>Specifies the test function. The initial value is GPU_ALWAYS. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ref</td><td>Specifies the reference value for the stencil test. ref is clamped to the range 02^n - 1 , where n is the number of bitplanes in the stencil buffer. The initial value is 0. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inputMask</td><td>Specifies a mask that is ANDed with both the reference value and the stored stencil value when the test is done. The initial value is all 1's. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">writeMask</td><td>Specifies a bit mask to enable and disable writing of individual bits in the stencil planes. Initially, the mask is all 0's. </td></tr>

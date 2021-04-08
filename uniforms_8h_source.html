@@ -72,7 +72,7 @@ $(function() {
 <div class="contents">
 <a href="uniforms_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * @file uniforms.h</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * @brief Write to shader unfiorms</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * @brief Write to shader uniforms</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="maths_8h.html">maths.h</a>&quot;</span></div>
@@ -91,8 +91,8 @@ $(function() {
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * @brief Provides a writable pointer for a floating-point uniform.</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * @param[in] type \ref GPU_SHADER_TYPE of the uniform to be set.</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * @param[in] id   ID of the uniform (retrivable using ctrulib&#39;s shaderInstanceGetUniformLocation())</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * @param[in] size Amount of uniform registers allocated with this pointer.</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * @param[in] id   ID of the uniform (retrievable using libctru&#39;s shaderInstanceGetUniformLocation())</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * @param[in] size Number of uniform registers allocated with this pointer.</span></div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * @return Writable pointer.</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="uniforms_8h.html#a3dedcb5d626f096015db5f26ec18d3ae">   26</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="unionC3D__FVec.html">C3D_FVec</a>* <a class="code" href="uniforms_8h.html#a3dedcb5d626f096015db5f26ec18d3ae">C3D_FVUnifWritePtr</a>(<a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a178882ce0f114a22e19ff7f0ee842de5">GPU_SHADER_TYPE</a> type, <span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">int</span> size)</div>
@@ -106,7 +106,7 @@ $(function() {
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> * @brief Provides a writable pointer for an integer uniform.</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> * @param[in] type \ref GPU_SHADER_TYPE of the uniform to be set.</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> * @param[in] id   ID of the uniform (retrivable using ctrulib&#39;s shaderInstanceGetUniformLocation())</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> * @param[in] id   ID of the uniform (retrievable using libctru&#39;s shaderInstanceGetUniformLocation())</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> * @return Writable pointer.</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="uniforms_8h.html#a484ee4555087bc3aae476de57fbfea7d">   40</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="types_8h.html#adb5b5e25c02073542d42a4110db12e71">C3D_IVec</a>* <a class="code" href="uniforms_8h.html#a484ee4555087bc3aae476de57fbfea7d">C3D_IVUnifWritePtr</a>(<a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a178882ce0f114a22e19ff7f0ee842de5">GPU_SHADER_TYPE</a> type, <span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div>
@@ -119,7 +119,7 @@ $(function() {
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> * @brief Writes an Nx4 matrix to the uniform registers.</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> * @param[in] type \ref GPU_SHADER_TYPE of the uniform to be set.</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> * @param[in] id   ID of the uniform (retrivable using ctrulib&#39;s shaderInstanceGetUniformLocation())</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> * @param[in] id   ID of the uniform (retrievable using libctru&#39;s shaderInstanceGetUniformLocation())</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"> * @param[in] mtx  Matrix to be written.</span></div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"> * @param[in] num  Row count of the matrix.</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> * @remark Usually, one should use the helper functions for 4x4, 3x4, and 2x4 matrices listed below.</span></div>
@@ -135,7 +135,7 @@ $(function() {
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> * @brief Writes a 4x4 matrix to the uniform registers.</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> * @param[in] type \ref GPU_SHADER_TYPE of the uniform to be set.</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> * @param[in] id   ID of the uniform (retrivable using ctrulib&#39;s shaderInstanceGetUniformLocation())</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> * @param[in] id   ID of the uniform (retrievable using libctru&#39;s shaderInstanceGetUniformLocation())</span></div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"> * @param[in] mtx  Matrix to be written.</span></div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="uniforms_8h.html#ab7c88ccd0076037081744ef6a9e59176">   69</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="uniforms_8h.html#ab7c88ccd0076037081744ef6a9e59176">C3D_FVUnifMtx4x4</a>(<a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a178882ce0f114a22e19ff7f0ee842de5">GPU_SHADER_TYPE</a> type, <span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keyword">const</span> <a class="code" href="unionC3D__Mtx.html">C3D_Mtx</a>* mtx)</div>
@@ -146,7 +146,7 @@ $(function() {
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> * @brief Writes a 3x4 matrix to the uniform registers.</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> * @param[in] type \ref GPU_SHADER_TYPE of the uniform to be set.</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"> * @param[in] id   ID of the uniform (retrivable using ctrulib&#39;s shaderInstanceGetUniformLocation())</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"> * @param[in] id   ID of the uniform (retrievable using libctru&#39;s shaderInstanceGetUniformLocation())</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment"> * @param[in] mtx  Matrix to be written.</span></div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="uniforms_8h.html#abe13337da38ff8313c69f770bcb0909b">   80</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="uniforms_8h.html#abe13337da38ff8313c69f770bcb0909b">C3D_FVUnifMtx3x4</a>(<a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a178882ce0f114a22e19ff7f0ee842de5">GPU_SHADER_TYPE</a> type, <span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keyword">const</span> <a class="code" href="unionC3D__Mtx.html">C3D_Mtx</a>* mtx)</div>
@@ -157,7 +157,7 @@ $(function() {
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"> * @brief Writes a 2x4 matrix to the uniform registers.</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"> * @param[in] type \ref GPU_SHADER_TYPE of the uniform to be set.</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"> * @param[in] id   ID of the uniform (retrivable using ctrulib&#39;s shaderInstanceGetUniformLocation())</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"> * @param[in] id   ID of the uniform (retrievable using libctru&#39;s shaderInstanceGetUniformLocation())</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"> * @param[in] mtx  Matrix to be written.</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="uniforms_8h.html#a7452d97f41e4f081079f858e610058ed">   91</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="uniforms_8h.html#a7452d97f41e4f081079f858e610058ed">C3D_FVUnifMtx2x4</a>(<a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a178882ce0f114a22e19ff7f0ee842de5">GPU_SHADER_TYPE</a> type, <span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keyword">const</span> <a class="code" href="unionC3D__Mtx.html">C3D_Mtx</a>* mtx)</div>
@@ -168,7 +168,7 @@ $(function() {
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"> * @brief Writes a 4-component floating-point vector to the uniform registers.</span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment"> * @param[in] type \ref GPU_SHADER_TYPE of the uniform to be set.</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"> * @param[in] id   ID of the uniform (retrivable using ctrulib&#39;s shaderInstanceGetUniformLocation())</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment"> * @param[in] id   ID of the uniform (retrievable using libctru&#39;s shaderInstanceGetUniformLocation())</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment"> * @param[in] x    X component of the vector.</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"> * @param[in] y    Y component of the vector.</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment"> * @param[in] z    Z component of the vector.</span></div>
@@ -186,7 +186,7 @@ $(function() {
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment"> * @brief Writes a 4-component integer vector to the uniform registers.</span></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment"> * @param[in] type \ref GPU_SHADER_TYPE of the uniform to be set.</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment"> * @param[in] id   ID of the uniform (retrivable using ctrulib&#39;s shaderInstanceGetUniformLocation())</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment"> * @param[in] id   ID of the uniform (retrievable using libctru&#39;s shaderInstanceGetUniformLocation())</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment"> * @param[in] x    X component of the vector.</span></div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment"> * @param[in] y    Y component of the vector.</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment"> * @param[in] z    Z component of the vector.</span></div>
@@ -201,7 +201,7 @@ $(function() {
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment"> * @brief Writes a boolean value to the uniform registers.</span></div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment"> * @param[in] type  \ref GPU_SHADER_TYPE of the uniform to be set.</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment"> * @param[in] id    ID of the uniform (retrivable using ctrulib&#39;s shaderInstanceGetUniformLocation())</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment"> * @param[in] id    ID of the uniform (retrievable using libctru&#39;s shaderInstanceGetUniformLocation())</span></div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment"> * @param[in] value Boolean value to write.</span></div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="uniforms_8h.html#a2d0aa1201bb22906319c464d31b21cea">  135</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="uniforms_8h.html#a2d0aa1201bb22906319c464d31b21cea">C3D_BoolUnifSet</a>(<a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a178882ce0f114a22e19ff7f0ee842de5">GPU_SHADER_TYPE</a> type, <span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">bool</span> value)</div>
@@ -225,8 +225,8 @@ $(function() {
 <div class="ttc" id="auniforms_8h_html_a7452d97f41e4f081079f858e610058ed"><div class="ttname"><a href="uniforms_8h.html#a7452d97f41e4f081079f858e610058ed">C3D_FVUnifMtx2x4</a></div><div class="ttdeci">static void C3D_FVUnifMtx2x4(GPU_SHADER_TYPE type, int id, const C3D_Mtx *mtx)</div><div class="ttdoc">Writes a 2x4 matrix to the uniform registers.</div><div class="ttdef"><b>Definition:</b> uniforms.h:91</div></div>
 <div class="ttc" id="aunionC3D__FVec_html_a47ca5e788fd11692ef2cd26122e3fb01"><div class="ttname"><a href="unionC3D__FVec.html#a47ca5e788fd11692ef2cd26122e3fb01">C3D_FVec::z</a></div><div class="ttdeci">float z</div><div class="ttdoc">Z-component.</div><div class="ttdef"><b>Definition:</b> types.h:59</div></div>
 <div class="ttc" id="amaths_8h_html"><div class="ttname"><a href="maths_8h.html">maths.h</a></div><div class="ttdoc">Basic math library for matrix, vector, and quaternion operations.</div></div>
-<div class="ttc" id="atypes_8h_html_a4ce87027c9b7aaa89c4b6c2ca994a144"><div class="ttname"><a href="types_8h.html#a4ce87027c9b7aaa89c4b6c2ca994a144">IVec_Pack</a></div><div class="ttdeci">static C3D_IVec IVec_Pack(u8 x, u8 y, u8 z, u8 w)</div><div class="ttdoc">Packes 4 u8 intergers into a vector.</div><div class="ttdef"><b>Definition:</b> types.h:34</div></div>
-<div class="ttc" id="atypes_8h_html_adb5b5e25c02073542d42a4110db12e71"><div class="ttname"><a href="types_8h.html#adb5b5e25c02073542d42a4110db12e71">C3D_IVec</a></div><div class="ttdeci">u32 C3D_IVec</div><div class="ttdoc">Interger vector.</div><div class="ttdef"><b>Definition:</b> types.h:24</div></div>
+<div class="ttc" id="atypes_8h_html_a4ce87027c9b7aaa89c4b6c2ca994a144"><div class="ttname"><a href="types_8h.html#a4ce87027c9b7aaa89c4b6c2ca994a144">IVec_Pack</a></div><div class="ttdeci">static C3D_IVec IVec_Pack(u8 x, u8 y, u8 z, u8 w)</div><div class="ttdoc">Packs 4 u8 integers into a vector.</div><div class="ttdef"><b>Definition:</b> types.h:34</div></div>
+<div class="ttc" id="atypes_8h_html_adb5b5e25c02073542d42a4110db12e71"><div class="ttname"><a href="types_8h.html#adb5b5e25c02073542d42a4110db12e71">C3D_IVec</a></div><div class="ttdeci">u32 C3D_IVec</div><div class="ttdoc">Integer vector.</div><div class="ttdef"><b>Definition:</b> types.h:24</div></div>
 <div class="ttc" id="auniforms_8h_html_abe13337da38ff8313c69f770bcb0909b"><div class="ttname"><a href="uniforms_8h.html#abe13337da38ff8313c69f770bcb0909b">C3D_FVUnifMtx3x4</a></div><div class="ttdeci">static void C3D_FVUnifMtx3x4(GPU_SHADER_TYPE type, int id, const C3D_Mtx *mtx)</div><div class="ttdoc">Writes a 3x4 matrix to the uniform registers.</div><div class="ttdef"><b>Definition:</b> uniforms.h:80</div></div>
 <div class="ttc" id="aunionC3D__Mtx_html_a9514506c9eba6260fdd6c81176b7b76f"><div class="ttname"><a href="unionC3D__Mtx.html#a9514506c9eba6260fdd6c81176b7b76f">C3D_Mtx::r</a></div><div class="ttdeci">C3D_FVec r[4]</div><div class="ttdoc">Rows are vectors.</div><div class="ttdef"><b>Definition:</b> types.h:92</div></div>
 <div class="ttc" id="aunionC3D__FVec_html_a4cde6944f805f8d2b61c48dcac8bae5a"><div class="ttname"><a href="unionC3D__FVec.html#a4cde6944f805f8d2b61c48dcac8bae5a">C3D_FVec::w</a></div><div class="ttdeci">float w</div><div class="ttdoc">W-component.</div><div class="ttdef"><b>Definition:</b> types.h:58</div></div>

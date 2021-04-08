@@ -128,7 +128,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a1cf7de15e6026508e2502dd8a938a554"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies render target to draw frame to.  <a href="renderqueue_8h.html#a1cf7de15e6026508e2502dd8a938a554">More...</a><br /></td></tr>
 <tr class="separator:a1cf7de15e6026508e2502dd8a938a554"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30d22d0f997fa9d49f58a9e0cd51d433"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderqueue_8h.html#a30d22d0f997fa9d49f58a9e0cd51d433">C3D_FrameSplit</a> (<a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> flags)</td></tr>
-<tr class="memdesc:a30d22d0f997fa9d49f58a9e0cd51d433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits and submits the gpu cmdlist in the middle of a renderqueue frame.  <a href="renderqueue_8h.html#a30d22d0f997fa9d49f58a9e0cd51d433">More...</a><br /></td></tr>
+<tr class="memdesc:a30d22d0f997fa9d49f58a9e0cd51d433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits and submits the GPU cmdlist in the middle of a renderqueue frame.  <a href="renderqueue_8h.html#a30d22d0f997fa9d49f58a9e0cd51d433">More...</a><br /></td></tr>
 <tr class="separator:a30d22d0f997fa9d49f58a9e0cd51d433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afff1197369155052b5ad89eca13fbb34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderqueue_8h.html#afff1197369155052b5ad89eca13fbb34">C3D_FrameEnd</a> (<a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> flags)</td></tr>
 <tr class="memdesc:afff1197369155052b5ad89eca13fbb34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends drawing frame.  <a href="renderqueue_8h.html#afff1197369155052b5ad89eca13fbb34">More...</a><br /></td></tr>
@@ -140,7 +140,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a4d5d9a58ee65c08aac17d819e072d8d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets time spent by the GPU during last render.  <a href="renderqueue_8h.html#a4d5d9a58ee65c08aac17d819e072d8d1">More...</a><br /></td></tr>
 <tr class="separator:a4d5d9a58ee65c08aac17d819e072d8d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42255e0c2c469fc7ef4ce52115390fa4"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderqueue_8h.html#a42255e0c2c469fc7ef4ce52115390fa4">C3D_GetProcessingTime</a> (void)</td></tr>
-<tr class="memdesc:a42255e0c2c469fc7ef4ce52115390fa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets time exapsed between last <a class="el" href="renderqueue_8h.html#a7675742b59d3b6718f68179bbe31e78b">C3D_FrameBegin()</a> and <a class="el" href="renderqueue_8h.html#afff1197369155052b5ad89eca13fbb34">C3D_FrameEnd()</a>.  <a href="renderqueue_8h.html#a42255e0c2c469fc7ef4ce52115390fa4">More...</a><br /></td></tr>
+<tr class="memdesc:a42255e0c2c469fc7ef4ce52115390fa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets time elapsed between last <a class="el" href="renderqueue_8h.html#a7675742b59d3b6718f68179bbe31e78b">C3D_FrameBegin()</a> and <a class="el" href="renderqueue_8h.html#afff1197369155052b5ad89eca13fbb34">C3D_FrameEnd()</a>.  <a href="renderqueue_8h.html#a42255e0c2c469fc7ef4ce52115390fa4">More...</a><br /></td></tr>
 <tr class="separator:a42255e0c2c469fc7ef4ce52115390fa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98f5b3e8167b6fb3ae1f7c740012aa7c"><td class="memItemLeft" align="right" valign="top">C3D_RenderTarget *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderqueue_8h.html#a98f5b3e8167b6fb3ae1f7c740012aa7c">C3D_RenderTargetCreate</a> (int width, int height, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a1bed7c7c90b43c261c07664aef35bf7a">GPU_COLORBUF</a> colorFmt, <a class="el" href="unionC3D__DEPTHTYPE.html">C3D_DEPTHTYPE</a> depthFmt)</td></tr>
 <tr class="memdesc:a98f5b3e8167b6fb3ae1f7c740012aa7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new render target.  <a href="renderqueue_8h.html#a98f5b3e8167b6fb3ae1f7c740012aa7c">More...</a><br /></td></tr>
@@ -161,13 +161,13 @@ Functions</h2></td></tr>
 <tr class="memdesc:a5f734600a3a8c34cb51cf699527900d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears framebuffer of target.  <a href="renderqueue_8h.html#a5f734600a3a8c34cb51cf699527900d5">More...</a><br /></td></tr>
 <tr class="separator:a5f734600a3a8c34cb51cf699527900d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae463bfd7d3676c3bcc56869f2e17ecf1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderqueue_8h.html#ae463bfd7d3676c3bcc56869f2e17ecf1">C3D_SyncDisplayTransfer</a> (<a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *inadr, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> indim, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *outadr, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> outdim, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> flags)</td></tr>
-<tr class="memdesc:ae463bfd7d3676c3bcc56869f2e17ecf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Syncronizes and initiates a display transfer.  <a href="renderqueue_8h.html#ae463bfd7d3676c3bcc56869f2e17ecf1">More...</a><br /></td></tr>
+<tr class="memdesc:ae463bfd7d3676c3bcc56869f2e17ecf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronizes and initiates a display transfer.  <a href="renderqueue_8h.html#ae463bfd7d3676c3bcc56869f2e17ecf1">More...</a><br /></td></tr>
 <tr class="separator:ae463bfd7d3676c3bcc56869f2e17ecf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40706d596256234e2655707ebdcacb32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderqueue_8h.html#a40706d596256234e2655707ebdcacb32">C3D_SyncTextureCopy</a> (<a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *inadr, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> indim, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *outadr, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> outdim, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> size, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> flags)</td></tr>
-<tr class="memdesc:a40706d596256234e2655707ebdcacb32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Syncronizes and initiates a texture copy.  <a href="renderqueue_8h.html#a40706d596256234e2655707ebdcacb32">More...</a><br /></td></tr>
+<tr class="memdesc:a40706d596256234e2655707ebdcacb32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronizes and initiates a texture copy.  <a href="renderqueue_8h.html#a40706d596256234e2655707ebdcacb32">More...</a><br /></td></tr>
 <tr class="separator:a40706d596256234e2655707ebdcacb32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87d66e53af7a8267f4be0e7283c4ce9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderqueue_8h.html#a87d66e53af7a8267f4be0e7283c4ce9c">C3D_SyncMemoryFill</a> (<a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *buf0a, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> buf0v, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *buf0e, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> control0, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *buf1a, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> buf1v, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> *buf1e, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> control1)</td></tr>
-<tr class="memdesc:a87d66e53af7a8267f4be0e7283c4ce9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Syncronizes and fills the memory of two buffers with the given values.  <a href="renderqueue_8h.html#a87d66e53af7a8267f4be0e7283c4ce9c">More...</a><br /></td></tr>
+<tr class="memdesc:a87d66e53af7a8267f4be0e7283c4ce9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Synchronizes and fills the memory of two buffers with the given values.  <a href="renderqueue_8h.html#a87d66e53af7a8267f4be0e7283c4ce9c">More...</a><br /></td></tr>
 <tr class="separator:a87d66e53af7a8267f4be0e7283c4ce9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -215,11 +215,11 @@ Functions</h2></td></tr>
 <p>Begins drawing frame. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>Specifies options for rendering. 0 or more flags can be used specified. <a class="el" href="renderqueue_8h.html#aac34dfe6c6b73b43a4656c9dce041034a9c9b3dfd6cd433f26fc77d1a1f6663a3">C3D_FRAME_SYNCDRAW</a> specifies that <a class="el" href="renderqueue_8h.html#a41442453dd910a4c79dec8f6a5cc6acc">C3D_FrameSync()</a> should be performed before checking the GPU status, <a class="el" href="renderqueue_8h.html#aac34dfe6c6b73b43a4656c9dce041034aea393eda0d6ffdc82edc062038324552">C3D_FRAME_NONBLOCK</a> specifies that the function should return false instead of wating for GPU to be ready. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>Specifies options for rendering; 0 or more flags may be provided. <a class="el" href="renderqueue_8h.html#aac34dfe6c6b73b43a4656c9dce041034a9c9b3dfd6cd433f26fc77d1a1f6663a3">C3D_FRAME_SYNCDRAW</a> specifies that <a class="el" href="renderqueue_8h.html#a41442453dd910a4c79dec8f6a5cc6acc">C3D_FrameSync()</a> should be performed before checking the GPU status, <a class="el" href="renderqueue_8h.html#aac34dfe6c6b73b43a4656c9dce041034aea393eda0d6ffdc82edc062038324552">C3D_FRAME_NONBLOCK</a> specifies that the function should return false instead of waiting for GPU to be ready. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if frame began sucessfully, otherwise false. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if frame began successfully, otherwise false. </dd></dl>
 
 </div>
 </div>
@@ -273,7 +273,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if rendertarget was set sucessfully, otherwise false. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if rendertarget was set successfully, otherwise false. </dd></dl>
 
 </div>
 </div>
@@ -383,7 +383,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Splits and submits the gpu cmdlist in the middle of a renderqueue frame. </p>
+<p>Splits and submits the GPU cmdlist in the middle of a renderqueue frame. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>Specifies 0 or more GX_CMDLIST flags. </td></tr>
@@ -451,7 +451,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets time exapsed between last <a class="el" href="renderqueue_8h.html#a7675742b59d3b6718f68179bbe31e78b">C3D_FrameBegin()</a> and <a class="el" href="renderqueue_8h.html#afff1197369155052b5ad89eca13fbb34">C3D_FrameEnd()</a>. </p>
+<p>Gets time elapsed between last <a class="el" href="renderqueue_8h.html#a7675742b59d3b6718f68179bbe31e78b">C3D_FrameBegin()</a> and <a class="el" href="renderqueue_8h.html#afff1197369155052b5ad89eca13fbb34">C3D_FrameEnd()</a>. </p>
 <dl class="section return"><dt>Returns</dt><dd>Time in milliseconds. </dd></dl>
 
 </div>
@@ -774,8 +774,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Syncronizes and initiates a display transfer. </p>
-<p>Syncronizes and initiates a <a class="elRef" href="https://libctru.devkitpro.org/gx_8h.html#a4de1f2c27d7984b8cf5b93c8913a499b">GX_DisplayTransfer()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Synchronizes and initiates a display transfer. </p>
+<p>Synchronizes and initiates a <a class="elRef" href="https://libctru.devkitpro.org/gx_8h.html#a4de1f2c27d7984b8cf5b93c8913a499b">GX_DisplayTransfer()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">inadr</td><td>Address of the input. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">indim</td><td>Dimensions of the input. </td></tr>
@@ -850,8 +850,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Syncronizes and fills the memory of two buffers with the given values. </p>
-<p>Syncronizes and initiates a <a class="elRef" href="https://libctru.devkitpro.org/gx_8h.html#aa6e39b328383930b64eaa230bc9bc6a0">GX_MemoryFill()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Synchronizes and fills the memory of two buffers with the given values. </p>
+<p>Synchronizes and initiates a <a class="elRef" href="https://libctru.devkitpro.org/gx_8h.html#aa6e39b328383930b64eaa230bc9bc6a0">GX_MemoryFill()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">buf0a</td><td>Start address of the first buffer. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">buf0v</td><td>Dimensions of the first buffer. </td></tr>
@@ -917,8 +917,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Syncronizes and initiates a texture copy. </p>
-<p>Syncronizes and initiates a <a class="elRef" href="https://libctru.devkitpro.org/gx_8h.html#a2c1286f84675137eeeadc589654976a2">GX_TextureCopy()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Synchronizes and initiates a texture copy. </p>
+<p>Synchronizes and initiates a <a class="elRef" href="https://libctru.devkitpro.org/gx_8h.html#a2c1286f84675137eeeadc589654976a2">GX_TextureCopy()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">inadr</td><td>Address of the input. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">indim</td><td>Dimensions of the input. </td></tr>
