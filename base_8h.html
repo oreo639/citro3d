@@ -684,7 +684,9 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the viewport for the current framebuffer. </p>
-<dl class="section note"><dt>Note</dt><dd>This value is modified by <a class="el" href="renderqueue_8h.html#a1cf7de15e6026508e2502dd8a938a554">C3D_FrameDrawOn()</a>. (which is set using <a class="el" href="renderqueue_8h.html#aa44d9c7acd33a35026292cb0481b4ebf">C3D_RenderTargetSetOutput()</a>) </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This value is modified by <a class="el" href="renderqueue_8h.html#a1cf7de15e6026508e2502dd8a938a554">C3D_FrameDrawOn()</a>. (which is set using <a class="el" href="renderqueue_8h.html#aa44d9c7acd33a35026292cb0481b4ebf">C3D_RenderTargetSetOutput()</a>) </dd>
+<dd>
+The origin begins at the top left corner with the Y axis being along the width of the screen and the X axis being along the height of the screen. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">x</td><td>X offset from the top left corner of the viewport in pixels. </td></tr>
