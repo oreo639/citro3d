@@ -171,8 +171,8 @@ void sceneInit(shaderProgram_s *program)
   // the vertex color (calculated by the vertex shader using a lighting algorithm)
   // See https://www.opengl.org/sdk/docs/man2/xhtml/glTexEnv.xml for more insight
   C3D_TexEnv* env = C3D_GetTexEnv(0);
-  C3D_TexEnvSrc(env, C3D_Both, GPU_TEXTURE0, GPU_PRIMARY_COLOR, 0);
-  C3D_TexEnvOp(env, C3D_Both, 0, 0, 0);
+  C3D_TexEnvInit(env);
+  C3D_TexEnvSrc(env, C3D_Both, GPU_TEXTURE0, GPU_PRIMARY_COLOR, GPU_PRIMARY_COLOR);
   C3D_TexEnvFunc(env, C3D_Both, GPU_MODULATE);
 }
 
@@ -195,7 +195,6 @@ void persp_tilt_test()
   float            angle = 0.0f;
 
   top = C3D_RenderTargetCreate(240, 400, GPU_RB_RGBA8, GPU_RB_DEPTH24_STENCIL8);
-  C3D_RenderTargetSetClear(top, C3D_CLEAR_ALL, CLEAR_COLOR, 0);
   C3D_RenderTargetSetOutput(top, GFX_TOP, GFX_LEFT, DISPLAY_TRANSFER_FLAGS);
 
   Mtx_PerspTilt(&projection, 60.0f*M_TAU/360.0f, 400.0f/240.0f, 1.0f, 10.0f, false);
@@ -265,6 +264,7 @@ void persp_tilt_test()
       angle = 0.0f;
 
     C3D_FrameBegin(C3D_FRAME_SYNCDRAW);
+    C3D_RenderTargetClear(top, C3D_CLEAR_ALL, CLEAR_COLOR, 0);
     C3D_FrameDrawOn(top);
     C3D_DrawArrays(GPU_TRIANGLES, 0, attribute_list_count);
     C3D_FrameEnd(0);
@@ -284,7 +284,6 @@ void ortho_tilt_test()
   float            angle = 0.0f;
 
   top = C3D_RenderTargetCreate(240, 400, GPU_RB_RGBA8, GPU_RB_DEPTH24_STENCIL8);
-  C3D_RenderTargetSetClear(top, C3D_CLEAR_ALL, CLEAR_COLOR, 0);
   C3D_RenderTargetSetOutput(top, GFX_TOP, GFX_LEFT, DISPLAY_TRANSFER_FLAGS);
 
   Mtx_OrthoTilt(&projection, 0.0f, 400.0f, 0.0f, 240.0f, 100.0f, -100.0f, false);
@@ -352,6 +351,7 @@ void ortho_tilt_test()
       angle = 0.0f;
 
     C3D_FrameBegin(C3D_FRAME_SYNCDRAW);
+    C3D_RenderTargetClear(top, C3D_CLEAR_ALL, CLEAR_COLOR, 0);
     C3D_FrameDrawOn(top);
     C3D_DrawArrays(GPU_TRIANGLES, 0, attribute_list_count);
     C3D_FrameEnd(0);
@@ -376,8 +376,6 @@ void stereo_tilt_test()
 
   topLeft  = C3D_RenderTargetCreate(240, 400, GPU_RB_RGBA8, GPU_RB_DEPTH24_STENCIL8);
   topRight = C3D_RenderTargetCreate(240, 400, GPU_RB_RGBA8, GPU_RB_DEPTH24_STENCIL8);
-  C3D_RenderTargetSetClear(topLeft,  C3D_CLEAR_ALL, CLEAR_COLOR, 0);
-  C3D_RenderTargetSetClear(topRight, C3D_CLEAR_ALL, CLEAR_COLOR, 0);
   C3D_RenderTargetSetOutput(topLeft,  GFX_TOP, GFX_LEFT,  DISPLAY_TRANSFER_FLAGS);
   C3D_RenderTargetSetOutput(topRight, GFX_TOP, GFX_RIGHT, DISPLAY_TRANSFER_FLAGS);
 
@@ -462,12 +460,14 @@ void stereo_tilt_test()
 
     C3D_FrameBegin(C3D_FRAME_SYNCDRAW);
 
+    C3D_RenderTargetClear(topLeft,  C3D_CLEAR_ALL, CLEAR_COLOR, 0);
     C3D_FrameDrawOn(topLeft);
     C3D_FVUnifMtx4x4(GPU_VERTEX_SHADER, uLoc_projection, &projLeft);
     C3D_DrawArrays(GPU_TRIANGLES, 0, attribute_list_count);
 
     if(iod > 0.0f)
     {
+      C3D_RenderTargetClear(topRight, C3D_CLEAR_ALL, CLEAR_COLOR, 0);
       C3D_FrameDrawOn(topRight);
       C3D_FVUnifMtx4x4(GPU_VERTEX_SHADER, uLoc_projection, &projRight);
       C3D_DrawArrays(GPU_TRIANGLES, 0, attribute_list_count);
@@ -484,7 +484,8 @@ void stereo_tilt_test()
 
 void persp_test()
 {
-  C3D_RenderTarget *top, *tex;
+  C3D_RenderTarget *top, *texTarget;
+  C3D_Tex          tex;
   C3D_Mtx          projTop, projTex;
   C3D_Mtx          modelView;
   C3D_Mtx          texView;
@@ -493,12 +494,11 @@ void persp_test()
   float            angle = 0.0f;
 
   top = C3D_RenderTargetCreate(240, 400, GPU_RB_RGBA8, GPU_RB_DEPTH24_STENCIL8);
-  C3D_RenderTargetSetClear(top, C3D_CLEAR_ALL, CLEAR_COLOR, 0);
   C3D_RenderTargetSetOutput(top, GFX_TOP, GFX_LEFT, DISPLAY_TRANSFER_FLAGS);
 
-  tex = C3D_RenderTargetCreate(512, 256, GPU_RB_RGBA8, GPU_RB_DEPTH24_STENCIL8);
-  C3D_RenderTargetSetClear(tex, C3D_CLEAR_ALL, CLEAR_COLOR, 0);
-  C3D_TexSetFilter(&tex->renderBuf.colorBuf, GPU_LINEAR, GPU_NEAREST);
+  C3D_TexInitVRAM(&tex, 512, 256, GPU_RGBA8);
+  C3D_TexSetFilter(&tex, GPU_LINEAR, GPU_NEAREST);
+  texTarget = C3D_RenderTargetCreateFromTex(&tex, GPU_TEXFACE_2D, 0, GPU_RB_DEPTH24_STENCIL8);
 
   Mtx_Persp(&projTex, 60.0f*M_TAU/360.0f, 400.0f/240.0f, 1.0f, 10.0f, false);
 
@@ -570,7 +570,8 @@ void persp_test()
 
     C3D_TexBind(0, &texture[0].tex);
 
-    C3D_FrameDrawOn(tex);
+    C3D_RenderTargetClear(texTarget, C3D_CLEAR_ALL, CLEAR_COLOR, 0);
+    C3D_FrameDrawOn(texTarget);
     C3D_FVUnifMtx4x4(GPU_VERTEX_SHADER, uLoc_projection, &projTex);
     C3D_DrawArrays(GPU_TRIANGLES, 0, attribute_list_count);
 
@@ -578,19 +579,22 @@ void persp_test()
     Mtx_Identity(&modelView);
     C3D_FVUnifMtx4x4(GPU_VERTEX_SHADER, uLoc_modelView, &modelView);
 
+    C3D_RenderTargetClear(top, C3D_CLEAR_ALL, CLEAR_COLOR, 0);
     C3D_FrameDrawOn(top);
-    C3D_TexBind(0, &tex->renderBuf.colorBuf);
+    C3D_TexBind(0, &tex);
     C3D_DrawArrays(GPU_TRIANGLES, 0, 6);
     C3D_FrameEnd(0);
   }
 
   C3D_RenderTargetDelete(top);
-  C3D_RenderTargetDelete(tex);
+  C3D_RenderTargetDelete(texTarget);
+  C3D_TexDelete(&tex);
 }
 
 void stereo_test()
 {
-  C3D_RenderTarget     *topLeft, *topRight, *texLeft, *texRight;
+  C3D_RenderTarget     *topLeft, *topRight, *texTargetLeft, *texTargetRight;
+  C3D_Tex              texRight, texLeft;
   C3D_Mtx              projLeft, projRight, proj;
   C3D_Mtx              modelView;
   C3D_Mtx              texView;
@@ -604,17 +608,15 @@ void stereo_test()
 
   topLeft  = C3D_RenderTargetCreate(240, 400, GPU_RB_RGBA8, GPU_RB_DEPTH24_STENCIL8);
   topRight = C3D_RenderTargetCreate(240, 400, GPU_RB_RGBA8, GPU_RB_DEPTH24_STENCIL8);
-  C3D_RenderTargetSetClear(topLeft,  C3D_CLEAR_ALL, CLEAR_COLOR, 0);
-  C3D_RenderTargetSetClear(topRight, C3D_CLEAR_ALL, CLEAR_COLOR, 0);
   C3D_RenderTargetSetOutput(topLeft,  GFX_TOP, GFX_LEFT,  DISPLAY_TRANSFER_FLAGS);
   C3D_RenderTargetSetOutput(topRight, GFX_TOP, GFX_RIGHT, DISPLAY_TRANSFER_FLAGS);
 
-  texLeft  = C3D_RenderTargetCreate(512, 256, GPU_RB_RGBA8, GPU_RB_DEPTH24_STENCIL8);
-  texRight = C3D_RenderTargetCreate(512, 256, GPU_RB_RGBA8, GPU_RB_DEPTH24_STENCIL8);
-  C3D_RenderTargetSetClear(texLeft,  C3D_CLEAR_ALL, CLEAR_COLOR, 0);
-  C3D_RenderTargetSetClear(texRight, C3D_CLEAR_ALL, CLEAR_COLOR, 0);
-  C3D_TexSetFilter(&texLeft->renderBuf.colorBuf, GPU_LINEAR, GPU_NEAREST);
-  C3D_TexSetFilter(&texRight->renderBuf.colorBuf, GPU_LINEAR, GPU_NEAREST);
+  C3D_TexInitVRAM(&texLeft,  512, 256, GPU_RGBA8);
+  C3D_TexInitVRAM(&texRight, 512, 256, GPU_RGBA8);
+  C3D_TexSetFilter(&texLeft,  GPU_LINEAR, GPU_NEAREST);
+  C3D_TexSetFilter(&texRight, GPU_LINEAR, GPU_NEAREST);
+  texTargetLeft  = C3D_RenderTargetCreateFromTex(&texLeft,  GPU_TEXFACE_2D, 0, GPU_RB_DEPTH24_STENCIL8);
+  texTargetRight = C3D_RenderTargetCreateFromTex(&texRight, GPU_TEXFACE_2D, 0, GPU_RB_DEPTH24_STENCIL8);
 
   Mtx_PerspStereo(&projLeft,  60.0f*M_TAU/360.0f, 400.0f/240.0f, 1.0f, 10.0f, -iod, focLen, false);
   Mtx_PerspStereo(&projRight, 60.0f*M_TAU/360.0f, 400.0f/240.0f, 1.0f, 10.0f,  iod, focLen, false);
@@ -701,13 +703,15 @@ void stereo_test()
 
     C3D_TexBind(0, &texture[0].tex);
 
-    C3D_FrameDrawOn(texLeft);
+    C3D_RenderTargetClear(texTargetLeft,  C3D_CLEAR_ALL, CLEAR_COLOR, 0);
+    C3D_FrameDrawOn(texTargetLeft);
     C3D_FVUnifMtx4x4(GPU_VERTEX_SHADER, uLoc_projection, &projLeft);
     C3D_DrawArrays(GPU_TRIANGLES, 0, attribute_list_count);
 
     if(iod > 0.0f)
     {
-      C3D_FrameDrawOn(texRight);
+      C3D_RenderTargetClear(texTargetRight, C3D_CLEAR_ALL, CLEAR_COLOR, 0);
+      C3D_FrameDrawOn(texTargetRight);
       C3D_FVUnifMtx4x4(GPU_VERTEX_SHADER, uLoc_projection, &projRight);
       C3D_DrawArrays(GPU_TRIANGLES, 0, attribute_list_count);
     }
@@ -716,13 +720,15 @@ void stereo_test()
     Mtx_Identity(&modelView);
     C3D_FVUnifMtx4x4(GPU_VERTEX_SHADER, uLoc_modelView, &modelView);
 
+    C3D_RenderTargetClear(topLeft,  C3D_CLEAR_ALL, CLEAR_COLOR, 0);
     C3D_FrameDrawOn(topLeft);
-    C3D_TexBind(0, &texLeft->renderBuf.colorBuf);
+    C3D_TexBind(0, &texLeft);
     C3D_DrawArrays(GPU_TRIANGLES, 0, attribute_list_count);
     if(iod > 0.0f)
     {
+      C3D_RenderTargetClear(topRight, C3D_CLEAR_ALL, CLEAR_COLOR, 0);
       C3D_FrameDrawOn(topRight);
-      C3D_TexBind(0, &texRight->renderBuf.colorBuf);
+      C3D_TexBind(0, &texRight);
       C3D_DrawArrays(GPU_TRIANGLES, 0, attribute_list_count);
     }
     C3D_FrameEnd(0);
@@ -730,15 +736,18 @@ void stereo_test()
 
   C3D_RenderTargetDelete(topLeft);
   C3D_RenderTargetDelete(topRight);
-  C3D_RenderTargetDelete(texLeft);
-  C3D_RenderTargetDelete(texRight);
+  C3D_RenderTargetDelete(texTargetLeft);
+  C3D_RenderTargetDelete(texTargetRight);
+  C3D_TexDelete(&texLeft);
+  C3D_TexDelete(&texRight);
 
   gfxSet3D(false);
 }
 
 void ortho_test()
 {
-  C3D_RenderTarget *top, *tex;
+  C3D_RenderTarget *top, *texTarget;
+  C3D_Tex          tex;
   C3D_Mtx          projTop, projTex;
   C3D_Mtx          modelView;
   C3D_Mtx          texView;
@@ -747,12 +756,11 @@ void ortho_test()
   float            angle = 0.0f;
 
   top = C3D_RenderTargetCreate(240, 400, GPU_RB_RGBA8, GPU_RB_DEPTH24_STENCIL8);
-  C3D_RenderTargetSetClear(top, C3D_CLEAR_ALL, CLEAR_COLOR, 0);
   C3D_RenderTargetSetOutput(top, GFX_TOP, GFX_LEFT, DISPLAY_TRANSFER_FLAGS);
 
-  tex = C3D_RenderTargetCreate(512, 256, GPU_RB_RGBA8, GPU_RB_DEPTH24_STENCIL8);
-  C3D_RenderTargetSetClear(tex, C3D_CLEAR_ALL, CLEAR_COLOR, 0);
-  C3D_TexSetFilter(&tex->renderBuf.colorBuf, GPU_LINEAR, GPU_NEAREST);
+  C3D_TexInitVRAM(&tex, 512, 256, GPU_RGBA8);
+  C3D_TexSetFilter(&tex, GPU_LINEAR, GPU_NEAREST);
+  texTarget = C3D_RenderTargetCreateFromTex(&tex,  GPU_TEXFACE_2D, 0, GPU_RB_DEPTH24_STENCIL8);
 
   Mtx_Ortho(&projTex, 0.0f, 400.0f, 0.0f, 240.0f, 100.0f, -100.0f, false);
 
@@ -823,7 +831,8 @@ void ortho_test()
 
     C3D_TexBind(0, &texture[0].tex);
 
-    C3D_FrameDrawOn(tex);
+    C3D_RenderTargetClear(texTarget, C3D_CLEAR_ALL, CLEAR_COLOR, 0);
+    C3D_FrameDrawOn(texTarget);
     C3D_FVUnifMtx4x4(GPU_VERTEX_SHADER, uLoc_projection, &projTex);
     C3D_DrawArrays(GPU_TRIANGLES, 0, attribute_list_count);
 
@@ -831,14 +840,16 @@ void ortho_test()
     Mtx_Identity(&modelView);
     C3D_FVUnifMtx4x4(GPU_VERTEX_SHADER, uLoc_modelView, &modelView);
 
+    C3D_RenderTargetClear(top, C3D_CLEAR_ALL, CLEAR_COLOR, 0);
     C3D_FrameDrawOn(top);
-    C3D_TexBind(0, &tex->renderBuf.colorBuf);
+    C3D_TexBind(0, &tex);
     C3D_DrawArrays(GPU_TRIANGLES, 0, 6);
     C3D_FrameEnd(0);
   }
 
   C3D_RenderTargetDelete(top);
-  C3D_RenderTargetDelete(tex);
+  C3D_RenderTargetDelete(texTarget);
+  C3D_TexDelete(&tex);
 }
 
 void transpose_test()
