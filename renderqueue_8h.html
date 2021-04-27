@@ -359,7 +359,7 @@ Functions</h2></td></tr>
 <p>Sets framerate. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">fps</td><td>Specifies framerate. Must be between 0.0 and 60.0 fps. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">fps</td><td>Specifies the target framerate. Must be between 0.0 and 60.0 fps. </td></tr>
   </table>
   </dd>
 </dl>
@@ -410,7 +410,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Waits for vblank. </p>
-<dl class="section note"><dt>Note</dt><dd>Used by <a class="el" href="renderqueue_8h.html#a7675742b59d3b6718f68179bbe31e78b">C3D_FrameBegin()</a> when using <a class="el" href="renderqueue_8h.html#aac34dfe6c6b73b43a4656c9dce041034a9c9b3dfd6cd433f26fc77d1a1f6663a3">C3D_FRAME_SYNCDRAW</a>. </dd></dl>
+<p>Waits for the required amount of vblanks specified by <a class="el" href="renderqueue_8h.html#a9ce9a686ea3cd4f8703b8d3cb815af06">C3D_FrameRate()</a>. </p><dl class="section note"><dt>Note</dt><dd>Used by <a class="el" href="renderqueue_8h.html#a7675742b59d3b6718f68179bbe31e78b">C3D_FrameBegin()</a> when using <a class="el" href="renderqueue_8h.html#aac34dfe6c6b73b43a4656c9dce041034a9c9b3dfd6cd433f26fc77d1a1f6663a3">C3D_FRAME_SYNCDRAW</a>. </dd></dl>
 
 </div>
 </div>

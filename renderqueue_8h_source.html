@@ -103,184 +103,185 @@ $(function() {
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment"> * @brief Sets framerate.</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> * @param[in] fps Specifies framerate. Must be between 0.0 and 60.0 fps.</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment"> * @param[in] fps Specifies the target framerate. Must be between 0.0 and 60.0 fps.</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> * @return Previous framerate.</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">float</span> <a class="code" href="renderqueue_8h.html#a9ce9a686ea3cd4f8703b8d3cb815af06">C3D_FrameRate</a>(<span class="keywordtype">float</span> fps);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"></span> </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment"> * @brief Waits for vblank.</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> * @note Used by \ref C3D_FrameBegin() when using \ref C3D_FRAME_SYNCDRAW.</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> <a class="code" href="renderqueue_8h.html#a41442453dd910a4c79dec8f6a5cc6acc">C3D_FrameSync</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> * @brief Returns total number of frames drawn.</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> * @param[in] id Vblank frame counter id.</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> * @return Total number of frames.</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> <a class="code" href="renderqueue_8h.html#a5ef85bebbc2a8a98a409a4c24a05fee6">C3D_FrameCounter</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"> * @brief Begins drawing frame.</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> * @param[in] flags Specifies options for rendering; 0 or more flags may be provided.</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> *       \ref C3D_FRAME_SYNCDRAW specifies that \ref C3D_FrameSync() should be performed before checking the GPU status,</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"> *       \ref C3D_FRAME_NONBLOCK specifies that the function should return false instead of waiting for GPU to be ready.</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> * @return True if frame began successfully, otherwise false.</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="renderqueue_8h.html#a7675742b59d3b6718f68179bbe31e78b">C3D_FrameBegin</a>(<a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> flags);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment"> * @brief Specifies render target to draw frame to.</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> * @param[in] target Pointer to render target.</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> * @return True if rendertarget was set successfully, otherwise false.</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="renderqueue_8h.html#a1cf7de15e6026508e2502dd8a938a554">C3D_FrameDrawOn</a>(C3D_RenderTarget* target);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"> * @brief Splits and submits the GPU cmdlist in the middle of a renderqueue frame.</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> * @param[in] flags Specifies 0 or more GX_CMDLIST flags.</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keywordtype">void</span> <a class="code" href="renderqueue_8h.html#a30d22d0f997fa9d49f58a9e0cd51d433">C3D_FrameSplit</a>(<a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> flags);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> * @brief Ends drawing frame.</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> * @param[in] flags Specifies 0 or more GX_CMDLIST flags.</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">void</span> <a class="code" href="renderqueue_8h.html#afff1197369155052b5ad89eca13fbb34">C3D_FrameEnd</a>(<a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> flags);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment"> * @brief Executes callback upon \ref C3D_FrameEnd().</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"> * @param[in] hook  Function callback.</span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"> * @param[in] param User data.</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">void</span> <a class="code" href="renderqueue_8h.html#a0fbf711434a86cf52247197bdd18d03d">C3D_FrameEndHook</a>(<span class="keywordtype">void</span> (* hook)(<span class="keywordtype">void</span>*), <span class="keywordtype">void</span>* param);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment"> * @brief Gets time spent by the GPU during last render.</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"> * @return Drawing time in milliseconds.</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">float</span> <a class="code" href="renderqueue_8h.html#a4d5d9a58ee65c08aac17d819e072d8d1">C3D_GetDrawingTime</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"> * @brief Gets time elapsed between last \ref C3D_FrameBegin() and \ref C3D_FrameEnd().</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"> * @return Time in milliseconds.</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">float</span> <a class="code" href="renderqueue_8h.html#a42255e0c2c469fc7ef4ce52115390fa4">C3D_GetProcessingTime</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#if defined(__GNUC__) &amp;&amp; !defined(__cplusplus)</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="keyword">typedef</span> <span class="keyword">union </span><a class="codeRef" href="https://libctru.devkitpro.org/svc_8h.html#ad45562eb801d9ac4de5ec07c596f1479">__attribute__</a>((__transparent_union__))</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;{</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">int</span> __i;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a9b40a4b2feaec1dc4a843a908f613a3e">GPU_DEPTHBUF</a> __e;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;} <a class="code" href="unionC3D__DEPTHTYPE.html">C3D_DEPTHTYPE</a>;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="unionC3D__DEPTHTYPE.html">  106</a></span>&#160;<span class="keyword">union </span><a class="code" href="unionC3D__DEPTHTYPE.html">C3D_DEPTHTYPE</a></div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;{</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">int</span> __i;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a9b40a4b2feaec1dc4a843a908f613a3e">GPU_DEPTHBUF</a> __e;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="unionC3D__DEPTHTYPE.html">C3D_DEPTHTYPE</a>(<a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a9b40a4b2feaec1dc4a843a908f613a3e">GPU_DEPTHBUF</a> e) : __e(e) {}</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="unionC3D__DEPTHTYPE.html">C3D_DEPTHTYPE</a>(<span class="keywordtype">int</span> i) : __i(-1) { (void)i; }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;};</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#define C3D_DEPTHTYPE_OK(_x)  ((_x).__i &gt;= 0)</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#define C3D_DEPTHTYPE_VAL(_x) ((_x).__e)</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment"> * @brief Creates a new render target.</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment"> * @param[in] width    Specifies width of the render target in pixels.</span></div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment"> * @param[in] height   Specifies height of the render target in pixels.</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment"> * @param[in] colorFmt Specifies the color format of the render target.</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment"> * @param[in] depthFmt Specifies the depth format of the render target using \ref GPU_DEPTHBUF. (-1 for no depth type)</span></div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment"> * @return Pointer to newly created render target.</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;C3D_RenderTarget* <a class="code" href="renderqueue_8h.html#a98f5b3e8167b6fb3ae1f7c740012aa7c">C3D_RenderTargetCreate</a>(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a1bed7c7c90b43c261c07664aef35bf7a">GPU_COLORBUF</a> colorFmt, <a class="code" href="unionC3D__DEPTHTYPE.html">C3D_DEPTHTYPE</a> depthFmt);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment"> * @brief Constructs render target for texture.</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment"> * @param[in] tex      Pointer to \ref C3D_Tex.</span></div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment"> * @param[in] face     Specifies face of cubemap to be used. (GPU_TEXFACE_2D if not cubemap)</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment"> * @param[in] level    Specifies mipmap level to use.</span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment"> * @param[in] depthFmt Specifies the depth format of the render target using \ref GPU_DEPTHBUF. (-1 for no depth type)</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment"> * @return Pointer to newly created render target.</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;C3D_RenderTarget* <a class="code" href="renderqueue_8h.html#a29b7a176842d7304a3ab1ffb3fadf555">C3D_RenderTargetCreateFromTex</a>(<a class="code" href="structC3D__Tex.html">C3D_Tex</a>* tex, <a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a2fac8fe6dd845ff19a9fc758c0aa8332">GPU_TEXFACE</a> face, <span class="keywordtype">int</span> level, <a class="code" href="unionC3D__DEPTHTYPE.html">C3D_DEPTHTYPE</a> depthFmt);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment"> * @brief Deletes render target.</span></div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment"> * @param[in] target Pointer to render target.</span></div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="keywordtype">void</span> <a class="code" href="renderqueue_8h.html#afa76b60e45b1a19fa44136a880c311ef">C3D_RenderTargetDelete</a>(C3D_RenderTarget* target);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment"> * @brief Sets render target output to screen.</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment"> * @param[in] target        Pointer to render target.</span></div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment"> * @param[in] screen        Screen to transfer the framebuffer to.</span></div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment"> * @param[in] side          Side of the screen to transfer the framebuffer to. (unused for the bottom screen)</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment"> * @param[in] transferFlags Specifies GX_TRANSFER bitflags.</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="keywordtype">void</span> <a class="code" href="renderqueue_8h.html#aa44d9c7acd33a35026292cb0481b4ebf">C3D_RenderTargetSetOutput</a>(C3D_RenderTarget* target, <a class="codeRef" href="https://libctru.devkitpro.org/gfx_8h.html#a356112d87f5cf6bbba3ea3b6b010e09c">gfxScreen_t</a> screen, <a class="codeRef" href="https://libctru.devkitpro.org/gfx_8h.html#ab9bacc1d598f0f6e4d5ef8bbeb466b03">gfx3dSide_t</a> side, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> transferFlags);</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment"> * @brief Detaches render target from screen output.</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment"> * @param[in] target Pointer to render target.</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="renderqueue_8h.html#a10c9fb53b124d2dfb911889ee90695bd">  159</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="renderqueue_8h.html#a10c9fb53b124d2dfb911889ee90695bd">C3D_RenderTargetDetachOutput</a>(C3D_RenderTarget* target)</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;{</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <a class="code" href="renderqueue_8h.html#aa44d9c7acd33a35026292cb0481b4ebf">C3D_RenderTargetSetOutput</a>(NULL, target-&gt;screen, target-&gt;side, 0);</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;}</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment"> * @brief Clears framebuffer of target.</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment"> * @param[in] target     Pointer to render target.</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment"> * @param[in] clearBits  Specifies which buffers to clear. (see \ref C3D_ClearBits)</span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment"> * @param[in] clearColor 32 bit RGBA value to clear color buffer with.</span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment"> * @param[in] clearDepth Value to clear depth buffer with.</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno"><a class="line" href="renderqueue_8h.html#a5f734600a3a8c34cb51cf699527900d5">  171</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="renderqueue_8h.html#a5f734600a3a8c34cb51cf699527900d5">C3D_RenderTargetClear</a>(C3D_RenderTarget* target, <a class="code" href="framebuffer_8h.html#af6b0ba609a1336282b372df6dddabe75">C3D_ClearBits</a> clearBits, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> clearColor, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> clearDepth)</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;{</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <a class="code" href="framebuffer_8h.html#af5329a1ee61456a8fdb55587e0178b4e">C3D_FrameBufClear</a>(&amp;target-&gt;frameBuf, clearBits, clearColor, clearDepth);</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;}</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment"> * @brief Synchronizes and initiates a display transfer.</span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment"> * Synchronizes and initiates a \ref GX_DisplayTransfer().</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment"> * @param[in]  inadr  Address of the input.</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment"> * @param[in]  indim  Dimensions of the input.</span></div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment"> * @param[out] outadr Address of the output.</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment"> * @param[in]  outdim Dimensions of the output.</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment"> * @param[in]  flags  Flags to transfer with.</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="keywordtype">void</span> <a class="code" href="renderqueue_8h.html#ae463bfd7d3676c3bcc56869f2e17ecf1">C3D_SyncDisplayTransfer</a>(<a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>* inadr, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> indim, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>* outadr, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> outdim, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> flags);</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment"> * @brief Synchronizes and initiates a texture copy.</span></div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="comment"> * Synchronizes and initiates a \ref GX_TextureCopy().</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment"> * @param[in]  inadr  Address of the input.</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment"> * @param[in]  indim  Dimensions of the input.</span></div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment"> * @param[out] outadr Address of the output.</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment"> * @param[in]  outdim Dimensions of the output.</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment"> * @param[in]  size   Size of the data to transfer.</span></div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="comment"> * @param[in]  flags  Flags to transfer with.</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="keywordtype">void</span> <a class="code" href="renderqueue_8h.html#a40706d596256234e2655707ebdcacb32">C3D_SyncTextureCopy</a>(<a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>* inadr, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> indim, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>* outadr, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> outdim, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> size, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> flags);</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="comment"></span> </div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="comment">/**</span></div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment"> * @brief Synchronizes and fills the memory of two buffers with the given values.</span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment"> * Synchronizes and initiates a \ref GX_MemoryFill().</span></div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment"> * @param[in] buf0a    Start address of the first buffer.</span></div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment"> * @param[in] buf0v    Dimensions of the first buffer.</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment"> * @param[in] buf0e    End address of the first buffer.</span></div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment"> * @param[in] control0 Value to fill the first buffer with.</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment"> * @param[in] buf1a    Start address of the second buffer.</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment"> * @param[in] buf1v    Dimensions of the second buffer.</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment"> * @param[in] buf1e    End address of the second buffer.</span></div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment"> * @param[in] control1 Value to fill the second buffer with.</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="keywordtype">void</span> <a class="code" href="renderqueue_8h.html#a87d66e53af7a8267f4be0e7283c4ce9c">C3D_SyncMemoryFill</a>(<a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>* buf0a, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> buf0v, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>* buf0e, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> control0, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>* buf1a, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> buf1v, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>* buf1e, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> control1);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"> * Waits for the required amount of vblanks specified by \ref C3D_FrameRate().</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment"> * @note Used by \ref C3D_FrameBegin() when using \ref C3D_FRAME_SYNCDRAW.</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="renderqueue_8h.html#a41442453dd910a4c79dec8f6a5cc6acc">C3D_FrameSync</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> * @brief Returns total number of frames drawn.</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"> * @param[in] id Vblank frame counter id.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> * @return Total number of frames.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> <a class="code" href="renderqueue_8h.html#a5ef85bebbc2a8a98a409a4c24a05fee6">C3D_FrameCounter</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"> * @brief Begins drawing frame.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"> * @param[in] flags Specifies options for rendering; 0 or more flags may be provided.</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment"> *       \ref C3D_FRAME_SYNCDRAW specifies that \ref C3D_FrameSync() should be performed before checking the GPU status,</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"> *       \ref C3D_FRAME_NONBLOCK specifies that the function should return false instead of waiting for GPU to be ready.</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment"> * @return True if frame began successfully, otherwise false.</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="renderqueue_8h.html#a7675742b59d3b6718f68179bbe31e78b">C3D_FrameBegin</a>(<a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> flags);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"> * @brief Specifies render target to draw frame to.</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment"> * @param[in] target Pointer to render target.</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"> * @return True if rendertarget was set successfully, otherwise false.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="renderqueue_8h.html#a1cf7de15e6026508e2502dd8a938a554">C3D_FrameDrawOn</a>(C3D_RenderTarget* target);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> * @brief Splits and submits the GPU cmdlist in the middle of a renderqueue frame.</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> * @param[in] flags Specifies 0 or more GX_CMDLIST flags.</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keywordtype">void</span> <a class="code" href="renderqueue_8h.html#a30d22d0f997fa9d49f58a9e0cd51d433">C3D_FrameSplit</a>(<a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> flags);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment"> * @brief Ends drawing frame.</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment"> * @param[in] flags Specifies 0 or more GX_CMDLIST flags.</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keywordtype">void</span> <a class="code" href="renderqueue_8h.html#afff1197369155052b5ad89eca13fbb34">C3D_FrameEnd</a>(<a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#a92c50087ca0e64fa93fc59402c55f8ca">u8</a> flags);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment"> * @brief Executes callback upon \ref C3D_FrameEnd().</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment"> * @param[in] hook  Function callback.</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment"> * @param[in] param User data.</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keywordtype">void</span> <a class="code" href="renderqueue_8h.html#a0fbf711434a86cf52247197bdd18d03d">C3D_FrameEndHook</a>(<span class="keywordtype">void</span> (* hook)(<span class="keywordtype">void</span>*), <span class="keywordtype">void</span>* param);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment"> * @brief Gets time spent by the GPU during last render.</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment"> * @return Drawing time in milliseconds.</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">float</span> <a class="code" href="renderqueue_8h.html#a4d5d9a58ee65c08aac17d819e072d8d1">C3D_GetDrawingTime</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment"> * @brief Gets time elapsed between last \ref C3D_FrameBegin() and \ref C3D_FrameEnd().</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment"> * @return Time in milliseconds.</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keywordtype">float</span> <a class="code" href="renderqueue_8h.html#a42255e0c2c469fc7ef4ce52115390fa4">C3D_GetProcessingTime</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#if defined(__GNUC__) &amp;&amp; !defined(__cplusplus)</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">typedef</span> <span class="keyword">union </span><a class="codeRef" href="https://libctru.devkitpro.org/svc_8h.html#ad45562eb801d9ac4de5ec07c596f1479">__attribute__</a>((__transparent_union__))</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;{</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">int</span> __i;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a9b40a4b2feaec1dc4a843a908f613a3e">GPU_DEPTHBUF</a> __e;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;} <a class="code" href="unionC3D__DEPTHTYPE.html">C3D_DEPTHTYPE</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="unionC3D__DEPTHTYPE.html">  107</a></span>&#160;<span class="keyword">union </span><a class="code" href="unionC3D__DEPTHTYPE.html">C3D_DEPTHTYPE</a></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;{</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">int</span> __i;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a9b40a4b2feaec1dc4a843a908f613a3e">GPU_DEPTHBUF</a> __e;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="unionC3D__DEPTHTYPE.html">C3D_DEPTHTYPE</a>(<a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a9b40a4b2feaec1dc4a843a908f613a3e">GPU_DEPTHBUF</a> e) : __e(e) {}</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="code" href="unionC3D__DEPTHTYPE.html">C3D_DEPTHTYPE</a>(<span class="keywordtype">int</span> i) : __i(-1) { (void)i; }</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;};</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#define C3D_DEPTHTYPE_OK(_x)  ((_x).__i &gt;= 0)</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#define C3D_DEPTHTYPE_VAL(_x) ((_x).__e)</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="comment"> * @brief Creates a new render target.</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="comment"> * @param[in] width    Specifies width of the render target in pixels.</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="comment"> * @param[in] height   Specifies height of the render target in pixels.</span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="comment"> * @param[in] colorFmt Specifies the color format of the render target.</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="comment"> * @param[in] depthFmt Specifies the depth format of the render target using \ref GPU_DEPTHBUF. (-1 for no depth type)</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="comment"> * @return Pointer to newly created render target.</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;C3D_RenderTarget* <a class="code" href="renderqueue_8h.html#a98f5b3e8167b6fb3ae1f7c740012aa7c">C3D_RenderTargetCreate</a>(<span class="keywordtype">int</span> width, <span class="keywordtype">int</span> height, <a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a1bed7c7c90b43c261c07664aef35bf7a">GPU_COLORBUF</a> colorFmt, <a class="code" href="unionC3D__DEPTHTYPE.html">C3D_DEPTHTYPE</a> depthFmt);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="comment"> * @brief Constructs render target for texture.</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="comment"> * @param[in] tex      Pointer to \ref C3D_Tex.</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="comment"> * @param[in] face     Specifies face of cubemap to be used. (GPU_TEXFACE_2D if not cubemap)</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="comment"> * @param[in] level    Specifies mipmap level to use.</span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="comment"> * @param[in] depthFmt Specifies the depth format of the render target using \ref GPU_DEPTHBUF. (-1 for no depth type)</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="comment"> * @return Pointer to newly created render target.</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;C3D_RenderTarget* <a class="code" href="renderqueue_8h.html#a29b7a176842d7304a3ab1ffb3fadf555">C3D_RenderTargetCreateFromTex</a>(<a class="code" href="structC3D__Tex.html">C3D_Tex</a>* tex, <a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a2fac8fe6dd845ff19a9fc758c0aa8332">GPU_TEXFACE</a> face, <span class="keywordtype">int</span> level, <a class="code" href="unionC3D__DEPTHTYPE.html">C3D_DEPTHTYPE</a> depthFmt);</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="comment"> * @brief Deletes render target.</span></div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="comment"> * @param[in] target Pointer to render target.</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keywordtype">void</span> <a class="code" href="renderqueue_8h.html#afa76b60e45b1a19fa44136a880c311ef">C3D_RenderTargetDelete</a>(C3D_RenderTarget* target);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment"> * @brief Sets render target output to screen.</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment"> * @param[in] target        Pointer to render target.</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment"> * @param[in] screen        Screen to transfer the framebuffer to.</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="comment"> * @param[in] side          Side of the screen to transfer the framebuffer to. (unused for the bottom screen)</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="comment"> * @param[in] transferFlags Specifies GX_TRANSFER bitflags.</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="keywordtype">void</span> <a class="code" href="renderqueue_8h.html#aa44d9c7acd33a35026292cb0481b4ebf">C3D_RenderTargetSetOutput</a>(C3D_RenderTarget* target, <a class="codeRef" href="https://libctru.devkitpro.org/gfx_8h.html#a356112d87f5cf6bbba3ea3b6b010e09c">gfxScreen_t</a> screen, <a class="codeRef" href="https://libctru.devkitpro.org/gfx_8h.html#ab9bacc1d598f0f6e4d5ef8bbeb466b03">gfx3dSide_t</a> side, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> transferFlags);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment"> * @brief Detaches render target from screen output.</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment"> * @param[in] target Pointer to render target.</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno"><a class="line" href="renderqueue_8h.html#a10c9fb53b124d2dfb911889ee90695bd">  160</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="renderqueue_8h.html#a10c9fb53b124d2dfb911889ee90695bd">C3D_RenderTargetDetachOutput</a>(C3D_RenderTarget* target)</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;{</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <a class="code" href="renderqueue_8h.html#aa44d9c7acd33a35026292cb0481b4ebf">C3D_RenderTargetSetOutput</a>(NULL, target-&gt;screen, target-&gt;side, 0);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment"> * @brief Clears framebuffer of target.</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment"> * @param[in] target     Pointer to render target.</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment"> * @param[in] clearBits  Specifies which buffers to clear. (see \ref C3D_ClearBits)</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment"> * @param[in] clearColor 32 bit RGBA value to clear color buffer with.</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment"> * @param[in] clearDepth Value to clear depth buffer with.</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno"><a class="line" href="renderqueue_8h.html#a5f734600a3a8c34cb51cf699527900d5">  172</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="renderqueue_8h.html#a5f734600a3a8c34cb51cf699527900d5">C3D_RenderTargetClear</a>(C3D_RenderTarget* target, <a class="code" href="framebuffer_8h.html#af6b0ba609a1336282b372df6dddabe75">C3D_ClearBits</a> clearBits, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> clearColor, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> clearDepth)</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;{</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <a class="code" href="framebuffer_8h.html#af5329a1ee61456a8fdb55587e0178b4e">C3D_FrameBufClear</a>(&amp;target-&gt;frameBuf, clearBits, clearColor, clearDepth);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;}</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment"> * @brief Synchronizes and initiates a display transfer.</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment"> * Synchronizes and initiates a \ref GX_DisplayTransfer().</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment"> * @param[in]  inadr  Address of the input.</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment"> * @param[in]  indim  Dimensions of the input.</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment"> * @param[out] outadr Address of the output.</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment"> * @param[in]  outdim Dimensions of the output.</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment"> * @param[in]  flags  Flags to transfer with.</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="keywordtype">void</span> <a class="code" href="renderqueue_8h.html#ae463bfd7d3676c3bcc56869f2e17ecf1">C3D_SyncDisplayTransfer</a>(<a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>* inadr, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> indim, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>* outadr, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> outdim, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> flags);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<span class="comment"> * @brief Synchronizes and initiates a texture copy.</span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="comment"> * Synchronizes and initiates a \ref GX_TextureCopy().</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment"> * @param[in]  inadr  Address of the input.</span></div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment"> * @param[in]  indim  Dimensions of the input.</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment"> * @param[out] outadr Address of the output.</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment"> * @param[in]  outdim Dimensions of the output.</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="comment"> * @param[in]  size   Size of the data to transfer.</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment"> * @param[in]  flags  Flags to transfer with.</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="keywordtype">void</span> <a class="code" href="renderqueue_8h.html#a40706d596256234e2655707ebdcacb32">C3D_SyncTextureCopy</a>(<a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>* inadr, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> indim, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>* outadr, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> outdim, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> size, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> flags);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="comment"> * @brief Synchronizes and fills the memory of two buffers with the given values.</span></div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="comment"> * Synchronizes and initiates a \ref GX_MemoryFill().</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment"> * @param[in] buf0a    Start address of the first buffer.</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment"> * @param[in] buf0v    Dimensions of the first buffer.</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment"> * @param[in] buf0e    End address of the first buffer.</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment"> * @param[in] control0 Value to fill the first buffer with.</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment"> * @param[in] buf1a    Start address of the second buffer.</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment"> * @param[in] buf1v    Dimensions of the second buffer.</span></div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment"> * @param[in] buf1e    End address of the second buffer.</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment"> * @param[in] control1 Value to fill the second buffer with.</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="keywordtype">void</span> <a class="code" href="renderqueue_8h.html#a87d66e53af7a8267f4be0e7283c4ce9c">C3D_SyncMemoryFill</a>(<a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>* buf0a, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> buf0v, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>* buf0e, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> control0, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>* buf1a, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> buf1v, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>* buf1e, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a> control1);</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="astructC3D__RenderTarget__tag_html"><div class="ttname"><a href="structC3D__RenderTarget__tag.html">C3D_RenderTarget_tag</a></div><div class="ttdoc">Render target structure.</div><div class="ttdef"><b>Definition:</b> renderqueue.h:11</div></div>
 <div class="ttc" id="arenderqueue_8h_html_a40706d596256234e2655707ebdcacb32"><div class="ttname"><a href="renderqueue_8h.html#a40706d596256234e2655707ebdcacb32">C3D_SyncTextureCopy</a></div><div class="ttdeci">void C3D_SyncTextureCopy(u32 *inadr, u32 indim, u32 *outadr, u32 outdim, u32 size, u32 flags)</div><div class="ttdoc">Synchronizes and initiates a texture copy.</div></div>
@@ -296,7 +297,7 @@ $(function() {
 <div class="ttc" id="arenderqueue_8h_html_a30d22d0f997fa9d49f58a9e0cd51d433"><div class="ttname"><a href="renderqueue_8h.html#a30d22d0f997fa9d49f58a9e0cd51d433">C3D_FrameSplit</a></div><div class="ttdeci">void C3D_FrameSplit(u8 flags)</div><div class="ttdoc">Splits and submits the GPU cmdlist in the middle of a renderqueue frame.</div></div>
 <div class="ttc" id="arenderqueue_8h_html_a29b7a176842d7304a3ab1ffb3fadf555"><div class="ttname"><a href="renderqueue_8h.html#a29b7a176842d7304a3ab1ffb3fadf555">C3D_RenderTargetCreateFromTex</a></div><div class="ttdeci">C3D_RenderTarget * C3D_RenderTargetCreateFromTex(C3D_Tex *tex, GPU_TEXFACE face, int level, C3D_DEPTHTYPE depthFmt)</div><div class="ttdoc">Constructs render target for texture.</div></div>
 <div class="ttc" id="arenderqueue_8h_html_a9ce9a686ea3cd4f8703b8d3cb815af06"><div class="ttname"><a href="renderqueue_8h.html#a9ce9a686ea3cd4f8703b8d3cb815af06">C3D_FrameRate</a></div><div class="ttdeci">float C3D_FrameRate(float fps)</div><div class="ttdoc">Sets framerate.</div></div>
-<div class="ttc" id="arenderqueue_8h_html_a10c9fb53b124d2dfb911889ee90695bd"><div class="ttname"><a href="renderqueue_8h.html#a10c9fb53b124d2dfb911889ee90695bd">C3D_RenderTargetDetachOutput</a></div><div class="ttdeci">static void C3D_RenderTargetDetachOutput(C3D_RenderTarget *target)</div><div class="ttdoc">Detaches render target from screen output.</div><div class="ttdef"><b>Definition:</b> renderqueue.h:159</div></div>
+<div class="ttc" id="arenderqueue_8h_html_a10c9fb53b124d2dfb911889ee90695bd"><div class="ttname"><a href="renderqueue_8h.html#a10c9fb53b124d2dfb911889ee90695bd">C3D_RenderTargetDetachOutput</a></div><div class="ttdeci">static void C3D_RenderTargetDetachOutput(C3D_RenderTarget *target)</div><div class="ttdoc">Detaches render target from screen output.</div><div class="ttdef"><b>Definition:</b> renderqueue.h:160</div></div>
 <div class="ttc" id="aenums_8h_html_a9b40a4b2feaec1dc4a843a908f613a3e"><div class="ttname"><a href="https://libctru.devkitpro.org/enums_8h.html#a9b40a4b2feaec1dc4a843a908f613a3e">GPU_DEPTHBUF</a></div><div class="ttdeci">GPU_DEPTHBUF</div></div>
 <div class="ttc" id="atypes_8h_html_afaa62991928fb9fb18ff0db62a040aba"><div class="ttname"><a href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a></div><div class="ttdeci">uint32_t u32</div></div>
 <div class="ttc" id="arenderqueue_8h_html_aa44d9c7acd33a35026292cb0481b4ebf"><div class="ttname"><a href="renderqueue_8h.html#aa44d9c7acd33a35026292cb0481b4ebf">C3D_RenderTargetSetOutput</a></div><div class="ttdeci">void C3D_RenderTargetSetOutput(C3D_RenderTarget *target, gfxScreen_t screen, gfx3dSide_t side, u32 transferFlags)</div><div class="ttdoc">Sets render target output to screen.</div></div>
@@ -306,7 +307,7 @@ $(function() {
 <div class="ttc" id="arenderqueue_8h_html_a98f5b3e8167b6fb3ae1f7c740012aa7c"><div class="ttname"><a href="renderqueue_8h.html#a98f5b3e8167b6fb3ae1f7c740012aa7c">C3D_RenderTargetCreate</a></div><div class="ttdeci">C3D_RenderTarget * C3D_RenderTargetCreate(int width, int height, GPU_COLORBUF colorFmt, C3D_DEPTHTYPE depthFmt)</div><div class="ttdoc">Creates a new render target.</div></div>
 <div class="ttc" id="astructC3D__FrameBuf_html"><div class="ttname"><a href="structC3D__FrameBuf.html">C3D_FrameBuf</a></div><div class="ttdef"><b>Definition:</b> framebuffer.h:8</div></div>
 <div class="ttc" id="astructC3D__Tex_html"><div class="ttname"><a href="structC3D__Tex.html">C3D_Tex</a></div><div class="ttdoc">Texture data.</div><div class="ttdef"><b>Definition:</b> texture.h:15</div></div>
-<div class="ttc" id="arenderqueue_8h_html_a5f734600a3a8c34cb51cf699527900d5"><div class="ttname"><a href="renderqueue_8h.html#a5f734600a3a8c34cb51cf699527900d5">C3D_RenderTargetClear</a></div><div class="ttdeci">static void C3D_RenderTargetClear(C3D_RenderTarget *target, C3D_ClearBits clearBits, u32 clearColor, u32 clearDepth)</div><div class="ttdoc">Clears framebuffer of target.</div><div class="ttdef"><b>Definition:</b> renderqueue.h:171</div></div>
+<div class="ttc" id="arenderqueue_8h_html_a5f734600a3a8c34cb51cf699527900d5"><div class="ttname"><a href="renderqueue_8h.html#a5f734600a3a8c34cb51cf699527900d5">C3D_RenderTargetClear</a></div><div class="ttdeci">static void C3D_RenderTargetClear(C3D_RenderTarget *target, C3D_ClearBits clearBits, u32 clearColor, u32 clearDepth)</div><div class="ttdoc">Clears framebuffer of target.</div><div class="ttdef"><b>Definition:</b> renderqueue.h:172</div></div>
 <div class="ttc" id="arenderqueue_8h_html_a1cf7de15e6026508e2502dd8a938a554"><div class="ttname"><a href="renderqueue_8h.html#a1cf7de15e6026508e2502dd8a938a554">C3D_FrameDrawOn</a></div><div class="ttdeci">bool C3D_FrameDrawOn(C3D_RenderTarget *target)</div><div class="ttdoc">Specifies render target to draw frame to.</div></div>
 <div class="ttc" id="arenderqueue_8h_html_afff1197369155052b5ad89eca13fbb34"><div class="ttname"><a href="renderqueue_8h.html#afff1197369155052b5ad89eca13fbb34">C3D_FrameEnd</a></div><div class="ttdeci">void C3D_FrameEnd(u8 flags)</div><div class="ttdoc">Ends drawing frame.</div></div>
 <div class="ttc" id="arenderqueue_8h_html_a42255e0c2c469fc7ef4ce52115390fa4"><div class="ttname"><a href="renderqueue_8h.html#a42255e0c2c469fc7ef4ce52115390fa4">C3D_GetProcessingTime</a></div><div class="ttdeci">float C3D_GetProcessingTime(void)</div><div class="ttdoc">Gets time elapsed between last C3D_FrameBegin() and C3D_FrameEnd().</div></div>
@@ -319,7 +320,7 @@ $(function() {
 <div class="ttc" id="arenderqueue_8h_html_a41442453dd910a4c79dec8f6a5cc6acc"><div class="ttname"><a href="renderqueue_8h.html#a41442453dd910a4c79dec8f6a5cc6acc">C3D_FrameSync</a></div><div class="ttdeci">void C3D_FrameSync(void)</div><div class="ttdoc">Waits for vblank.</div></div>
 <div class="ttc" id="arenderqueue_8h_html_a5ef85bebbc2a8a98a409a4c24a05fee6"><div class="ttname"><a href="renderqueue_8h.html#a5ef85bebbc2a8a98a409a4c24a05fee6">C3D_FrameCounter</a></div><div class="ttdeci">u32 C3D_FrameCounter(int id)</div><div class="ttdoc">Returns total number of frames drawn.</div></div>
 <div class="ttc" id="atypes_8h_html_ace9d960e74685e2cd84b36132dbbf8aa"><div class="ttname"><a href="https://libctru.devkitpro.org/types_8h.html#ace9d960e74685e2cd84b36132dbbf8aa">u16</a></div><div class="ttdeci">uint16_t u16</div></div>
-<div class="ttc" id="aunionC3D__DEPTHTYPE_html"><div class="ttname"><a href="unionC3D__DEPTHTYPE.html">C3D_DEPTHTYPE</a></div><div class="ttdef"><b>Definition:</b> renderqueue.h:106</div></div>
+<div class="ttc" id="aunionC3D__DEPTHTYPE_html"><div class="ttname"><a href="unionC3D__DEPTHTYPE.html">C3D_DEPTHTYPE</a></div><div class="ttdef"><b>Definition:</b> renderqueue.h:107</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
