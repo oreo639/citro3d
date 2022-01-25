@@ -100,7 +100,7 @@ Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>C3D_EarlyDepthTest</b> (bool enable, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a92e680b4a2dac313ccd2bc5bae51b703">GPU_EARLYDEPTHFUNC</a> function, <a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> ref)</td></tr>
 <tr class="separator:af6d28032f679a91d505185eb8e59d019"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af38339706d598b6e5e3a88766e95a99f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="effect_8h.html#af38339706d598b6e5e3a88766e95a99f">C3D_DepthTest</a> (bool enable, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#ad964a2dd9f856d413d01dc81d5712618">GPU_TESTFUNC</a> function, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a7fffcfca8e93491a90d7b54cce719cd3">GPU_WRITEMASK</a> writemask)</td></tr>
-<tr class="memdesc:af38339706d598b6e5e3a88766e95a99f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure post-fragment depth testing stage options.  <a href="effect_8h.html#af38339706d598b6e5e3a88766e95a99f">More...</a><br /></td></tr>
+<tr class="memdesc:af38339706d598b6e5e3a88766e95a99f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure depth testing options.  <a href="effect_8h.html#af38339706d598b6e5e3a88766e95a99f">More...</a><br /></td></tr>
 <tr class="separator:af38339706d598b6e5e3a88766e95a99f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a555cd40790b14750276cd36f47041c2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="effect_8h.html#a555cd40790b14750276cd36f47041c2a">C3D_AlphaTest</a> (bool enable, <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#ad964a2dd9f856d413d01dc81d5712618">GPU_TESTFUNC</a> function, int ref)</td></tr>
 <tr class="memdesc:a555cd40790b14750276cd36f47041c2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configure Alpha testing.  <a href="effect_8h.html#a555cd40790b14750276cd36f47041c2a">More...</a><br /></td></tr>
@@ -358,7 +358,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>C3D_FragOpShadow</b> 
       </table>
 </div><div class="memdoc">
 
-<p>Configure post-fragment depth testing stage options. </p>
+<p>Configure depth testing options. </p>
 <dl class="section note"><dt>Note</dt><dd>Setting the enable parameter to false will not also disable depth writes. It will instead behave as if the depth function were set to <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#ad964a2dd9f856d413d01dc81d5712618a2021d04562bc3b47a305c57dff840c2e">GPU_ALWAYS</a>. To completely disable depth-related operations, the enable parameter must be false, and the writemask should be <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a7fffcfca8e93491a90d7b54cce719cd3aab35493591ce4e6a89f6855c3e4f32e0">GPU_WRITE_COLOR</a>. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
