@@ -174,12 +174,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>C3D_FragOpShadow</b> 
 <p>Configure blend functions. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">colorEq</td><td>Specifies how source and destination colors are combined. The initial value is GPU_BLEND_ADD. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">alphaEq</td><td>Specifies how source and destination alphas are combined. The initial value is GPU_BLEND_ADD. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">srcClr</td><td>Specifies how the red, green, and blue source blending factors are computed. The initial value is GPU_SRC_ALPHA. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dstClr</td><td>Specifies how the red, green, and blue destination blending factors are computed. The initial value is GPU_ONE_MINUS_SRC_ALPHA. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">srcAlpha</td><td>Specifies how the alpha source blending factors are computed. The initial value is GPU_SRC_ALPHA. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dstAlpha</td><td>Specifies how the alpha destination blending factors are computed. The initial value is GPU_ONE_MINUS_SRC_ALPHA. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">colorEq</td><td>Specifies how source and destination colors are combined. The initial value is <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#ade416bc8de7b235e270c76f371d3cfb5a39318f81ae768d8a6119e7965a11bd50">GPU_BLEND_ADD</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">alphaEq</td><td>Specifies how source and destination alphas are combined. The initial value is <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#ade416bc8de7b235e270c76f371d3cfb5a39318f81ae768d8a6119e7965a11bd50">GPU_BLEND_ADD</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">srcClr</td><td>Specifies how the red, green, and blue source blending factors are computed. The initial value is <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a2a140d854f0e7c97cec2b38f4a226fe1af2ec416dc4e7e8562e61d5f7963e8a36">GPU_SRC_ALPHA</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dstClr</td><td>Specifies how the red, green, and blue destination blending factors are computed. The initial value is <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a2a140d854f0e7c97cec2b38f4a226fe1a7bf978d71679e5507689e4570d3d85b2">GPU_ONE_MINUS_SRC_ALPHA</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">srcAlpha</td><td>Specifies how the alpha source blending factors are computed. The initial value is <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a2a140d854f0e7c97cec2b38f4a226fe1af2ec416dc4e7e8562e61d5f7963e8a36">GPU_SRC_ALPHA</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dstAlpha</td><td>Specifies how the alpha destination blending factors are computed. The initial value is <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#a2a140d854f0e7c97cec2b38f4a226fe1a7bf978d71679e5507689e4570d3d85b2">GPU_ONE_MINUS_SRC_ALPHA</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -222,7 +222,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>C3D_FragOpShadow</b> 
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>Enables or disables alpha test. The initial value is false. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">function</td><td>Specifies the alpha comparison function. The initial value is GPU_ALWAYS. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">function</td><td>Specifies the alpha comparison function. The initial value is <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#ad964a2dd9f856d413d01dc81d5712618a2021d04562bc3b47a305c57dff840c2e">GPU_ALWAYS</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ref</td><td>Specifies the reference value that incoming alpha values are compared to (0 disables depth buffer writing). The intial value is 0. </td></tr>
   </table>
   </dd>
@@ -275,7 +275,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>C3D_FragOpShadow</b> 
 <p>Specify whether front-facing or back-facing facets can be culled. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>Specifies whether front-facing or back-facing facets are candidates for culling. The inital value is GPU_CULL_BACK_CCW. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>Specifies whether front-facing, back-facing, or no facets are candidates for culling. The inital value is <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#aded31eec5d2f72ea5c6141f24d8a0174a5f4f59f8f711f0bcfa9ca8b87f169ee0">GPU_CULL_BACK_CCW</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -406,9 +406,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>C3D_FragOpShadow</b> 
 <p>Set front and back stencil test actions. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sfail</td><td>Specifies the action to take when the stencil test fails. The initial value is GPU_STENCIL_KEEP. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">dfail</td><td>Specifies the stencil action when the stencil test passes, but the depth test fails. The initial value is GPU_STENCIL_KEEP. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pass</td><td>Specifies the stencil action when both the stencil test and the depth test pass, or when the stencil test passes and either there is no depth buffer or depth testing is not enabled. The initial value is GPU_STENCIL_KEEP. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sfail</td><td>Specifies the action to take when the stencil test fails. The initial value is <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#ab7737bd79ec87b48dd2815e54a0f78c1a2ef8af6e032c0cd8613259aef01f0477">GPU_STENCIL_KEEP</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">dfail</td><td>Specifies the stencil action when the stencil test passes, but the depth test fails. The initial value is <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#ab7737bd79ec87b48dd2815e54a0f78c1a2ef8af6e032c0cd8613259aef01f0477">GPU_STENCIL_KEEP</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pass</td><td>Specifies the stencil action when both the stencil test and the depth test pass, or when the stencil test passes and either there is no depth buffer or depth testing is not enabled. The initial value is <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#ab7737bd79ec87b48dd2815e54a0f78c1a2ef8af6e032c0cd8613259aef01f0477">GPU_STENCIL_KEEP</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -463,7 +463,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>C3D_FragOpShadow</b> 
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">enable</td><td>Enables or disables stencil test. The initial value is false. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">function</td><td>Specifies the test function. The initial value is GPU_ALWAYS. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">function</td><td>Specifies the test function. The initial value is <a class="elRef" href="https://libctru.devkitpro.org/enums_8h.html#ad964a2dd9f856d413d01dc81d5712618a2021d04562bc3b47a305c57dff840c2e">GPU_ALWAYS</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ref</td><td>Specifies the reference value for the stencil test. ref is clamped to the range 02^n - 1 , where n is the number of bitplanes in the stencil buffer. The initial value is 0. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">inputMask</td><td>Specifies a mask that is ANDed with both the reference value and the stored stencil value when the test is done. The initial value is all 1's. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">writeMask</td><td>Specifies a bit mask to enable and disable writing of individual bits in the stencil planes. Initially, the mask is all 0's. </td></tr>
