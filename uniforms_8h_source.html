@@ -93,7 +93,7 @@ $(function() {
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * @param[in] type \ref GPU_SHADER_TYPE of the uniform to be set.</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * @param[in] id   ID of the uniform (retrievable using libctru&#39;s \ref shaderInstanceGetUniformLocation())</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> * @param[in] size Number of registers allocated for this uniform.</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * @return Writable pointer.</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> * @return Writable pointer. This should not be freed.</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="uniforms_8h.html#a3dedcb5d626f096015db5f26ec18d3ae">   26</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="unionC3D__FVec.html">C3D_FVec</a>* <a class="code" href="uniforms_8h.html#a3dedcb5d626f096015db5f26ec18d3ae">C3D_FVUnifWritePtr</a>(<a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a178882ce0f114a22e19ff7f0ee842de5">GPU_SHADER_TYPE</a> type, <span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">int</span> size)</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
@@ -107,7 +107,7 @@ $(function() {
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"> * @brief Provides a writable pointer for an integer uniform.</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment"> * @param[in] type \ref GPU_SHADER_TYPE of the uniform to be set.</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment"> * @param[in] id   ID of the uniform (retrievable using libctru&#39;s \ref shaderInstanceGetUniformLocation())</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> * @return Writable pointer.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment"> * @return Writable pointer. This should not be freed.</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="uniforms_8h.html#a484ee4555087bc3aae476de57fbfea7d">   40</a></span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <a class="code" href="types_8h.html#adb5b5e25c02073542d42a4110db12e71">C3D_IVec</a>* <a class="code" href="uniforms_8h.html#a484ee4555087bc3aae476de57fbfea7d">C3D_IVUnifWritePtr</a>(<a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a178882ce0f114a22e19ff7f0ee842de5">GPU_SHADER_TYPE</a> type, <span class="keywordtype">int</span> <span class="keywordtype">id</span>)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
@@ -217,7 +217,7 @@ $(function() {
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="comment">/**</span></div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="comment"> * @brief Flushes newly-updated uniforms to the uniform registers.</span></div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="comment"> * @param[in] type \ref GPU_SHADER_TYPE of the uniforms to be flushed.</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment"> * @remark This is called internally, and does not need to be handled by the user.</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment"> * @remark This is called internally, and generally does not need to be handled by the user.</span></div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keywordtype">void</span> <a class="code" href="uniforms_8h.html#ad274dff39f7bbc80ac20e8b4a36eee46">C3D_UpdateUniforms</a>(<a class="codeRef" href="https://libctru.devkitpro.org/enums_8h.html#a178882ce0f114a22e19ff7f0ee842de5">GPU_SHADER_TYPE</a> type);</div>
 </div><!-- fragment --></div><!-- contents -->
