@@ -252,9 +252,9 @@ $(function() {
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment"> * @brief Synchronizes and initiates a display transfer.</span></div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment"> * Synchronizes and initiates a \ref GX_DisplayTransfer().</span></div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment"> * @param[in]  inadr  Address of the input.</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment"> * @param[in]  indim  Dimensions of the input.</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment"> * @param[in]  indim  \ref GX_BUFFER_DIM() of the input.</span></div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment"> * @param[out] outadr Address of the output.</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment"> * @param[in]  outdim Dimensions of the output.</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment"> * @param[in]  outdim \ref GX_BUFFER_DIM() of the output.</span></div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="comment"> * @param[in]  flags  Flags to transfer with.</span></div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;<span class="keywordtype">void</span> <a class="code" href="renderqueue_8h.html#ae463bfd7d3676c3bcc56869f2e17ecf1">C3D_SyncDisplayTransfer</a>(<a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>* inadr, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> indim, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>* outadr, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> outdim, <a class="codeRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a> flags);</div>
@@ -263,9 +263,9 @@ $(function() {
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="comment"> * @brief Synchronizes and initiates a texture copy.</span></div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="comment"> * Synchronizes and initiates a \ref GX_TextureCopy().</span></div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;<span class="comment"> * @param[in]  inadr  Address of the input.</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment"> * @param[in]  indim  Dimensions of the input.</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;<span class="comment"> * @param[in]  indim  \ref GX_BUFFER_DIM() of the input.</span></div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="comment"> * @param[out] outadr Address of the output.</span></div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment"> * @param[in]  outdim Dimensions of the output.</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="comment"> * @param[in]  outdim \ref GX_BUFFER_DIM() of the output.</span></div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="comment"> * @param[in]  size   Size of the data to transfer.</span></div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;<span class="comment"> * @param[in]  flags  Flags to transfer with.</span></div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="comment"> */</span></div>
@@ -275,11 +275,11 @@ $(function() {
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="comment"> * @brief Synchronizes and fills the memory of two buffers with the given values.</span></div>
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;<span class="comment"> * Synchronizes and initiates a \ref GX_MemoryFill().</span></div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;<span class="comment"> * @param[in] buf0a    Start address of the first buffer.</span></div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment"> * @param[in] buf0v    Dimensions of the first buffer.</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment"> * @param[in] buf0v    Value to fill first buffer.</span></div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment"> * @param[in] buf0e    End address of the first buffer.</span></div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment"> * @param[in] control0 Value to fill the first buffer with.</span></div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="comment"> * @param[in] buf1a    Start address of the second buffer.</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment"> * @param[in] buf1v    Dimensions of the second buffer.</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="comment"> * @param[in] buf1v    Value to fill second buffer.</span></div>
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;<span class="comment"> * @param[in] buf1e    End address of the second buffer.</span></div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;<span class="comment"> * @param[in] control1 Value to fill the second buffer with.</span></div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;<span class="comment"> */</span></div>
