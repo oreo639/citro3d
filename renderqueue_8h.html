@@ -113,10 +113,10 @@ Enumerations</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a9ce9a686ea3cd4f8703b8d3cb815af06"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderqueue_8h.html#a9ce9a686ea3cd4f8703b8d3cb815af06">C3D_FrameRate</a> (float fps)</td></tr>
-<tr class="memdesc:a9ce9a686ea3cd4f8703b8d3cb815af06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets framerate.  <a href="renderqueue_8h.html#a9ce9a686ea3cd4f8703b8d3cb815af06">More...</a><br /></td></tr>
+<tr class="memdesc:a9ce9a686ea3cd4f8703b8d3cb815af06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies framerate cap.  <a href="renderqueue_8h.html#a9ce9a686ea3cd4f8703b8d3cb815af06">More...</a><br /></td></tr>
 <tr class="separator:a9ce9a686ea3cd4f8703b8d3cb815af06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41442453dd910a4c79dec8f6a5cc6acc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderqueue_8h.html#a41442453dd910a4c79dec8f6a5cc6acc">C3D_FrameSync</a> (void)</td></tr>
-<tr class="memdesc:a41442453dd910a4c79dec8f6a5cc6acc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for vblank.  <a href="renderqueue_8h.html#a41442453dd910a4c79dec8f6a5cc6acc">More...</a><br /></td></tr>
+<tr class="memdesc:a41442453dd910a4c79dec8f6a5cc6acc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs framerate limiting.  <a href="renderqueue_8h.html#a41442453dd910a4c79dec8f6a5cc6acc">More...</a><br /></td></tr>
 <tr class="separator:a41442453dd910a4c79dec8f6a5cc6acc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ef85bebbc2a8a98a409a4c24a05fee6"><td class="memItemLeft" align="right" valign="top"><a class="elRef" href="https://libctru.devkitpro.org/types_8h.html#afaa62991928fb9fb18ff0db62a040aba">u32</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="renderqueue_8h.html#a5ef85bebbc2a8a98a409a4c24a05fee6">C3D_FrameCounter</a> (int id)</td></tr>
 <tr class="memdesc:a5ef85bebbc2a8a98a409a4c24a05fee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns total number of frames drawn.  <a href="renderqueue_8h.html#a5ef85bebbc2a8a98a409a4c24a05fee6">More...</a><br /></td></tr>
@@ -356,8 +356,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets framerate. </p>
-<dl class="params"><dt>Parameters</dt><dd>
+<p>Specifies framerate cap. </p>
+<p>Specifies target framerate for <a class="el" href="renderqueue_8h.html#a41442453dd910a4c79dec8f6a5cc6acc">C3D_FrameSync()</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">fps</td><td>Specifies the target framerate. Must be between 0.0 and 60.0 fps. </td></tr>
   </table>
@@ -409,7 +409,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Waits for vblank. </p>
+<p>Performs framerate limiting. </p>
 <p>Waits for the required amount of vblanks specified by <a class="el" href="renderqueue_8h.html#a9ce9a686ea3cd4f8703b8d3cb815af06">C3D_FrameRate()</a>. </p><dl class="section note"><dt>Note</dt><dd>Used by <a class="el" href="renderqueue_8h.html#a7675742b59d3b6718f68179bbe31e78b">C3D_FrameBegin()</a> when using <a class="el" href="renderqueue_8h.html#aac34dfe6c6b73b43a4656c9dce041034a9c9b3dfd6cd433f26fc77d1a1f6663a3">C3D_FRAME_SYNCDRAW</a>. </dd></dl>
 
 </div>
