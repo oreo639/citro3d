@@ -1,6 +1,12 @@
 var searchData=
 [
-  ['_5fpad1_2',['_pad1',['https://libctru.devkitpro.org/unionCSND__CapInfo.html#ae0a73702b74a8df5d1767e2d8f643bf5',1,'CSND_CapInfo::_pad1()'],['https://libctru.devkitpro.org/unionCSND__ChnInfo.html#a82f44e9c71e5058523616518884bc29d',1,'CSND_ChnInfo::_pad1()']]],
-  ['_5fpad2_3',['_pad2',['https://libctru.devkitpro.org/unionCSND__CapInfo.html#aad5428d2d50ecc0d775e25de6fe36ab1',1,'CSND_CapInfo::_pad2()'],['https://libctru.devkitpro.org/unionCSND__ChnInfo.html#a8a5d07ac432da22d7dd37cfed6d7a1f2',1,'CSND_ChnInfo::_pad2()']]],
-  ['_5fpad3_4',['_pad3',['https://libctru.devkitpro.org/unionCSND__ChnInfo.html#a122945e8a6846829ae2435226c0a82aa',1,'CSND_ChnInfo']]]
+  ['1_202_200_0',['Version 0-1.2.0',['../md_Changelog.html#autotoc_md12',1,'']]],
+  ['1_203_200_1',['Version 1.3.0',['../md_Changelog.html#autotoc_md11',1,'']]],
+  ['1_203_201_2',['Version 1.3.1',['../md_Changelog.html#autotoc_md10',1,'']]],
+  ['1_204_200_3',['Version 1.4.0',['../md_Changelog.html#autotoc_md9',1,'']]],
+  ['1_205_200_4',['Version 1.5.0',['../md_Changelog.html#autotoc_md8',1,'']]],
+  ['1_206_200_5',['Version 1.6.0',['../md_Changelog.html#autotoc_md7',1,'']]],
+  ['1_206_201_6',['Version 1.6.1',['../md_Changelog.html#autotoc_md6',1,'']]],
+  ['1_206_202_7',['Version 1.6.2',['../md_Changelog.html#autotoc_md5',1,'']]],
+  ['1_207_200_8',['Version 1.7.0',['../md_Changelog.html#autotoc_md4',1,'']]]
 ];

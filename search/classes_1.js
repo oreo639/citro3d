@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bosscontext_1091',['bossContext',['https://libctru.devkitpro.org/structbossContext.html',1,'']]]
+  ['bosscontext_0',['bossContext',['https://libctru.devkitpro.org/structbossContext.html',1,'']]]
 ];

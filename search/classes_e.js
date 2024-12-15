@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['qtm_5fheadtrackinginfo_1229',['QTM_HeadTrackingInfo',['https://libctru.devkitpro.org/structQTM__HeadTrackingInfo.html',1,'']]],
-  ['qtm_5fheadtrackinginfocoord_1230',['QTM_HeadTrackingInfoCoord',['https://libctru.devkitpro.org/structQTM__HeadTrackingInfoCoord.html',1,'']]]
+  ['qtmcalibrationdata_0',['QtmCalibrationData',['https://libctru.devkitpro.org/structQtmCalibrationData.html',1,'']]],
+  ['qtmrawtrackingdata_1',['QtmRawTrackingData',['https://libctru.devkitpro.org/structQtmRawTrackingData.html',1,'']]],
+  ['qtmstatuscfgdata_2',['QtmStatusCfgData',['https://libctru.devkitpro.org/structQtmStatusCfgData.html',1,'']]],
+  ['qtmtrackingdata_3',['QtmTrackingData',['https://libctru.devkitpro.org/structQtmTrackingData.html',1,'']]]
 ];

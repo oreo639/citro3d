@@ -1,6 +1,30 @@
 var searchData=
 [
-  ['x_1068',['x',['https://libctru.devkitpro.org/structaccelVector.html#a0504512667f03b668fea1f5bc4928885',1,'accelVector::x()'],['https://libctru.devkitpro.org/structangularRate.html#aeb9bf87b59b134ea1c7ab84af7f97615',1,'angularRate::x()'],['https://libctru.devkitpro.org/structQTM__HeadTrackingInfoCoord.html#a36ab3ab6584f54d59cfe9e9a638771d0',1,'QTM_HeadTrackingInfoCoord::x()'],['../unionC3D__FVec.html#a0b544eebade1776b54ead10d0dc84e01',1,'C3D_FVec::x()']]],
-  ['xadvance_1069',['xAdvance',['https://libctru.devkitpro.org/structfontGlyphPos__s.html#a300fb5125c36feed92364416a2e73bd6',1,'fontGlyphPos_s']]],
-  ['xoffset_1070',['xOffset',['https://libctru.devkitpro.org/structfontGlyphPos__s.html#ae96778159b2b35a6116814a14d0baeee',1,'fontGlyphPos_s']]]
+  ['qtm_2eh_0',['qtm.h',['https://libctru.devkitpro.org/qtm_8h.html',1,'']]],
+  ['qtmc_2eh_1',['qtmc.h',['https://libctru.devkitpro.org/qtmc_8h.html',1,'']]],
+  ['qtmcalibrationdata_2',['QtmCalibrationData',['https://libctru.devkitpro.org/structQtmCalibrationData.html',1,'']]],
+  ['qtmrawtrackingdata_3',['QtmRawTrackingData',['https://libctru.devkitpro.org/structQtmRawTrackingData.html',1,'']]],
+  ['qtmstatuscfgdata_4',['QtmStatusCfgData',['https://libctru.devkitpro.org/structQtmStatusCfgData.html',1,'']]],
+  ['qtmtrackingdata_5',['QtmTrackingData',['https://libctru.devkitpro.org/structQtmTrackingData.html',1,'']]],
+  ['quat_5fadd_6',['Quat_Add',['../group__math__support.html#ga57e019dd1e4f6f46f7a3bdb29f80bab1',1,'maths.h']]],
+  ['quat_5fconjugate_7',['Quat_Conjugate',['../group__math__support.html#ga7c79289d876936974e291e3a52078774',1,'maths.h']]],
+  ['quat_5fcrossfvec3_8',['Quat_CrossFVec3',['../group__math__support.html#ga585ace65e61c3f5eaa5aa01a54debff7',1,'maths.h']]],
+  ['quat_5fdot_9',['Quat_Dot',['../group__math__support.html#gaedd36b5ef97e45f55105acf41c1fdf73',1,'maths.h']]],
+  ['quat_5ffromaxisangle_10',['Quat_FromAxisAngle',['../group__math__support.html#ga8eff75561be78aef8236c2fb5016f1fd',1,'maths.h']]],
+  ['quat_5ffrommtx_11',['Quat_FromMtx',['../group__math__support.html#gaf9ee3635a678d69c18676f20b1190063',1,'maths.h']]],
+  ['quat_5ffrompitchyawroll_12',['Quat_FromPitchYawRoll',['../group__math__support.html#ga38f79dcd8e8d8b0f025af5632629d8ac',1,'maths.h']]],
+  ['quat_5fidentity_13',['Quat_Identity',['../group__math__support.html#ga52f97a7a10b89083a92c16f03b6a86ad',1,'maths.h']]],
+  ['quat_5finverse_14',['Quat_Inverse',['../group__math__support.html#gaa9b8f21b187d0594daee582b53fbda9a',1,'maths.h']]],
+  ['quat_5flookat_15',['Quat_LookAt',['../group__math__support.html#ga7fbba74b28a2e2b5574431d10a6e7947',1,'maths.h']]],
+  ['quat_5fmultiply_16',['Quat_Multiply',['../group__math__support.html#gaaf3d8de02af908ef1f3bfc252bb4299b',1,'maths.h']]],
+  ['quat_5fnegate_17',['Quat_Negate',['../group__math__support.html#gad556d28f9ce6cd84f484adfc1190ec8f',1,'maths.h']]],
+  ['quat_5fnew_18',['Quat_New',['../group__math__support.html#ga15b24b7c262f61ed84f49a810e871acb',1,'maths.h']]],
+  ['quat_5fnormalize_19',['Quat_Normalize',['../group__math__support.html#gae0415dbba61cadc0c7c08d5473fa2ff3',1,'maths.h']]],
+  ['quat_5fpow_20',['Quat_Pow',['../group__math__support.html#gab03dc88dec7a8745bb5f54fc07660294',1,'maths.h']]],
+  ['quat_5frotate_21',['Quat_Rotate',['../group__math__support.html#gac6ba4458705fbc4cd7ebe09be8d5a0b7',1,'maths.h']]],
+  ['quat_5frotatex_22',['Quat_RotateX',['../group__math__support.html#ga0b982df76399822c9262685877e02953',1,'maths.h']]],
+  ['quat_5frotatey_23',['Quat_RotateY',['../group__math__support.html#gac1f3b196675e9c809a6c31b1842d3d9a',1,'maths.h']]],
+  ['quat_5frotatez_24',['Quat_RotateZ',['../group__math__support.html#gafa5defdbf47e3b6d290dc3f56feb9277',1,'maths.h']]],
+  ['quat_5fscale_25',['Quat_Scale',['../group__math__support.html#gaa8fc08ab776c45a477c448950d4574d3',1,'maths.h']]],
+  ['quat_5fsubtract_26',['Quat_Subtract',['../group__math__support.html#gaddb6f41db638452500b56cab755c4768',1,'maths.h']]]
 ];
