@@ -21,7 +21,7 @@ var searchData=
   ['dirhashtablesize_18',['dirHashTableSize',['https://libctru.devkitpro.org/structromfs__header.html#a6c84c8f3674cb651abec63695c9570e0',1,'romfs_header']]],
   ['dirtableoff_19',['dirTableOff',['https://libctru.devkitpro.org/structromfs__header.html#ae69ef70fbbff94cac2ad508f3b9648a5',1,'romfs_header']]],
   ['dirtablesize_20',['dirTableSize',['https://libctru.devkitpro.org/structromfs__header.html#a3d55de35b6579d211430645d1fbbe070',1,'romfs_header']]],
-  ['disable_5fsharing_21',['disable_sharing',['https://libctru.devkitpro.org/structMiiData.html#a7488bce578fa20415232042b2993628c',1,'MiiData']]],
+  ['disable_5fsharing_21',['disable_sharing',['https://libctru.devkitpro.org/structMiiData.html#a44cd404b1371bf68dde9ff6a72ab6c46',1,'MiiData']]],
   ['distancecameras_22',['distanceCameras',['https://libctru.devkitpro.org/structCAMU__StereoCameraCalibrationData.html#a0283ceebabd56efc49a208318094ea91',1,'CAMU_StereoCameraCalibrationData']]],
   ['distancetochart_23',['distanceToChart',['https://libctru.devkitpro.org/structCAMU__StereoCameraCalibrationData.html#a5320dda35a896aed071098f4e48e19cb',1,'CAMU_StereoCameraCalibrationData']]],
   ['downloadedsize_24',['downloadedSize',['https://libctru.devkitpro.org/structNIM__TitleProgress.html#a85833d41dcb3f889e03390cdb042df0f',1,'NIM_TitleProgress']]],
@@ -30,7 +30,7 @@ var searchData=
   ['droll_27',['droll',['https://libctru.devkitpro.org/structQtmRawTrackingData.html#a832edce0e6f102e106a5e9f8266abbd7',1,'QtmRawTrackingData::dRoll'],['https://libctru.devkitpro.org/structQtmTrackingData.html#affe5182f24a5e77895382e987e3f65b4',1,'QtmTrackingData::dRoll']]],
   ['dstcfg_28',['dstCfg',['https://libctru.devkitpro.org/structDmaConfig.html#af3ffc0bd8ef24a50cdb68aeb24f88819',1,'DmaConfig']]],
   ['dvle_29',['dvle',['https://libctru.devkitpro.org/structshaderInstance__s.html#a3e0cff4ae283440abfb6b94ad97b5e6d',1,'shaderInstance_s::dvle'],['https://libctru.devkitpro.org/structDVLB__s.html#a1934abe9c4109579746d57c5b20b5834',1,'DVLB_s::DVLE']]],
-  ['dvlp_30',['dvlp',['https://libctru.devkitpro.org/structDVLB__s.html#a89394562d20aa2dbe82e56db7a7b0138',1,'DVLB_s::DVLP'],['https://libctru.devkitpro.org/structDVLE__s.html#a6a6c88a5c720fdf20f3b8e28032960b7',1,'DVLE_s::dvlp']]],
+  ['dvlp_30',['dvlp',['https://libctru.devkitpro.org/structDVLE__s.html#a6a6c88a5c720fdf20f3b8e28032960b7',1,'DVLE_s::dvlp'],['https://libctru.devkitpro.org/structDVLB__s.html#a89394562d20aa2dbe82e56db7a7b0138',1,'DVLB_s::DVLP']]],
   ['dx_31',['dx',['https://libctru.devkitpro.org/structcirclePosition.html#a2a234ca65b74a2634e067261050021bb',1,'circlePosition']]],
   ['dy_32',['dy',['https://libctru.devkitpro.org/structcirclePosition.html#ac617313212e138e7249a1deec7ed8f88',1,'circlePosition']]],
   ['dyaw_33',['dyaw',['https://libctru.devkitpro.org/structQtmRawTrackingData.html#a87e8906a3dc5308b1b150817f62d811c',1,'QtmRawTrackingData::dYaw'],['https://libctru.devkitpro.org/structQtmTrackingData.html#a83257168960f6fcaadc0d569e0dbf1ae',1,'QtmTrackingData::dYaw']]]

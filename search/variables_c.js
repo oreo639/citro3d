@@ -1,15 +1,19 @@
 var searchData=
 [
-  ['language_0',['language',['https://libctru.devkitpro.org/structFriendProfile.html#acd0c5cfc685f6384f26c0d55bca0f611',1,'FriendProfile::language'],['https://libctru.devkitpro.org/structSwkbdDictWord.html#aaa1ff887f1d888595340ad2fa60a1d09',1,'SwkbdDictWord::language']]],
-  ['lastentry_1',['lastEntry',['https://libctru.devkitpro.org/structgxCmdQueue__s.html#a8bf3daf45d08546c0162d754ab66ad96',1,'gxCmdQueue_s']]],
-  ['lastresult_2',['lastResult',['https://libctru.devkitpro.org/structNIM__TitleProgress.html#ab3a428ec2477ee4bd75ab781f5b654d1',1,'NIM_TitleProgress']]],
-  ['left_3',['left',['https://libctru.devkitpro.org/structcharWidthInfo__s.html#a7c05ffca23db8b34c4acea4b4e5fc8e0',1,'charWidthInfo_s::left'],['../structTex3DS__SubTexture.html#ac52c6e9c9afdb66c0731a0eff4ab893c',1,'Tex3DS_SubTexture::left']]],
-  ['lenscorrection_4',['lensCorrection',['https://libctru.devkitpro.org/structCAMU__PackageParameterCameraSelect.html#af3de38877056496facb20c3eaf5eaadd',1,'CAMU_PackageParameterCameraSelect']]],
-  ['linefeed_5',['lineFeed',['https://libctru.devkitpro.org/structFINF__s.html#a61c7d30b360074723a75335ebc1de1d7',1,'FINF_s']]],
-  ['local_6',['local',['https://libctru.devkitpro.org/structSOCU__TCPTableEntry.html#a77ef4f04db3d5705452ce8dd32ed9d70',1,'SOCU_TCPTableEntry::local'],['https://libctru.devkitpro.org/structSOCU__UDPTableEntry.html#ab06e381a05a80b2907f62ad72208e1fa',1,'SOCU_UDPTableEntry::local']]],
-  ['local_5fcaps_7',['local_caps',['https://libctru.devkitpro.org/structExHeader__AccessControlInfo.html#a44195b3bef441a827d56fda1c8baa0f1',1,'ExHeader_AccessControlInfo']]],
-  ['lock_8',['lock',['https://libctru.devkitpro.org/structLightEvent.html#aa903d9a20aebc10972fac85def48f1ac',1,'LightEvent']]],
-  ['loopdelay_9',['loopDelay',['https://libctru.devkitpro.org/structInfoLedPattern.html#a78f415cacf93273b538d273b19492422',1,'InfoLedPattern']]],
-  ['looping_10',['looping',['https://libctru.devkitpro.org/structtag__ndspWaveBuf.html#a3c7ea7f11f9e714c385befa490f5079b',1,'tag_ndspWaveBuf']]],
-  ['lr_11',['lr',['https://libctru.devkitpro.org/structCpuRegisters.html#af39510a91f0cb45bf16fa21644d14245',1,'CpuRegisters']]]
+  ['language_0',['language',['https://libctru.devkitpro.org/structSwkbdDictWord.html#aaa1ff887f1d888595340ad2fa60a1d09',1,'SwkbdDictWord::language'],['https://libctru.devkitpro.org/structProfile.html#adb1e5629a0a9d2cd38385aaf7ff29b7e',1,'Profile::language']]],
+  ['languagecode_1',['languagecode',['https://libctru.devkitpro.org/structEulaEntry.html#a61aed482c689abf906ded723e04fb872',1,'EulaEntry::languageCode'],['https://libctru.devkitpro.org/structEulaInfo.html#a354dc6c285e956d7afd3fbae7f0d6791',1,'EulaInfo::languageCode']]],
+  ['languagenameoffset_2',['languageNameOffset',['https://libctru.devkitpro.org/structEulaEntry.html#a38cf29dbe4d941fa663f561b18e77f95',1,'EulaEntry']]],
+  ['lastdurationus_3',['lastDurationUs',['https://libctru.devkitpro.org/structGSPGPU__PerfLogEntry.html#ac6ba9855717dc65416c064112fb2b0cd',1,'GSPGPU_PerfLogEntry']]],
+  ['lastentry_4',['lastEntry',['https://libctru.devkitpro.org/structgxCmdQueue__s.html#a8bf3daf45d08546c0162d754ab66ad96',1,'gxCmdQueue_s']]],
+  ['lastonlinetimestamp_5',['lastOnlineTimestamp',['https://libctru.devkitpro.org/structFriendProfile.html#ab1a6ff5d15888ce084a99e64a997942e',1,'FriendProfile']]],
+  ['lastresult_6',['lastResult',['https://libctru.devkitpro.org/structNIM__TitleProgress.html#ab3a428ec2477ee4bd75ab781f5b654d1',1,'NIM_TitleProgress']]],
+  ['left_7',['left',['../structTex3DS__SubTexture.html#ac52c6e9c9afdb66c0731a0eff4ab893c',1,'Tex3DS_SubTexture::left'],['https://libctru.devkitpro.org/structcharWidthInfo__s.html#a7c05ffca23db8b34c4acea4b4e5fc8e0',1,'charWidthInfo_s::left']]],
+  ['lenscorrection_8',['lensCorrection',['https://libctru.devkitpro.org/structCAMU__PackageParameterCameraSelect.html#af3de38877056496facb20c3eaf5eaadd',1,'CAMU_PackageParameterCameraSelect']]],
+  ['linefeed_9',['lineFeed',['https://libctru.devkitpro.org/structFINF__s.html#a61c7d30b360074723a75335ebc1de1d7',1,'FINF_s']]],
+  ['local_10',['local',['https://libctru.devkitpro.org/structSOCU__TCPTableEntry.html#a77ef4f04db3d5705452ce8dd32ed9d70',1,'SOCU_TCPTableEntry::local'],['https://libctru.devkitpro.org/structSOCU__UDPTableEntry.html#ab06e381a05a80b2907f62ad72208e1fa',1,'SOCU_UDPTableEntry::local']]],
+  ['local_5fcaps_11',['local_caps',['https://libctru.devkitpro.org/structExHeader__AccessControlInfo.html#a44195b3bef441a827d56fda1c8baa0f1',1,'ExHeader_AccessControlInfo']]],
+  ['lock_12',['lock',['https://libctru.devkitpro.org/structLightEvent.html#aa903d9a20aebc10972fac85def48f1ac',1,'LightEvent']]],
+  ['loopdelay_13',['loopDelay',['https://libctru.devkitpro.org/structInfoLedPattern.html#a78f415cacf93273b538d273b19492422',1,'InfoLedPattern']]],
+  ['looping_14',['looping',['https://libctru.devkitpro.org/structtag__ndspWaveBuf.html#a3c7ea7f11f9e714c385befa490f5079b',1,'tag_ndspWaveBuf']]],
+  ['lr_15',['lr',['https://libctru.devkitpro.org/structCpuRegisters.html#af39510a91f0cb45bf16fa21644d14245',1,'CpuRegisters']]]
 ];

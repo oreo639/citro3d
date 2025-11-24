@@ -30,12 +30,15 @@ var searchData=
   ['camu_5fpackageparametercontext_27',['CAMU_PackageParameterContext',['https://libctru.devkitpro.org/structCAMU__PackageParameterContext.html',1,'']]],
   ['camu_5fpackageparametercontextdetail_28',['CAMU_PackageParameterContextDetail',['https://libctru.devkitpro.org/structCAMU__PackageParameterContextDetail.html',1,'']]],
   ['camu_5fstereocameracalibrationdata_29',['CAMU_StereoCameraCalibrationData',['https://libctru.devkitpro.org/structCAMU__StereoCameraCalibrationData.html',1,'']]],
-  ['cfnt_5fs_30',['CFNT_s',['https://libctru.devkitpro.org/structCFNT__s.html',1,'']]],
-  ['charwidthinfo_5fs_31',['charWidthInfo_s',['https://libctru.devkitpro.org/structcharWidthInfo__s.html',1,'']]],
-  ['circleposition_32',['circlePosition',['https://libctru.devkitpro.org/structcirclePosition.html',1,'']]],
-  ['codesetheader_33',['CodeSetHeader',['https://libctru.devkitpro.org/structCodeSetHeader.html',1,'']]],
-  ['consolefont_34',['ConsoleFont',['https://libctru.devkitpro.org/structConsoleFont.html',1,'']]],
-  ['cpuregisters_35',['CpuRegisters',['https://libctru.devkitpro.org/structCpuRegisters.html',1,'']]],
-  ['csnd_5fcapinfo_36',['CSND_CapInfo',['https://libctru.devkitpro.org/unionCSND__CapInfo.html',1,'']]],
-  ['csnd_5fchninfo_37',['CSND_ChnInfo',['https://libctru.devkitpro.org/unionCSND__ChnInfo.html',1,'']]]
+  ['cflstoredata_30',['CFLStoreData',['https://libctru.devkitpro.org/structCFLStoreData.html',1,'']]],
+  ['cfnt_5fs_31',['CFNT_s',['https://libctru.devkitpro.org/structCFNT__s.html',1,'']]],
+  ['charwidthinfo_5fs_32',['charWidthInfo_s',['https://libctru.devkitpro.org/structcharWidthInfo__s.html',1,'']]],
+  ['circleposition_33',['circlePosition',['https://libctru.devkitpro.org/structcirclePosition.html',1,'']]],
+  ['codesetheader_34',['CodeSetHeader',['https://libctru.devkitpro.org/structCodeSetHeader.html',1,'']]],
+  ['consolefont_35',['ConsoleFont',['https://libctru.devkitpro.org/structConsoleFont.html',1,'']]],
+  ['coppacodemaildata_36',['CoppaCodeMailData',['https://libctru.devkitpro.org/structCoppaCodeMailData.html',1,'']]],
+  ['cpuregisters_37',['CpuRegisters',['https://libctru.devkitpro.org/structCpuRegisters.html',1,'']]],
+  ['creditcardinfo_38',['CreditCardInfo',['https://libctru.devkitpro.org/structCreditCardInfo.html',1,'']]],
+  ['csnd_5fcapinfo_39',['CSND_CapInfo',['https://libctru.devkitpro.org/unionCSND__CapInfo.html',1,'']]],
+  ['csnd_5fchninfo_40',['CSND_ChnInfo',['https://libctru.devkitpro.org/unionCSND__ChnInfo.html',1,'']]]
 ];

@@ -7,6 +7,6 @@ var searchData=
   ['tglp_5fs_4',['TGLP_s',['https://libctru.devkitpro.org/structTGLP__s.html',1,'']]],
   ['threadcontext_5',['ThreadContext',['https://libctru.devkitpro.org/structThreadContext.html',1,'']]],
   ['tickcounter_6',['TickCounter',['https://libctru.devkitpro.org/structTickCounter.html',1,'']]],
-  ['titledata_7',['TitleData',['https://libctru.devkitpro.org/structTitleData.html',1,'']]],
+  ['timezonelist_7',['TimezoneList',['https://libctru.devkitpro.org/structTimezoneList.html',1,'']]],
   ['touchposition_8',['touchPosition',['https://libctru.devkitpro.org/structtouchPosition.html',1,'']]]
 ];

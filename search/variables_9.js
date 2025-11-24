@@ -21,6 +21,8 @@ var searchData=
   ['ip_18',['ip',['https://libctru.devkitpro.org/structSOCU__ARPTableEntry.html#aeae0365091b9d10c2c017d0d9e105199',1,'SOCU_ARPTableEntry::ip'],['https://libctru.devkitpro.org/structSOCU__DNSTableEntry.html#a3fb90bfa23683903abf06bd832dc0ba5',1,'SOCU_DNSTableEntry::ip'],['https://libctru.devkitpro.org/structSOCU__IPInfo.html#aca1d15bae55b2990f3d3309d1921ed65',1,'SOCU_IPInfo::ip']]],
   ['is_5fprivate_5fname_19',['is_private_name',['https://libctru.devkitpro.org/structMiiData.html#a1604f31051750e6c4a1a0de5cc7804af',1,'MiiData']]],
   ['is_5fsd_5fapplication_20',['is_sd_application',['https://libctru.devkitpro.org/structExHeader__SystemInfoFlags.html#a0ca439a793ded3d383b1b5c4cb3d3895',1,'ExHeader_SystemInfoFlags']]],
-  ['isvalidrotationxy_21',['isValidRotationXY',['https://libctru.devkitpro.org/structCAMU__StereoCameraCalibrationData.html#a61454743016d8fa6658a700d0c3039ca',1,'CAMU_StereoCameraCalibrationData']]],
-  ['ivs_22',['ivs',['https://libctru.devkitpro.org/structFS__DeviceMoveContext.html#a16f06d589079f9a705d2a63ed26bde19',1,'FS_DeviceMoveContext']]]
+  ['ispresenceloaded_21',['isPresenceLoaded',['https://libctru.devkitpro.org/structFriendPresence.html#a9a65c98b22b4999e3dd1f4f598a8ca55',1,'FriendPresence']]],
+  ['isvalidrotationxy_22',['isValidRotationXY',['https://libctru.devkitpro.org/structCAMU__StereoCameraCalibrationData.html#a61454743016d8fa6658a700d0c3039ca',1,'CAMU_StereoCameraCalibrationData']]],
+  ['iv_23',['iv',['https://libctru.devkitpro.org/structIndependentServiceTokenV2.html#a4dc62f4b0b4177f27fbcc5b392adc22c',1,'IndependentServiceTokenV2']]],
+  ['ivs_24',['ivs',['https://libctru.devkitpro.org/structFS__DeviceMoveContext.html#a16f06d589079f9a705d2a63ed26bde19',1,'FS_DeviceMoveContext']]]
 ];

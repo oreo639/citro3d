@@ -9,7 +9,7 @@ var searchData=
   ['uniforms_2eh_6',['uniforms.h',['../uniforms_8h.html',1,'']]],
   ['uniformtabledata_7',['uniformTableData',['https://libctru.devkitpro.org/structDVLE__s.html#a37130c23fcea45833e688e92803fff63',1,'DVLE_s']]],
   ['uniformtablesize_8',['uniformTableSize',['https://libctru.devkitpro.org/structDVLE__s.html#af66ba7fde88b0bb1df53aef8c24db51c',1,'DVLE_s']]],
-  ['unk_9',['unk',['https://libctru.devkitpro.org/structAM__PendingTitleEntry.html#ab63f01a88e37f5feb31dfdf5ef5642b9',1,'AM_PendingTitleEntry::unk'],['https://libctru.devkitpro.org/structAM__TitleEntry.html#a22a7d967f2e7f4f7072eb46f17b35077',1,'AM_TitleEntry::unk'],['https://libctru.devkitpro.org/structDVLE__outEntry__s.html#a8a552967912a216a2900ba57c0cb33ba',1,'DVLE_outEntry_s::unk'],['https://libctru.devkitpro.org/structGSPGPU__FramebufferInfo.html#a1794be4dc30dcf32ff0c2fb2ef7a5841',1,'GSPGPU_FramebufferInfo::unk']]],
+  ['unk_9',['unk',['https://libctru.devkitpro.org/structDVLE__outEntry__s.html#a8a552967912a216a2900ba57c0cb33ba',1,'DVLE_outEntry_s::unk'],['https://libctru.devkitpro.org/structGSPGPU__FramebufferInfo.html#a1794be4dc30dcf32ff0c2fb2ef7a5841',1,'GSPGPU_FramebufferInfo::unk']]],
   ['unk_5fx04_10',['unk_x04',['https://libctru.devkitpro.org/structMVDSTD__Config.html#a044475bde408bf873f9a6da6b3bd7ecc',1,'MVDSTD_Config']]],
   ['unk_5fx08_11',['unk_x08',['https://libctru.devkitpro.org/structMVDSTD__Config.html#a8c6ca76186b85dee3ac2585df2c3af94',1,'MVDSTD_Config']]],
   ['unk_5fx2_12',['unk_x2',['https://libctru.devkitpro.org/structNFC__TagInfo.html#a60b976dafb0acafde87489bbcb98e8e9',1,'NFC_TagInfo']]],
